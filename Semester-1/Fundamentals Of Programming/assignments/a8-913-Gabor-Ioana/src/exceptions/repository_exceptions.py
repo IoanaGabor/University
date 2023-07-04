@@ -1,0 +1,3 @@
+
+class GenericRepositoryException(Exception):
+    pass
