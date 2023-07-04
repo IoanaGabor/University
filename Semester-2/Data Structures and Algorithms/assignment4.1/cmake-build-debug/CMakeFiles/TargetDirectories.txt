@@ -1,0 +1,3 @@
+/home/ioana/second_semester/dsa/assignment4/cmake-build-debug/CMakeFiles/assignment4.dir
+/home/ioana/second_semester/dsa/assignment4/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ioana/second_semester/dsa/assignment4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
