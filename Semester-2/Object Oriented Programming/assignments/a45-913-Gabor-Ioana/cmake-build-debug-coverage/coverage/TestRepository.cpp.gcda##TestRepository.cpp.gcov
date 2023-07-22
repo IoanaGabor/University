@@ -1,0 +1,2036 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/app_tests/TestRepository.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestRepository.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestRepository.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include <cassert>
+        -:    6:#include "TestRepository.h"
+        -:    7:#include "../repository/Repository.h"
+        -:    8:#include "../domain/Event.h"
+        -:    9:
+function _ZN14TestRepository32testAddAndListElementsRepositoryEv called 1 returned 100% blocks executed 50%
+        1:   10:void TestRepository::testAddAndListElementsRepository() {
+        1:   11:    Repository<Event> repository = Repository<Event>();
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:    repository.add(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+        1:   12-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   12-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   12-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   12-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   12-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   12-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   12-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   12-block  7
+call   31 never executed
+    $$$$$:   12-block  8
+    $$$$$:   12-block  9
+call   32 never executed
+    $$$$$:   12-block 10
+    $$$$$:   12-block 11
+call   33 never executed
+    $$$$$:   12-block 12
+    $$$$$:   12-block 13
+call   34 never executed
+    $$$$$:   12-block 14
+    $$$$$:   12-block 15
+call   35 never executed
+    $$$$$:   12-block 16
+    $$$$$:   12-block 17
+call   36 never executed
+    $$$$$:   12-block 18
+    $$$$$:   12-block 19
+call   37 never executed
+    $$$$$:   12-block 20
+    $$$$$:   12-block 21
+call   38 never executed
+    $$$$$:   12-block 22
+    $$$$$:   12-block 23
+call   39 never executed
+    $$$$$:   12-block 24
+        1:   13:    repository.add(Event("fdsas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   13-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   13-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   13-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   13-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   13-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   13-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   13-block  6
+call   31 never executed
+    $$$$$:   13-block  7
+    $$$$$:   13-block  8
+call   32 never executed
+    $$$$$:   13-block  9
+    $$$$$:   13-block 10
+call   33 never executed
+    $$$$$:   13-block 11
+    $$$$$:   13-block 12
+call   34 never executed
+    $$$$$:   13-block 13
+    $$$$$:   13-block 14
+call   35 never executed
+    $$$$$:   13-block 15
+    $$$$$:   13-block 16
+call   36 never executed
+    $$$$$:   13-block 17
+    $$$$$:   13-block 18
+call   37 never executed
+    $$$$$:   13-block 19
+    $$$$$:   13-block 20
+call   38 never executed
+    $$$$$:   13-block 21
+    $$$$$:   13-block 22
+call   39 never executed
+    $$$$$:   13-block 23
+        1:   14:    repository.add(Event("dfafds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   14-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   14-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   14-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   14-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   14-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   14-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   14-block  6
+call   31 never executed
+    $$$$$:   14-block  7
+    $$$$$:   14-block  8
+call   32 never executed
+    $$$$$:   14-block  9
+    $$$$$:   14-block 10
+call   33 never executed
+    $$$$$:   14-block 11
+    $$$$$:   14-block 12
+call   34 never executed
+    $$$$$:   14-block 13
+    $$$$$:   14-block 14
+call   35 never executed
+    $$$$$:   14-block 15
+    $$$$$:   14-block 16
+call   36 never executed
+    $$$$$:   14-block 17
+    $$$$$:   14-block 18
+call   37 never executed
+    $$$$$:   14-block 19
+    $$$$$:   14-block 20
+call   38 never executed
+    $$$$$:   14-block 21
+    $$$$$:   14-block 22
+call   39 never executed
+    $$$$$:   14-block 23
+        1:   15:    repository.add(Event("dfafdds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   15-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   15-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   15-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   15-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   15-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   15-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   15-block  6
+call   31 never executed
+    $$$$$:   15-block  7
+    $$$$$:   15-block  8
+call   32 never executed
+    $$$$$:   15-block  9
+    $$$$$:   15-block 10
+call   33 never executed
+    $$$$$:   15-block 11
+    $$$$$:   15-block 12
+call   34 never executed
+    $$$$$:   15-block 13
+    $$$$$:   15-block 14
+call   35 never executed
+    $$$$$:   15-block 15
+    $$$$$:   15-block 16
+call   36 never executed
+    $$$$$:   15-block 17
+    $$$$$:   15-block 18
+call   37 never executed
+    $$$$$:   15-block 19
+    $$$$$:   15-block 20
+call   38 never executed
+    $$$$$:   15-block 21
+    $$$$$:   15-block 22
+call   39 never executed
+    $$$$$:   15-block 23
+       1*:   16:    assert(repository.getAllEntities().getSize() == 4);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   16-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   16-block  1
+call    6 never executed
+        1:   16-block  2
+call    7 returned 1
+        -:   17:    try{
+      10*:   18:        repository.add(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   18-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   18-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   18-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   18-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   18-block  4
+call   19 returned 1
+branch 20 taken 0 (fallthrough)
+branch 21 taken 1 (throw)
+    %%%%%:   18-block  5
+call   22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        1:   18-block  6
+call   31 returned 1
+        1:   18-block  7
+        1:   18-block  8
+call   32 returned 1
+        1:   18-block  9
+        1:   18-block 10
+call   33 returned 1
+        1:   18-block 11
+        1:   18-block 12
+call   34 returned 1
+        1:   18-block 13
+        1:   18-block 14
+call   35 returned 1
+        1:   18-block 15
+        1:   18-block 16
+call   36 returned 1
+        1:   18-block 17
+        1:   18-block 18
+call   37 returned 1
+        1:   18-block 19
+        1:   18-block 20
+call   38 returned 1
+        1:   18-block 21
+        1:   18-block 22
+call   39 returned 1
+        1:   18-block 23
+    #####:   19:        assert(false);
+call    0 never executed
+        1:   20:    }catch (RepositoryException &repositoryException){
+        1:   20-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   20-block  1
+call    2 returned 1
+        -:   21:        assert(true);
+        1:   22:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23:}
+        1:   23-block  0
+call    0 returned 1
+    $$$$$:   23-block  1
+call    1 never executed
+        -:   24:
+function _ZN14TestRepository20testRemoveRepositoryEv called 1 returned 100% blocks executed 50%
+        1:   25:void TestRepository::testRemoveRepository() {
+        1:   26:    Repository<Event> repository = Repository<Event>();
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   27:    repository.add(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+        1:   27-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   27-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   27-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   27-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   27-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   27-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   27-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   27-block  7
+call   31 never executed
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+call   32 never executed
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+call   33 never executed
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
+call   34 never executed
+    $$$$$:   27-block 14
+    $$$$$:   27-block 15
+call   35 never executed
+    $$$$$:   27-block 16
+    $$$$$:   27-block 17
+call   36 never executed
+    $$$$$:   27-block 18
+    $$$$$:   27-block 19
+call   37 never executed
+    $$$$$:   27-block 20
+    $$$$$:   27-block 21
+call   38 never executed
+    $$$$$:   27-block 22
+    $$$$$:   27-block 23
+call   39 never executed
+    $$$$$:   27-block 24
+        1:   28:    repository.add(Event("fdsas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   28-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   28-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   28-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   28-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   28-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   28-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   28-block  6
+call   31 never executed
+    $$$$$:   28-block  7
+    $$$$$:   28-block  8
+call   32 never executed
+    $$$$$:   28-block  9
+    $$$$$:   28-block 10
+call   33 never executed
+    $$$$$:   28-block 11
+    $$$$$:   28-block 12
+call   34 never executed
+    $$$$$:   28-block 13
+    $$$$$:   28-block 14
+call   35 never executed
+    $$$$$:   28-block 15
+    $$$$$:   28-block 16
+call   36 never executed
+    $$$$$:   28-block 17
+    $$$$$:   28-block 18
+call   37 never executed
+    $$$$$:   28-block 19
+    $$$$$:   28-block 20
+call   38 never executed
+    $$$$$:   28-block 21
+    $$$$$:   28-block 22
+call   39 never executed
+    $$$$$:   28-block 23
+        1:   29:    repository.add(Event("dfafds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   29-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   29-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   29-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   29-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   29-block  6
+call   31 never executed
+    $$$$$:   29-block  7
+    $$$$$:   29-block  8
+call   32 never executed
+    $$$$$:   29-block  9
+    $$$$$:   29-block 10
+call   33 never executed
+    $$$$$:   29-block 11
+    $$$$$:   29-block 12
+call   34 never executed
+    $$$$$:   29-block 13
+    $$$$$:   29-block 14
+call   35 never executed
+    $$$$$:   29-block 15
+    $$$$$:   29-block 16
+call   36 never executed
+    $$$$$:   29-block 17
+    $$$$$:   29-block 18
+call   37 never executed
+    $$$$$:   29-block 19
+    $$$$$:   29-block 20
+call   38 never executed
+    $$$$$:   29-block 21
+    $$$$$:   29-block 22
+call   39 never executed
+    $$$$$:   29-block 23
+        1:   30:    repository.add(Event("dfafdds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   30-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   30-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   30-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   30-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   30-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   30-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   30-block  6
+call   31 never executed
+    $$$$$:   30-block  7
+    $$$$$:   30-block  8
+call   32 never executed
+    $$$$$:   30-block  9
+    $$$$$:   30-block 10
+call   33 never executed
+    $$$$$:   30-block 11
+    $$$$$:   30-block 12
+call   34 never executed
+    $$$$$:   30-block 13
+    $$$$$:   30-block 14
+call   35 never executed
+    $$$$$:   30-block 15
+    $$$$$:   30-block 16
+call   36 never executed
+    $$$$$:   30-block 17
+    $$$$$:   30-block 18
+call   37 never executed
+    $$$$$:   30-block 19
+    $$$$$:   30-block 20
+call   38 never executed
+    $$$$$:   30-block 21
+    $$$$$:   30-block 22
+call   39 never executed
+    $$$$$:   30-block 23
+        1:   31:    repository.remove(Event::getIdFromTitleAndDate("dfas","/2022/10/23/10:24"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   31-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   31-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   31-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   31-block  3
+call   14 returned 1
+call   15 returned 1
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+    $$$$$:   31-block  4
+call   19 never executed
+    $$$$$:   31-block  5
+    $$$$$:   31-block  6
+call   20 never executed
+    $$$$$:   31-block  7
+    $$$$$:   31-block  8
+call   21 never executed
+    $$$$$:   31-block  9
+    $$$$$:   31-block 10
+call   22 never executed
+    $$$$$:   31-block 11
+    $$$$$:   31-block 12
+call   23 never executed
+    $$$$$:   31-block 13
+       1*:   32:    assert(repository.getAllEntities().getSize() == 3);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   32-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   32-block  1
+call    6 never executed
+        1:   32-block  2
+call    7 returned 1
+        -:   33:    try{
+      11*:   34:        repository.remove(Event("dfasdsaaa", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229").getId());
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   34-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   34-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   34-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   34-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   34-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   34-block  5
+call   22 returned 1
+branch 23 taken 0 (fallthrough)
+branch 24 taken 1 (throw)
+    %%%%%:   34-block  6
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+call   31 never executed
+call   32 never executed
+call   33 never executed
+call   34 never executed
+        1:   34-block  7
+call   35 returned 1
+        1:   34-block  8
+        1:   34-block  9
+call   36 returned 1
+        1:   34-block 10
+        1:   34-block 11
+call   37 returned 1
+        1:   34-block 12
+        1:   34-block 13
+call   38 returned 1
+        1:   34-block 14
+        1:   34-block 15
+call   39 returned 1
+        1:   34-block 16
+        1:   34-block 17
+call   40 returned 1
+        1:   34-block 18
+        1:   34-block 19
+call   41 returned 1
+        1:   34-block 20
+        1:   34-block 21
+call   42 returned 1
+        1:   34-block 22
+        1:   34-block 23
+call   43 returned 1
+        1:   34-block 24
+        1:   34-block 25
+call   44 returned 1
+        1:   34-block 26
+    #####:   35:        assert(false);
+call    0 never executed
+        1:   36:    }catch (RepositoryException &repositoryException){
+        1:   36-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   36-block  1
+call    2 returned 1
+        -:   37:        assert(true);
+        1:   38:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   39:}
+        1:   39-block  0
+call    0 returned 1
+    $$$$$:   39-block  1
+call    1 never executed
+        -:   40:
+function _ZN14TestRepository20testUpdateRepositoryEv called 1 returned 100% blocks executed 49%
+        1:   41:void TestRepository::testUpdateRepository() {
+        1:   42:    Repository<Event> repository = Repository<Event>();
+        1:   42-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43:    repository.add(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+        1:   43-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   43-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   43-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   43-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   43-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   43-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   43-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   43-block  7
+call   31 never executed
+    $$$$$:   43-block  8
+    $$$$$:   43-block  9
+call   32 never executed
+    $$$$$:   43-block 10
+    $$$$$:   43-block 11
+call   33 never executed
+    $$$$$:   43-block 12
+    $$$$$:   43-block 13
+call   34 never executed
+    $$$$$:   43-block 14
+    $$$$$:   43-block 15
+call   35 never executed
+    $$$$$:   43-block 16
+    $$$$$:   43-block 17
+call   36 never executed
+    $$$$$:   43-block 18
+    $$$$$:   43-block 19
+call   37 never executed
+    $$$$$:   43-block 20
+    $$$$$:   43-block 21
+call   38 never executed
+    $$$$$:   43-block 22
+    $$$$$:   43-block 23
+call   39 never executed
+    $$$$$:   43-block 24
+        1:   44:    repository.add(Event("fdsas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   44-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   44-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   44-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   44-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   44-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   44-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   44-block  6
+call   31 never executed
+    $$$$$:   44-block  7
+    $$$$$:   44-block  8
+call   32 never executed
+    $$$$$:   44-block  9
+    $$$$$:   44-block 10
+call   33 never executed
+    $$$$$:   44-block 11
+    $$$$$:   44-block 12
+call   34 never executed
+    $$$$$:   44-block 13
+    $$$$$:   44-block 14
+call   35 never executed
+    $$$$$:   44-block 15
+    $$$$$:   44-block 16
+call   36 never executed
+    $$$$$:   44-block 17
+    $$$$$:   44-block 18
+call   37 never executed
+    $$$$$:   44-block 19
+    $$$$$:   44-block 20
+call   38 never executed
+    $$$$$:   44-block 21
+    $$$$$:   44-block 22
+call   39 never executed
+    $$$$$:   44-block 23
+        1:   45:    repository.add(Event("dfafds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   45-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   45-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   45-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   45-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   45-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   45-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   45-block  6
+call   31 never executed
+    $$$$$:   45-block  7
+    $$$$$:   45-block  8
+call   32 never executed
+    $$$$$:   45-block  9
+    $$$$$:   45-block 10
+call   33 never executed
+    $$$$$:   45-block 11
+    $$$$$:   45-block 12
+call   34 never executed
+    $$$$$:   45-block 13
+    $$$$$:   45-block 14
+call   35 never executed
+    $$$$$:   45-block 15
+    $$$$$:   45-block 16
+call   36 never executed
+    $$$$$:   45-block 17
+    $$$$$:   45-block 18
+call   37 never executed
+    $$$$$:   45-block 19
+    $$$$$:   45-block 20
+call   38 never executed
+    $$$$$:   45-block 21
+    $$$$$:   45-block 22
+call   39 never executed
+    $$$$$:   45-block 23
+        1:   46:    repository.add(Event("dfafdds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   46-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   46-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   46-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   46-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   46-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   46-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   46-block  6
+call   31 never executed
+    $$$$$:   46-block  7
+    $$$$$:   46-block  8
+call   32 never executed
+    $$$$$:   46-block  9
+    $$$$$:   46-block 10
+call   33 never executed
+    $$$$$:   46-block 11
+    $$$$$:   46-block 12
+call   34 never executed
+    $$$$$:   46-block 13
+    $$$$$:   46-block 14
+call   35 never executed
+    $$$$$:   46-block 15
+    $$$$$:   46-block 16
+call   36 never executed
+    $$$$$:   46-block 17
+    $$$$$:   46-block 18
+call   37 never executed
+    $$$$$:   46-block 19
+    $$$$$:   46-block 20
+call   38 never executed
+    $$$$$:   46-block 21
+    $$$$$:   46-block 22
+call   39 never executed
+    $$$$$:   46-block 23
+        1:   47:    repository.update(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   47-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   47-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   47-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   47-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   47-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   47-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   47-block  6
+call   31 never executed
+    $$$$$:   47-block  7
+    $$$$$:   47-block  8
+call   32 never executed
+    $$$$$:   47-block  9
+    $$$$$:   47-block 10
+call   33 never executed
+    $$$$$:   47-block 11
+    $$$$$:   47-block 12
+call   34 never executed
+    $$$$$:   47-block 13
+    $$$$$:   47-block 14
+call   35 never executed
+    $$$$$:   47-block 15
+    $$$$$:   47-block 16
+call   36 never executed
+    $$$$$:   47-block 17
+    $$$$$:   47-block 18
+call   37 never executed
+    $$$$$:   47-block 19
+    $$$$$:   47-block 20
+call   38 never executed
+    $$$$$:   47-block 21
+    $$$$$:   47-block 22
+call   39 never executed
+    $$$$$:   47-block 23
+       1*:   48:    assert(repository.getAllEntities().getSize() == 4);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   48-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   48-block  1
+call    6 never executed
+        1:   48-block  2
+call    7 returned 1
+        -:   49:    try{
+      10*:   50:        repository.update(Event("dfasdsaaa", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   50-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   50-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   50-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   50-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   50-block  4
+call   19 returned 1
+branch 20 taken 0 (fallthrough)
+branch 21 taken 1 (throw)
+    %%%%%:   50-block  5
+call   22 never executed
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+call   30 never executed
+        1:   50-block  6
+call   31 returned 1
+        1:   50-block  7
+        1:   50-block  8
+call   32 returned 1
+        1:   50-block  9
+        1:   50-block 10
+call   33 returned 1
+        1:   50-block 11
+        1:   50-block 12
+call   34 returned 1
+        1:   50-block 13
+        1:   50-block 14
+call   35 returned 1
+        1:   50-block 15
+        1:   50-block 16
+call   36 returned 1
+        1:   50-block 17
+        1:   50-block 18
+call   37 returned 1
+        1:   50-block 19
+        1:   50-block 20
+call   38 returned 1
+        1:   50-block 21
+        1:   50-block 22
+call   39 returned 1
+        1:   50-block 23
+    #####:   51:        assert(false);
+call    0 never executed
+        1:   52:    }catch (RepositoryException &repositoryException){
+        1:   52-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   52-block  1
+call    2 returned 1
+        -:   53:        assert(true);
+        1:   54:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   55:}
+        1:   55-block  0
+call    0 returned 1
+    $$$$$:   55-block  1
+call    1 never executed
+        -:   56:
+function _ZN14TestRepository24testGetElementRepositoryEv called 1 returned 100% blocks executed 45%
+        1:   57:void TestRepository::testGetElementRepository() {
+        1:   58:    Repository<Event> repository = Repository<Event>();
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59:    repository.add(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+        1:   59-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   59-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   59-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   59-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   59-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   59-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   59-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   59-block  7
+call   31 never executed
+    $$$$$:   59-block  8
+    $$$$$:   59-block  9
+call   32 never executed
+    $$$$$:   59-block 10
+    $$$$$:   59-block 11
+call   33 never executed
+    $$$$$:   59-block 12
+    $$$$$:   59-block 13
+call   34 never executed
+    $$$$$:   59-block 14
+    $$$$$:   59-block 15
+call   35 never executed
+    $$$$$:   59-block 16
+    $$$$$:   59-block 17
+call   36 never executed
+    $$$$$:   59-block 18
+    $$$$$:   59-block 19
+call   37 never executed
+    $$$$$:   59-block 20
+    $$$$$:   59-block 21
+call   38 never executed
+    $$$$$:   59-block 22
+    $$$$$:   59-block 23
+call   39 never executed
+    $$$$$:   59-block 24
+        1:   60:    repository.add(Event("fdsas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   60-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   60-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   60-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   60-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   60-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   60-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   60-block  6
+call   31 never executed
+    $$$$$:   60-block  7
+    $$$$$:   60-block  8
+call   32 never executed
+    $$$$$:   60-block  9
+    $$$$$:   60-block 10
+call   33 never executed
+    $$$$$:   60-block 11
+    $$$$$:   60-block 12
+call   34 never executed
+    $$$$$:   60-block 13
+    $$$$$:   60-block 14
+call   35 never executed
+    $$$$$:   60-block 15
+    $$$$$:   60-block 16
+call   36 never executed
+    $$$$$:   60-block 17
+    $$$$$:   60-block 18
+call   37 never executed
+    $$$$$:   60-block 19
+    $$$$$:   60-block 20
+call   38 never executed
+    $$$$$:   60-block 21
+    $$$$$:   60-block 22
+call   39 never executed
+    $$$$$:   60-block 23
+        1:   61:    repository.add(Event("dfafds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   61-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   61-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   61-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   61-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   61-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   61-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   61-block  6
+call   31 never executed
+    $$$$$:   61-block  7
+    $$$$$:   61-block  8
+call   32 never executed
+    $$$$$:   61-block  9
+    $$$$$:   61-block 10
+call   33 never executed
+    $$$$$:   61-block 11
+    $$$$$:   61-block 12
+call   34 never executed
+    $$$$$:   61-block 13
+    $$$$$:   61-block 14
+call   35 never executed
+    $$$$$:   61-block 15
+    $$$$$:   61-block 16
+call   36 never executed
+    $$$$$:   61-block 17
+    $$$$$:   61-block 18
+call   37 never executed
+    $$$$$:   61-block 19
+    $$$$$:   61-block 20
+call   38 never executed
+    $$$$$:   61-block 21
+    $$$$$:   61-block 22
+call   39 never executed
+    $$$$$:   61-block 23
+        1:   62:    repository.add(Event("dfafdds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   62-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   62-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   62-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   62-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   62-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   62-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   62-block  6
+call   31 never executed
+    $$$$$:   62-block  7
+    $$$$$:   62-block  8
+call   32 never executed
+    $$$$$:   62-block  9
+    $$$$$:   62-block 10
+call   33 never executed
+    $$$$$:   62-block 11
+    $$$$$:   62-block 12
+call   34 never executed
+    $$$$$:   62-block 13
+    $$$$$:   62-block 14
+call   35 never executed
+    $$$$$:   62-block 15
+    $$$$$:   62-block 16
+call   36 never executed
+    $$$$$:   62-block 17
+    $$$$$:   62-block 18
+call   37 never executed
+    $$$$$:   62-block 19
+    $$$$$:   62-block 20
+call   38 never executed
+    $$$$$:   62-block 21
+    $$$$$:   62-block 22
+call   39 never executed
+    $$$$$:   62-block 23
+       1*:   63:    assert(Event("fdsas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229")
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   63-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   63-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   63-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   63-block  3
+call   14 returned 1
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:   63-block  4
+call   18 returned 1
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   63-block  5
+call   22 returned 1
+call   23 returned 1
+branch 24 taken 1 (fallthrough)
+branch 25 taken 0 (throw)
+        1:   63-block  6
+call   26 returned 1
+call   27 returned 1
+branch 28 taken 1 (fallthrough)
+branch 29 taken 0 (throw)
+        1:   63-block  7
+call   30 returned 1
+branch 31 taken 1 (fallthrough)
+branch 32 taken 0 (throw)
+        1:   63-block  8
+call   33 returned 1
+branch 34 taken 1 (fallthrough)
+branch 35 taken 0 (throw)
+        1:   63-block  9
+branch 36 taken 0 (fallthrough)
+branch 37 taken 1
+    %%%%%:   63-block 10
+call   38 never executed
+        1:   63-block 11
+call   39 returned 1
+call   40 returned 1
+call   41 returned 1
+call   42 returned 1
+call   43 returned 1
+call   44 returned 1
+call   45 returned 1
+call   46 returned 1
+call   47 returned 1
+call   48 returned 1
+call   49 returned 1
+call   50 returned 1
+call   51 returned 1
+call   52 returned 1
+call   53 returned 1
+    $$$$$:   63-block 12
+call   54 never executed
+    $$$$$:   63-block 13
+    $$$$$:   63-block 14
+call   55 never executed
+    $$$$$:   63-block 15
+    $$$$$:   63-block 16
+call   56 never executed
+    $$$$$:   63-block 17
+    $$$$$:   63-block 18
+call   57 never executed
+    $$$$$:   63-block 19
+    $$$$$:   63-block 20
+call   58 never executed
+    $$$$$:   63-block 21
+    $$$$$:   63-block 22
+call   59 never executed
+    $$$$$:   63-block 23
+    $$$$$:   63-block 24
+call   60 never executed
+    $$$$$:   63-block 25
+    $$$$$:   63-block 26
+call   61 never executed
+    $$$$$:   63-block 27
+    $$$$$:   63-block 28
+call   62 never executed
+    $$$$$:   63-block 29
+    $$$$$:   63-block 30
+call   63 never executed
+    $$$$$:   63-block 31
+    $$$$$:   63-block 32
+call   64 never executed
+    $$$$$:   63-block 33
+    $$$$$:   63-block 34
+call   65 never executed
+    $$$$$:   63-block 35
+    $$$$$:   63-block 36
+call   66 never executed
+    $$$$$:   63-block 37
+    $$$$$:   63-block 38
+call   67 never executed
+    $$$$$:   63-block 39
+    $$$$$:   63-block 40
+call   68 never executed
+    $$$$$:   63-block 41
+        -:   64:    == repository.getElementById(Event::getIdFromTitleAndDate("fdsas", "/2022/10/23/10:24")));
+        -:   65:    try{
+       6*:   66:        repository.getElementById(Event::getIdFromTitleAndDate("dfasdsaaa",  "/2022/10/23/10:24"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   66-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   66-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   66-block  2
+call   11 returned 1
+branch 12 taken 0 (fallthrough)
+branch 13 taken 1 (throw)
+    %%%%%:   66-block  3
+call   14 never executed
+call   15 never executed
+call   16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+        1:   66-block  4
+call   20 returned 1
+        1:   66-block  5
+        1:   66-block  6
+call   21 returned 1
+        1:   66-block  7
+        1:   66-block  8
+call   22 returned 1
+        1:   66-block  9
+        1:   66-block 10
+call   23 returned 1
+        1:   66-block 11
+        1:   66-block 12
+call   24 returned 1
+        1:   66-block 13
+    #####:   67:        assert(false);
+call    0 never executed
+        1:   68:    }catch (RepositoryException &repositoryException){
+        1:   68-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   68-block  1
+call    2 returned 1
+        -:   69:        assert(true);
+        1:   70:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   71:}
+        1:   71-block  0
+call    0 returned 1
+    $$$$$:   71-block  1
+call    1 never executed
+        -:   72:
+function _ZN14TestRepository32testIsElementPresentInRepositoryEv called 1 returned 100% blocks executed 42%
+        1:   73:void TestRepository::testIsElementPresentInRepository() {
+        1:   74:    Repository<Event> repository = Repository<Event>();
+        1:   74-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   75:    repository.add(Event("dfas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+        1:   75-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   75-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   75-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   75-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   75-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   75-block  5
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   75-block  6
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   75-block  7
+call   31 never executed
+    $$$$$:   75-block  8
+    $$$$$:   75-block  9
+call   32 never executed
+    $$$$$:   75-block 10
+    $$$$$:   75-block 11
+call   33 never executed
+    $$$$$:   75-block 12
+    $$$$$:   75-block 13
+call   34 never executed
+    $$$$$:   75-block 14
+    $$$$$:   75-block 15
+call   35 never executed
+    $$$$$:   75-block 16
+    $$$$$:   75-block 17
+call   36 never executed
+    $$$$$:   75-block 18
+    $$$$$:   75-block 19
+call   37 never executed
+    $$$$$:   75-block 20
+    $$$$$:   75-block 21
+call   38 never executed
+    $$$$$:   75-block 22
+    $$$$$:   75-block 23
+call   39 never executed
+    $$$$$:   75-block 24
+        1:   76:    repository.add(Event("fdsas", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   76-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   76-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   76-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   76-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   76-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   76-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   76-block  6
+call   31 never executed
+    $$$$$:   76-block  7
+    $$$$$:   76-block  8
+call   32 never executed
+    $$$$$:   76-block  9
+    $$$$$:   76-block 10
+call   33 never executed
+    $$$$$:   76-block 11
+    $$$$$:   76-block 12
+call   34 never executed
+    $$$$$:   76-block 13
+    $$$$$:   76-block 14
+call   35 never executed
+    $$$$$:   76-block 15
+    $$$$$:   76-block 16
+call   36 never executed
+    $$$$$:   76-block 17
+    $$$$$:   76-block 18
+call   37 never executed
+    $$$$$:   76-block 19
+    $$$$$:   76-block 20
+call   38 never executed
+    $$$$$:   76-block 21
+    $$$$$:   76-block 22
+call   39 never executed
+    $$$$$:   76-block 23
+        1:   77:    repository.add(Event("dfafds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   77-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   77-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   77-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   77-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   77-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   77-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   77-block  6
+call   31 never executed
+    $$$$$:   77-block  7
+    $$$$$:   77-block  8
+call   32 never executed
+    $$$$$:   77-block  9
+    $$$$$:   77-block 10
+call   33 never executed
+    $$$$$:   77-block 11
+    $$$$$:   77-block 12
+call   34 never executed
+    $$$$$:   77-block 13
+    $$$$$:   77-block 14
+call   35 never executed
+    $$$$$:   77-block 15
+    $$$$$:   77-block 16
+call   36 never executed
+    $$$$$:   77-block 17
+    $$$$$:   77-block 18
+call   37 never executed
+    $$$$$:   77-block 19
+    $$$$$:   77-block 20
+call   38 never executed
+    $$$$$:   77-block 21
+    $$$$$:   77-block 22
+call   39 never executed
+    $$$$$:   77-block 23
+        1:   78:    repository.add(Event("dfafdds", "fdas", 3, "/2022/10/23/10:24","https://stackoverflow.com/questions/3385229"));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   78-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   78-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   78-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   78-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   78-block  4
+call   19 returned 1
+branch 20 taken 1 (fallthrough)
+branch 21 taken 0 (throw)
+        1:   78-block  5
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+call   27 returned 1
+call   28 returned 1
+call   29 returned 1
+call   30 returned 1
+    $$$$$:   78-block  6
+call   31 never executed
+    $$$$$:   78-block  7
+    $$$$$:   78-block  8
+call   32 never executed
+    $$$$$:   78-block  9
+    $$$$$:   78-block 10
+call   33 never executed
+    $$$$$:   78-block 11
+    $$$$$:   78-block 12
+call   34 never executed
+    $$$$$:   78-block 13
+    $$$$$:   78-block 14
+call   35 never executed
+    $$$$$:   78-block 15
+    $$$$$:   78-block 16
+call   36 never executed
+    $$$$$:   78-block 17
+    $$$$$:   78-block 18
+call   37 never executed
+    $$$$$:   78-block 19
+    $$$$$:   78-block 20
+call   38 never executed
+    $$$$$:   78-block 21
+    $$$$$:   78-block 22
+call   39 never executed
+    $$$$$:   78-block 23
+       1*:   79:    assert(repository.isPresent(Event::getIdFromTitleAndDate("fdsas", "/2022/10/23/10:24")));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   79-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   79-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   79-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   79-block  3
+branch 14 taken 0 (fallthrough)
+branch 15 taken 1
+    %%%%%:   79-block  4
+call   16 never executed
+        1:   79-block  5
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+    $$$$$:   79-block  6
+call   22 never executed
+    $$$$$:   79-block  7
+    $$$$$:   79-block  8
+call   23 never executed
+    $$$$$:   79-block  9
+    $$$$$:   79-block 10
+call   24 never executed
+    $$$$$:   79-block 11
+    $$$$$:   79-block 12
+call   25 never executed
+    $$$$$:   79-block 13
+    $$$$$:   79-block 14
+call   26 never executed
+    $$$$$:   79-block 15
+       1*:   80:    assert(!repository.isPresent(Event::getIdFromTitleAndDate("fdfdasdfassas", "/2022/10/23/10:24")));
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   80-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   80-block  1
+call    8 returned 1
+branch  9 taken 1 (fallthrough)
+branch 10 taken 0 (throw)
+        1:   80-block  2
+call   11 returned 1
+branch 12 taken 1 (fallthrough)
+branch 13 taken 0 (throw)
+        1:   80-block  3
+branch 14 taken 0 (fallthrough)
+branch 15 taken 1
+    %%%%%:   80-block  4
+call   16 never executed
+        1:   80-block  5
+call   17 returned 1
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+    $$$$$:   80-block  6
+call   22 never executed
+    $$$$$:   80-block  7
+    $$$$$:   80-block  8
+call   23 never executed
+    $$$$$:   80-block  9
+    $$$$$:   80-block 10
+call   24 never executed
+    $$$$$:   80-block 11
+    $$$$$:   80-block 12
+call   25 never executed
+    $$$$$:   80-block 13
+    $$$$$:   80-block 14
+call   26 never executed
+    $$$$$:   80-block 15
+        1:   81:}
+call    0 returned 1
+    $$$$$:   81-block  0
+call    1 never executed
+        -:   82:
+function _ZN14TestRepository17testAllRepositoryEv called 1 returned 100% blocks executed 100%
+        1:   83:void TestRepository::testAllRepository() {
+        1:   84:    TestRepository::testAddAndListElementsRepository();
+        1:   84-block  0
+call    0 returned 1
+        1:   85:    TestRepository::testRemoveRepository();
+call    0 returned 1
+        1:   86:    TestRepository::testUpdateRepository();
+call    0 returned 1
+        1:   87:    TestRepository::testGetElementRepository();
+call    0 returned 1
+        1:   88:    TestRepository::testIsElementPresentInRepository();
+call    0 returned 1
+        1:   89:}

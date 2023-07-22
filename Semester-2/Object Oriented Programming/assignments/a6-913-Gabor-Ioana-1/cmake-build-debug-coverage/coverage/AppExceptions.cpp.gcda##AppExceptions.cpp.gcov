@@ -1,0 +1,56 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/domain/AppExceptions.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/domain/AppExceptions.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/domain/AppExceptions.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "AppExceptions.h"
+        -:    6:
+function _ZN14EventExceptionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 100% blocks executed 100%
+        4:    7:EventException::EventException(const std::string &message) : GenericAppException(message) {
+        4:    7-block  0
+call    0 returned 4
+call    1 returned 4
+        -:    8:
+        4:    9:}
+        -:   10:
+function _ZNK19GenericAppException11get_messageB5cxx11Ev called 5 returned 100% blocks executed 100%
+        5:   11:std::string GenericAppException::get_message() const {
+        5:   12:    return this->message;
+        5:   12-block  0
+call    0 returned 5
+        -:   13:}
+        -:   14:
+function _ZN19GenericAppExceptionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 20 returned 100% blocks executed 62%
+       20:   15:GenericAppException::GenericAppException(const std::string &message) {
+       20:   15-block  0
+call    0 returned 20
+call    1 returned 20
+       20:   16:    this->message = message;
+call    0 returned 20
+branch  1 taken 20 (fallthrough)
+branch  2 taken 0 (throw)
+       20:   17:}
+       20:   17-block  0
+    $$$$$:   17-block  1
+call    0 never executed
+    $$$$$:   17-block  2
+call    1 never executed
+        -:   18:
+function _ZN19RepositoryExceptionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 7 returned 100% blocks executed 100%
+        7:   19:RepositoryException::RepositoryException(const std::string &message) : GenericAppException(message) {
+        7:   19-block  0
+call    0 returned 7
+call    1 returned 7
+        -:   20:
+        7:   21:}
+        -:   22:
+function _ZN25EventsControllerExceptionC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 9 returned 100% blocks executed 100%
+        9:   23:EventsControllerException::EventsControllerException(const std::string &message) : GenericAppException(message) {
+        9:   23-block  0
+call    0 returned 9
+call    1 returned 9
+        -:   24:
+        9:   25:}

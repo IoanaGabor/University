@@ -1,0 +1,3 @@
+Temperature: diameter2.000000Producer: napocaPrice: 17.000000 Recordings: 3.000000 3.000000 23.000000 Alerting: 0
+smoke Producer: smokingPrice: 25.000000 Recordings: 3.000000 3321.000000 23.000000 Alerting: 1
+hum Producer: wadasPrice: 4.000000 Recordings: 3.000000 3212.000000 23.000000 Alerting: 1

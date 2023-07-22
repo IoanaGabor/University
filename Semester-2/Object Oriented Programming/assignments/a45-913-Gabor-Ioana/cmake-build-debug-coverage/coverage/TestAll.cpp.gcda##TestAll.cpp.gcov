@@ -1,0 +1,26 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/app_tests/TestAll.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestAll.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestAll.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 31.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "TestAll.h"
+        -:    6:#include "TestDynamicVector.h"
+        -:    7:#include "TestEvent.h"
+        -:    8:#include "TestRepository.h"
+        -:    9:#include "TestController.h"
+        -:   10:
+function _ZN7TestAll11runAllTestsEv called 1 returned 100% blocks executed 100%
+        1:   11:void TestAll::runAllTests() {
+        1:   12:    TestDynamicVector::testAllDynamicVector();
+        1:   12-block  0
+call    0 returned 1
+        1:   13:    TestEvent::testAllEvent();
+call    0 returned 1
+        1:   14:    TestRepository::testAllRepository();
+call    0 returned 1
+        1:   15:    TestController::testAllController();
+call    0 returned 1
+        1:   16:}

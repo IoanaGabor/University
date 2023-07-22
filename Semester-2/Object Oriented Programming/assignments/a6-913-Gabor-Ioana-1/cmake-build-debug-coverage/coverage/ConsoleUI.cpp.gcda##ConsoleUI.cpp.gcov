@@ -1,0 +1,1726 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/ui/ConsoleUI.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/ui/ConsoleUI.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/ui/ConsoleUI.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include <string>
+        -:    6:#include <iostream>
+        -:    7:#include <regex.h>
+        -:    8:#include <string>
+        -:    9:#include <regex>
+        -:   10:#include "validators/Validators.h"
+        -:   11:#include "ConsoleUI.h"
+        -:   12:#include "domain/AppExceptions.h"
+        -:   13:
+        -:   14:const std::string ADMIN_USAGE_MOD = "1";
+        -:   15:const std::string USER_USAGE_MOD = "2";
+        -:   16:
+function _ZN9ConsoleUI14runConsoleMenuEv called 1 returned 100% blocks executed 42%
+        1:   17:void ConsoleUI::runConsoleMenu() {
+        1:   18:    std::string commandAsLine;
+        1:   18-block  0
+call    0 returned 1
+        -:   19:
+        1:   20:    eventsController.addEventAdministrator("movie", "fda", "/2022/09/23/10:25", 3, "https://www.google.com/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   20-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   20-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   20-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   20-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   20-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   20-block  5
+call   27 never executed
+    $$$$$:   20-block  6
+    $$$$$:   20-block  7
+call   28 never executed
+    $$$$$:   20-block  8
+    $$$$$:   20-block  9
+call   29 never executed
+    $$$$$:   20-block 10
+    $$$$$:   20-block 11
+call   30 never executed
+    $$$$$:   20-block 12
+    $$$$$:   20-block 13
+call   31 never executed
+    $$$$$:   20-block 14
+    $$$$$:   20-block 15
+call   32 never executed
+    $$$$$:   20-block 16
+    $$$$$:   20-block 17
+call   33 never executed
+    $$$$$:   20-block 18
+    $$$$$:   20-block 19
+call   34 never executed
+    $$$$$:   20-block 20
+        1:   21:    eventsController.addEventAdministrator("concert", "fda", "/2022/10/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   21-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   21-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   21-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   21-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   21-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   21-block  5
+call   27 never executed
+    $$$$$:   21-block  6
+    $$$$$:   21-block  7
+call   28 never executed
+    $$$$$:   21-block  8
+    $$$$$:   21-block  9
+call   29 never executed
+    $$$$$:   21-block 10
+    $$$$$:   21-block 11
+call   30 never executed
+    $$$$$:   21-block 12
+    $$$$$:   21-block 13
+call   31 never executed
+    $$$$$:   21-block 14
+    $$$$$:   21-block 15
+call   32 never executed
+    $$$$$:   21-block 16
+    $$$$$:   21-block 17
+call   33 never executed
+    $$$$$:   21-block 18
+    $$$$$:   21-block 19
+call   34 never executed
+    $$$$$:   21-block 20
+        1:   22:    eventsController.addEventAdministrator("abc", "fda", "/2022/04/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   22-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   22-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   22-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   22-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   22-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   22-block  5
+call   27 never executed
+    $$$$$:   22-block  6
+    $$$$$:   22-block  7
+call   28 never executed
+    $$$$$:   22-block  8
+    $$$$$:   22-block  9
+call   29 never executed
+    $$$$$:   22-block 10
+    $$$$$:   22-block 11
+call   30 never executed
+    $$$$$:   22-block 12
+    $$$$$:   22-block 13
+call   31 never executed
+    $$$$$:   22-block 14
+    $$$$$:   22-block 15
+call   32 never executed
+    $$$$$:   22-block 16
+    $$$$$:   22-block 17
+call   33 never executed
+    $$$$$:   22-block 18
+    $$$$$:   22-block 19
+call   34 never executed
+    $$$$$:   22-block 20
+        1:   23:    eventsController.addEventAdministrator("contest", "fda", "/2022/10/21/10:25", 3, "https://www.youtube.com/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   23-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   23-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   23-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   23-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   23-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   23-block  5
+call   27 never executed
+    $$$$$:   23-block  6
+    $$$$$:   23-block  7
+call   28 never executed
+    $$$$$:   23-block  8
+    $$$$$:   23-block  9
+call   29 never executed
+    $$$$$:   23-block 10
+    $$$$$:   23-block 11
+call   30 never executed
+    $$$$$:   23-block 12
+    $$$$$:   23-block 13
+call   31 never executed
+    $$$$$:   23-block 14
+    $$$$$:   23-block 15
+call   32 never executed
+    $$$$$:   23-block 16
+    $$$$$:   23-block 17
+call   33 never executed
+    $$$$$:   23-block 18
+    $$$$$:   23-block 19
+call   34 never executed
+    $$$$$:   23-block 20
+        1:   24:    eventsController.addEventAdministrator("party", "fda", "/2022/11/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   24-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   24-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   24-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   24-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   24-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   24-block  5
+call   27 never executed
+    $$$$$:   24-block  6
+    $$$$$:   24-block  7
+call   28 never executed
+    $$$$$:   24-block  8
+    $$$$$:   24-block  9
+call   29 never executed
+    $$$$$:   24-block 10
+    $$$$$:   24-block 11
+call   30 never executed
+    $$$$$:   24-block 12
+    $$$$$:   24-block 13
+call   31 never executed
+    $$$$$:   24-block 14
+    $$$$$:   24-block 15
+call   32 never executed
+    $$$$$:   24-block 16
+    $$$$$:   24-block 17
+call   33 never executed
+    $$$$$:   24-block 18
+    $$$$$:   24-block 19
+call   34 never executed
+    $$$$$:   24-block 20
+        1:   25:    eventsController.addEventAdministrator("something", "fda", "/2022/12/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   25-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   25-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   25-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   25-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   25-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   25-block  5
+call   27 never executed
+    $$$$$:   25-block  6
+    $$$$$:   25-block  7
+call   28 never executed
+    $$$$$:   25-block  8
+    $$$$$:   25-block  9
+call   29 never executed
+    $$$$$:   25-block 10
+    $$$$$:   25-block 11
+call   30 never executed
+    $$$$$:   25-block 12
+    $$$$$:   25-block 13
+call   31 never executed
+    $$$$$:   25-block 14
+    $$$$$:   25-block 15
+call   32 never executed
+    $$$$$:   25-block 16
+    $$$$$:   25-block 17
+call   33 never executed
+    $$$$$:   25-block 18
+    $$$$$:   25-block 19
+call   34 never executed
+    $$$$$:   25-block 20
+        1:   26:    eventsController.addEventAdministrator("nothing", "fda", "/2022/01/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   26-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   26-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   26-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   26-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   26-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   26-block  5
+call   27 never executed
+    $$$$$:   26-block  6
+    $$$$$:   26-block  7
+call   28 never executed
+    $$$$$:   26-block  8
+    $$$$$:   26-block  9
+call   29 never executed
+    $$$$$:   26-block 10
+    $$$$$:   26-block 11
+call   30 never executed
+    $$$$$:   26-block 12
+    $$$$$:   26-block 13
+call   31 never executed
+    $$$$$:   26-block 14
+    $$$$$:   26-block 15
+call   32 never executed
+    $$$$$:   26-block 16
+    $$$$$:   26-block 17
+call   33 never executed
+    $$$$$:   26-block 18
+    $$$$$:   26-block 19
+call   34 never executed
+    $$$$$:   26-block 20
+        1:   27:    eventsController.addEventAdministrator("haha", "fda", "/2022/03/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   27-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   27-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   27-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   27-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   27-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   27-block  5
+call   27 never executed
+    $$$$$:   27-block  6
+    $$$$$:   27-block  7
+call   28 never executed
+    $$$$$:   27-block  8
+    $$$$$:   27-block  9
+call   29 never executed
+    $$$$$:   27-block 10
+    $$$$$:   27-block 11
+call   30 never executed
+    $$$$$:   27-block 12
+    $$$$$:   27-block 13
+call   31 never executed
+    $$$$$:   27-block 14
+    $$$$$:   27-block 15
+call   32 never executed
+    $$$$$:   27-block 16
+    $$$$$:   27-block 17
+call   33 never executed
+    $$$$$:   27-block 18
+    $$$$$:   27-block 19
+call   34 never executed
+    $$$$$:   27-block 20
+        1:   28:    eventsController.addEventAdministrator("well", "fda", "/2022/04/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   28-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   28-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   28-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   28-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   28-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   28-block  5
+call   27 never executed
+    $$$$$:   28-block  6
+    $$$$$:   28-block  7
+call   28 never executed
+    $$$$$:   28-block  8
+    $$$$$:   28-block  9
+call   29 never executed
+    $$$$$:   28-block 10
+    $$$$$:   28-block 11
+call   30 never executed
+    $$$$$:   28-block 12
+    $$$$$:   28-block 13
+call   31 never executed
+    $$$$$:   28-block 14
+    $$$$$:   28-block 15
+call   32 never executed
+    $$$$$:   28-block 16
+    $$$$$:   28-block 17
+call   33 never executed
+    $$$$$:   28-block 18
+    $$$$$:   28-block 19
+call   34 never executed
+    $$$$$:   28-block 20
+        1:   29:    eventsController.addEventAdministrator("fda623s", "fda", "/2022/05/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   29-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   29-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   29-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   29-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   29-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   29-block  5
+call   27 never executed
+    $$$$$:   29-block  6
+    $$$$$:   29-block  7
+call   28 never executed
+    $$$$$:   29-block  8
+    $$$$$:   29-block  9
+call   29 never executed
+    $$$$$:   29-block 10
+    $$$$$:   29-block 11
+call   30 never executed
+    $$$$$:   29-block 12
+    $$$$$:   29-block 13
+call   31 never executed
+    $$$$$:   29-block 14
+    $$$$$:   29-block 15
+call   32 never executed
+    $$$$$:   29-block 16
+    $$$$$:   29-block 17
+call   33 never executed
+    $$$$$:   29-block 18
+    $$$$$:   29-block 19
+call   34 never executed
+    $$$$$:   29-block 20
+        1:   30:    eventsController.addEventAdministrator("fdasfdas", "fda", "/2022/06/23/10:25", 3, "https://www.infoarena.ro/");
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   30-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   30-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:   30-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:   30-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:   30-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:   30-block  5
+call   27 never executed
+    $$$$$:   30-block  6
+    $$$$$:   30-block  7
+call   28 never executed
+    $$$$$:   30-block  8
+    $$$$$:   30-block  9
+call   29 never executed
+    $$$$$:   30-block 10
+    $$$$$:   30-block 11
+call   30 never executed
+    $$$$$:   30-block 12
+    $$$$$:   30-block 13
+call   31 never executed
+    $$$$$:   30-block 14
+    $$$$$:   30-block 15
+call   32 never executed
+    $$$$$:   30-block 16
+    $$$$$:   30-block 17
+call   33 never executed
+    $$$$$:   30-block 18
+    $$$$$:   30-block 19
+call   34 never executed
+    $$$$$:   30-block 20
+        1:   31:    usageMode = "";
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   32:    while (true) {
+       1*:   33:        std::cout << "Options:\n";
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+    %%%%%:   33-block  1
+        1:   34:        std::cout << "1. Admin mode\n";
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   35:        std::cout << "2. User mode\n";
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:        getline(std::cin, usageMode);
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   37:        if (usageMode == ADMIN_USAGE_MOD || usageMode == USER_USAGE_MOD) {
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   37-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   37-block  2
+        1:   37-block  3
+        1:   37-block  4
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    #####:   38:            break;
+    %%%%%:   38-block  0
+        1:   39:        } else if (usageMode == "exit") {
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+        1:   40:            return;
+        1:   40-block  0
+        -:   41:        } else {
+    #####:   42:            std::cout << "invalid command\n";
+    %%%%%:   42-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   43:        }
+        -:   44:    }
+        -:   45:
+        -:   46:    while (true) {
+    #####:   47:        if (usageMode == ADMIN_USAGE_MOD) {
+    %%%%%:   47-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   48:            printAdministratorMenu();
+    %%%%%:   48-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   49:        } else if (usageMode == USER_USAGE_MOD) {
+    %%%%%:   49-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   50:            printUserMenu();
+    %%%%%:   50-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   51:        }
+    #####:   52:        getline(std::cin, commandAsLine);
+    %%%%%:   52-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   53:        if (commandAsLine == "exit") {
+    %%%%%:   53-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   54:            break;
+    %%%%%:   54-block  0
+        -:   55:        }
+    #####:   56:        if (usageMode == ADMIN_USAGE_MOD) {
+    %%%%%:   56-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   57:            executeAdministratorCommand(commandAsLine);
+    %%%%%:   57-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   58:        } else if (usageMode == USER_USAGE_MOD) {
+    %%%%%:   58-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   59:            executeUserCommand(commandAsLine);
+    %%%%%:   59-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:   60:        }
+        -:   61:    }
+       1*:   62:}
+    %%%%%:   62-block  0
+        1:   62-block  1
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    $$$$$:   62-block  2
+call    3 never executed
+        -:   63:
+function _ZN9ConsoleUI22printAdministratorMenuEv called 0 returned 0% blocks executed 0%
+    #####:   64:void ConsoleUI::printAdministratorMenu() {
+    #####:   65:    std::cout << "Options:\n";
+    %%%%%:   65-block  0
+call    0 never executed
+    #####:   66:    std::cout << "add event\n";
+call    0 never executed
+    #####:   67:    std::cout << "update event\n";
+call    0 never executed
+    #####:   68:    std::cout << "remove event\n";
+call    0 never executed
+    #####:   69:    std::cout << "list event\n";
+call    0 never executed
+    #####:   70:    std::cout << "exit\n";
+call    0 never executed
+    #####:   71:}
+        -:   72:
+function _ZN9ConsoleUI13printUserMenuEv called 0 returned 0% blocks executed 0%
+    #####:   73:void ConsoleUI::printUserMenu() {
+    #####:   74:    std::cout << "Options:\n";
+    %%%%%:   74-block  0
+call    0 never executed
+    #####:   75:    std::cout << "display\n";
+call    0 never executed
+    #####:   76:    std::cout << "my list\n";
+call    0 never executed
+    #####:   77:    std::cout << "remove event\n";
+call    0 never executed
+    #####:   78:    std::cout << "exit\n";
+call    0 never executed
+    #####:   79:}
+        -:   80:
+function _ZN9ConsoleUI27executeAdministratorCommandERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   81:void ConsoleUI::executeAdministratorCommand(const std::string &command) {
+    #####:   82:    if (std::regex_search(command, std::regex("^add event$"))) {
+    %%%%%:   82-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   82-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   82-block  2
+call    7 never executed
+    $$$$$:   82-block  3
+call    8 never executed
+    #####:   83:        this->handleAdministratorAddEventCommand();
+    %%%%%:   83-block  0
+call    0 never executed
+    #####:   84:    } else if (std::regex_search(command, std::regex("^update event$"))) {
+    %%%%%:   84-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   84-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   84-block  2
+call    7 never executed
+    $$$$$:   84-block  3
+call    8 never executed
+    #####:   85:        this->handleAdministratorUpdateEventCommand();
+    %%%%%:   85-block  0
+call    0 never executed
+    #####:   86:    } else if (std::regex_search(command, std::regex("^remove event$"))) {
+    %%%%%:   86-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   86-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   86-block  2
+call    7 never executed
+    $$$$$:   86-block  3
+call    8 never executed
+    #####:   87:        this->handleAdministratorRemoveEventCommand();
+    %%%%%:   87-block  0
+call    0 never executed
+    #####:   88:    } else if (std::regex_search(command, std::regex("^list event$"))) {
+    %%%%%:   88-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   88-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   88-block  2
+call    7 never executed
+    $$$$$:   88-block  3
+call    8 never executed
+    #####:   89:        printEvents(this->eventsController.listEventsAdministrator());
+    %%%%%:   89-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   89-block  1
+call    4 never executed
+    $$$$$:   89-block  2
+call    5 never executed
+        -:   90:    } else {
+    #####:   91:        std::cout << "Invalid command\n";
+    %%%%%:   91-block  0
+call    0 never executed
+        -:   92:    }
+    #####:   93:}
+    %%%%%:   93-block  0
+        -:   94:
+function _ZN9ConsoleUI18executeUserCommandERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   95:void ConsoleUI::executeUserCommand(const std::string &command) {
+    #####:   96:    if (std::regex_search(command, std::regex("^display$"))) {
+    %%%%%:   96-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   96-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   96-block  2
+call    7 never executed
+    $$$$$:   96-block  3
+call    8 never executed
+    #####:   97:        this->handleUserDisplayEventsMenuCommand();
+    %%%%%:   97-block  0
+call    0 never executed
+    #####:   98:    } else if (std::regex_search(command, std::regex("^remove event$"))) {
+    %%%%%:   98-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   98-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:   98-block  2
+call    7 never executed
+    $$$$$:   98-block  3
+call    8 never executed
+    #####:   99:        this->handleUserRemoveEventCommand();
+    %%%%%:   99-block  0
+call    0 never executed
+    #####:  100:    } else if (std::regex_search(command, std::regex("^my list$"))) {
+    %%%%%:  100-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  100-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    $$$$$:  100-block  2
+call    7 never executed
+    $$$$$:  100-block  3
+call    8 never executed
+    #####:  101:        printEvents(this->eventsController.listEventsUser());
+    %%%%%:  101-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  101-block  1
+call    4 never executed
+    $$$$$:  101-block  2
+call    5 never executed
+        -:  102:    } else {
+    #####:  103:        std::cout << "Invalid command\n";
+    %%%%%:  103-block  0
+call    0 never executed
+        -:  104:    }
+    #####:  105:}
+    %%%%%:  105-block  0
+        -:  106:
+function _ZN9ConsoleUI34handleAdministratorAddEventCommandEv called 0 returned 0% blocks executed 0%
+    #####:  107:void ConsoleUI::handleAdministratorAddEventCommand() {
+    #####:  108:    std::string title, description, attendants, link, dateAndTime;
+    %%%%%:  108-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+    #####:  109:    std::cout << "Please enter the event title:\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  110:    getline(std::cin, title);
+    %%%%%:  110-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  111:    std::cout << "Please enter the event date and time:\n";
+    %%%%%:  111-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  112:    getline(std::cin, dateAndTime);
+    %%%%%:  112-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  113:    std::cout << "Please enter the event description:\n";
+    %%%%%:  113-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  114:    getline(std::cin, description);
+    %%%%%:  114-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  115:    std::cout << "Please enter the number of attendants:\n";
+    %%%%%:  115-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  116:    getline(std::cin, attendants);
+    %%%%%:  116-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  117:    std::cout << "Please enter the event link:\n";
+    %%%%%:  117-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  118:    getline(std::cin, link);
+    %%%%%:  118-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  119:    int attendantsAsInteger;
+        -:  120:    try {
+    #####:  121:        attendantsAsInteger = stoi(attendants);
+    %%%%%:  121-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    =====:  122:    } catch (std::invalid_argument &invalid_argument) {
+    $$$$$:  122-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  122-block  1
+call    2 never executed
+    =====:  123:        std::cout << "The number of attendants should be an integer!\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    =====:  124:        return;
+    $$$$$:  124-block  0
+    =====:  125:    }
+    $$$$$:  125-block  0
+call    0 never executed
+    $$$$$:  125-block  1
+call    1 never executed
+        -:  126:    try {
+    #####:  127:        this->eventsController.addEventAdministrator(
+    %%%%%:  127-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  128:                title,
+        -:  129:                description, dateAndTime,
+        -:  130:                attendantsAsInteger,
+        -:  131:                link
+        -:  132:        );
+    =====:  133:    } catch (EventsControllerException &eventsControllerException) {
+    $$$$$:  133-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  133-block  1
+call    2 never executed
+    =====:  134:        std::cout << eventsControllerException.get_message() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  134-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  134-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  134-block  2
+call    9 never executed
+    $$$$$:  134-block  3
+call   10 never executed
+    $$$$$:  134-block  4
+    =====:  135:    }
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  135-block  0
+call    3 never executed
+    #####:  136:}
+    %%%%%:  136-block  0
+    %%%%%:  136-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  136-block  2
+    %%%%%:  136-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  136-block  4
+    %%%%%:  136-block  5
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  136-block  6
+    %%%%%:  136-block  7
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  136-block  8
+    %%%%%:  136-block  9
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    $$$$$:  136-block 10
+call   15 never executed
+    $$$$$:  136-block 11
+call   16 never executed
+    $$$$$:  136-block 12
+call   17 never executed
+    $$$$$:  136-block 13
+call   18 never executed
+    $$$$$:  136-block 14
+call   19 never executed
+        -:  137:
+function _ZN9ConsoleUI37handleAdministratorUpdateEventCommandEv called 0 returned 0% blocks executed 0%
+    #####:  138:void ConsoleUI::handleAdministratorUpdateEventCommand() {
+    #####:  139:    std::string title, description, attendants, link, dateAndTime;
+    %%%%%:  139-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+call    4 never executed
+    #####:  140:    std::cout << "Please enter title of the event which you want to update:\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  141:    getline(std::cin, title);
+    %%%%%:  141-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  142:    std::cout << "Please enter the date and time of the event which you want to update:\n";
+    %%%%%:  142-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  143:    getline(std::cin, dateAndTime);
+    %%%%%:  143-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  144:    std::cout << "Please enter the new event description:\n";
+    %%%%%:  144-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  145:    getline(std::cin, description);
+    %%%%%:  145-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  146:    std::cout << "Please enter the new number of attendants:\n";
+    %%%%%:  146-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  147:    getline(std::cin, attendants);
+    %%%%%:  147-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  148:    std::cout << "Please enter the new event link:\n";
+    %%%%%:  148-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  149:    getline(std::cin, link);
+    %%%%%:  149-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  150:    int attendantsAsInteger;
+        -:  151:    try {
+    #####:  152:        attendantsAsInteger = stoi(attendants);
+    %%%%%:  152-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    =====:  153:    } catch (std::invalid_argument &invalid_argument) {
+    $$$$$:  153-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  153-block  1
+call    2 never executed
+    =====:  154:        std::cout << "The number of attendants should be an integer!\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    =====:  155:        return;
+    $$$$$:  155-block  0
+    =====:  156:    }
+    $$$$$:  156-block  0
+call    0 never executed
+    $$$$$:  156-block  1
+call    1 never executed
+        -:  157:    try {
+    #####:  158:        this->eventsController.updateEventAdministrator(
+    %%%%%:  158-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  159:                title,
+        -:  160:                description, dateAndTime,
+        -:  161:                attendantsAsInteger,
+        -:  162:                link
+        -:  163:        );
+    =====:  164:    } catch (EventsControllerException &eventsControllerException) {
+    $$$$$:  164-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  164-block  1
+call    2 never executed
+    =====:  165:        std::cout << eventsControllerException.get_message() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  165-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  165-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  165-block  2
+call    9 never executed
+    $$$$$:  165-block  3
+call   10 never executed
+    $$$$$:  165-block  4
+    =====:  166:    }
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  166-block  0
+call    3 never executed
+    #####:  167:}
+    %%%%%:  167-block  0
+    %%%%%:  167-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  167-block  2
+    %%%%%:  167-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  167-block  4
+    %%%%%:  167-block  5
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  167-block  6
+    %%%%%:  167-block  7
+call    9 never executed
+branch 10 never executed
+branch 11 never executed
+    %%%%%:  167-block  8
+    %%%%%:  167-block  9
+call   12 never executed
+branch 13 never executed
+branch 14 never executed
+    $$$$$:  167-block 10
+call   15 never executed
+    $$$$$:  167-block 11
+call   16 never executed
+    $$$$$:  167-block 12
+call   17 never executed
+    $$$$$:  167-block 13
+call   18 never executed
+    $$$$$:  167-block 14
+call   19 never executed
+        -:  168:
+function _ZN9ConsoleUI37handleAdministratorRemoveEventCommandEv called 0 returned 0% blocks executed 0%
+    #####:  169:void ConsoleUI::handleAdministratorRemoveEventCommand() {
+    #####:  170:    std::string title, dateAndTime;
+    %%%%%:  170-block  0
+call    0 never executed
+call    1 never executed
+    #####:  171:    std::cout << "Please enter title of the event which you want to remove:\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  172:    getline(std::cin, title);
+    %%%%%:  172-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  173:    std::cout << "Please enter the date and time of the event which you want to remove:\n";
+    %%%%%:  173-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  174:    getline(std::cin, dateAndTime);
+    %%%%%:  174-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  175:    try {
+    #####:  176:        this->eventsController.removeEventAdministrator(
+    %%%%%:  176-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  177:                title,
+        -:  178:                dateAndTime
+        -:  179:        );
+    =====:  180:    } catch (EventsControllerException &eventsControllerException) {
+    $$$$$:  180-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  180-block  1
+call    2 never executed
+    =====:  181:        std::cout << eventsControllerException.get_message() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  181-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  181-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  181-block  2
+call    9 never executed
+    $$$$$:  181-block  3
+call   10 never executed
+    $$$$$:  181-block  4
+    =====:  182:    }
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  182-block  0
+call    3 never executed
+    #####:  183:}
+    %%%%%:  183-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  183-block  1
+call    2 never executed
+    $$$$$:  183-block  2
+call    3 never executed
+        -:  184:
+        -:  185:
+function _ZN9ConsoleUI28handleUserRemoveEventCommandEv called 0 returned 0% blocks executed 0%
+    #####:  186:void ConsoleUI::handleUserRemoveEventCommand() {
+    #####:  187:    std::string title, dateAndTime;
+    %%%%%:  187-block  0
+call    0 never executed
+call    1 never executed
+    #####:  188:    std::cout << "Please enter title of the event which you want to remove:\n";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  189:    getline(std::cin, title);
+    %%%%%:  189-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  190:    std::cout << "Please enter the date and time of the event which you want to remove:\n";
+    %%%%%:  190-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  191:    getline(std::cin, dateAndTime);
+    %%%%%:  191-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  192:    try {
+    #####:  193:        this->eventsController.removeEventUser(
+    %%%%%:  193-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  194:                title,
+        -:  195:                dateAndTime
+        -:  196:        );
+    =====:  197:    } catch (EventsControllerException &eventsControllerException) {
+    $$$$$:  197-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  197-block  1
+call    2 never executed
+    =====:  198:        std::cout << eventsControllerException.get_message() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  198-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  198-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  198-block  2
+call    9 never executed
+    $$$$$:  198-block  3
+call   10 never executed
+    $$$$$:  198-block  4
+    =====:  199:    }
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  199-block  0
+call    3 never executed
+    #####:  200:}
+    %%%%%:  200-block  0
+call    0 never executed
+call    1 never executed
+    $$$$$:  200-block  1
+call    2 never executed
+    $$$$$:  200-block  2
+call    3 never executed
+        -:  201:
+function _ZN9ConsoleUI11printEventsESt6vectorI5EventSaIS1_EE called 0 returned 0% blocks executed 0%
+    #####:  202:void ConsoleUI::printEvents(std::vector<Event> someEvents) {
+    #####:  203:    for (auto & someEvent : someEvents) {
+    %%%%%:  203-block  0
+call    0 never executed
+call    1 never executed
+    %%%%%:  203-block  1
+call    2 never executed
+    %%%%%:  203-block  2
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:  204:        std::cout << someEvent.toString() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  204-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  204-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    %%%%%:  204-block  2
+call    9 never executed
+call   10 never executed
+    $$$$$:  204-block  3
+call   11 never executed
+    $$$$$:  204-block  4
+        -:  205:    }
+    #####:  206:}
+    %%%%%:  206-block  0
+        -:  207:
+function _ZN9ConsoleUIC2ERK16EventsController called 1 returned 100% blocks executed 62%
+        1:  208:ConsoleUI::ConsoleUI(const EventsController &eventsController) {
+        1:  208-block  0
+call    0 returned 1
+call    1 returned 1
+        1:  209:    this->eventsController = eventsController;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  210:}
+        1:  210-block  0
+    $$$$$:  210-block  1
+call    0 never executed
+    $$$$$:  210-block  2
+call    1 never executed
+        -:  211:
+function _ZN9ConsoleUI34handleUserDisplayEventsMenuCommandEv called 0 returned 0% blocks executed 0%
+    #####:  212:void ConsoleUI::handleUserDisplayEventsMenuCommand() {
+    #####:  213:    std::string month;
+    %%%%%:  213-block  0
+call    0 never executed
+    #####:  214:    std::cout << "Please enter the month, or leave blank";
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  215:    getline(std::cin, month);
+    %%%%%:  215-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  216:    int currentIndex = 0;
+    #####:  217:    std::string commandAsLine;
+    %%%%%:  217-block  0
+call    0 never executed
+    #####:  218:    std::vector<Event> selectedEvents;
+call    0 never executed
+        -:  219:    try {
+    #####:  220:        selectedEvents = this->eventsController.selectAllEventsByMonth(month);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  220-block  0
+call    3 never executed
+call    4 never executed
+    =====:  221:    } catch (EventsControllerException &eventsControllerException) {
+    $$$$$:  221-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  221-block  1
+call    2 never executed
+    =====:  222:        std::cout << eventsControllerException.get_message() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  222-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  222-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  222-block  2
+call    9 never executed
+    $$$$$:  222-block  3
+call   10 never executed
+    $$$$$:  222-block  4
+    =====:  223:        return;
+    =====:  224:    }
+    $$$$$:  224-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  224-block  1
+call    3 never executed
+    #####:  225:    if (selectedEvents.empty()) {
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  226:        std::cout << "no selected events";
+    %%%%%:  226-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  227:        return;
+    %%%%%:  227-block  0
+        -:  228:    }
+        -:  229:    while (true) {
+        -:  230:        //this->printUserMenu();
+    #####:  231:        system(("open " + selectedEvents[currentIndex].getLink()).c_str());
+    %%%%%:  231-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  231-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  231-block  2
+call    7 never executed
+call    8 never executed
+branch  9 never executed
+branch 10 never executed
+    %%%%%:  231-block  3
+call   11 never executed
+call   12 never executed
+    $$$$$:  231-block  4
+call   13 never executed
+    $$$$$:  231-block  5
+    $$$$$:  231-block  6
+call   14 never executed
+    $$$$$:  231-block  7
+    #####:  232:        std::cout << selectedEvents[currentIndex].toString() << '\n';
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  232-block  0
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  232-block  1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+    %%%%%:  232-block  2
+call   10 never executed
+    $$$$$:  232-block  3
+call   11 never executed
+    $$$$$:  232-block  4
+    #####:  233:        getline(std::cin, commandAsLine);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  234:        if (std::regex_search(commandAsLine, std::regex("^next$"))) {
+    %%%%%:  234-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  234-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  234-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  234-block  3
+call    9 never executed
+    $$$$$:  234-block  4
+    #####:  235:            currentIndex++;
+    #####:  236:            currentIndex %= selectedEvents.size();
+    %%%%%:  236-block  0
+call    0 never executed
+    #####:  237:        } else if (std::regex_search(commandAsLine, std::regex("^add$"))) {
+    %%%%%:  237-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  237-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  237-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  237-block  3
+call    9 never executed
+    $$$$$:  237-block  4
+        -:  238:            try {
+    #####:  239:                this->eventsController.addEventUser(selectedEvents[currentIndex].getId());
+    %%%%%:  239-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  239-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  239-block  2
+call    7 never executed
+    $$$$$:  239-block  3
+call    8 never executed
+    $$$$$:  239-block  4
+    =====:  240:            } catch (GenericAppException &genericAppException) {
+    $$$$$:  240-block  0
+branch  0 never executed
+branch  1 never executed
+    $$$$$:  240-block  1
+call    2 never executed
+    =====:  241:                std::cout << genericAppException.get_message() << '\n';
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  241-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    $$$$$:  241-block  1
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  241-block  2
+call    9 never executed
+    $$$$$:  241-block  3
+call   10 never executed
+    $$$$$:  241-block  4
+    =====:  242:            }
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    $$$$$:  242-block  0
+call    3 never executed
+        -:  243:
+    #####:  244:        } else if (std::regex_search(commandAsLine, std::regex("^exit$"))) {
+    %%%%%:  244-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  244-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  244-block  2
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  244-block  3
+call    9 never executed
+    $$$$$:  244-block  4
+    #####:  245:            break;
+    %%%%%:  245-block  0
+        -:  246:        } else {
+    #####:  247:            std::cout << "invalid command\n";
+    %%%%%:  247-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  248:        }
+    #####:  249:    }
+    %%%%%:  249-block  0
+        -:  250:
+    #####:  251:}
+    %%%%%:  251-block  0
+    %%%%%:  251-block  1
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:  251-block  2
+    %%%%%:  251-block  3
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:  251-block  4
+    %%%%%:  251-block  5
+call    6 never executed
+branch  7 never executed
+branch  8 never executed
+    $$$$$:  251-block  6
+call    9 never executed
+    $$$$$:  251-block  7
+call   10 never executed
+    $$$$$:  251-block  8
+call   11 never executed

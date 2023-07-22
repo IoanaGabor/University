@@ -1,0 +1,15 @@
+# ninja log v5
+3	319	1680870613364442971	CMakeFiles/a45_913_Gabor_Ioana.dir/repository/Repository.cpp.o	1d4868c7918d8466
+1	304	1680870749419214944	CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestController.cpp.o	3c5af886493346a1
+3	629	1680866938415647208	CMakeFiles/a45_913_Gabor_Ioana.dir/domain/Event.cpp.o	af30622635cff550
+313	1022	1680870614068504918	CMakeFiles/a45_913_Gabor_Ioana.dir/controller/EventsController.cpp.o	5242cfcb393e3d76
+742	4889	1680866942667710194	CMakeFiles/a45_913_Gabor_Ioana.dir/validators/Validators.cpp.o	ccbcfa65d9799fe7
+308	3703	1680870616744669593	CMakeFiles/a45_913_Gabor_Ioana.dir/ui/ConsoleUI.cpp.o	89964b3b978b9c71
+2	308	1680870613352441898	CMakeFiles/a45_913_Gabor_Ioana.dir/domain/DynamicVector.cpp.o	c2e9d3d3f40bcef1
+319	912	1680870613956495872	CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestRepository.cpp.o	7e64bcd3e6d48e70
+1	381	1680867962106834380	CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestEvent.cpp.o	1a57a9d8a1dae0f5
+304	548	1680870749663123366	a45_913_Gabor_Ioana	68c772ec86af8d37
+1052	1353	1680866939139657934	CMakeFiles/a45_913_Gabor_Ioana.dir/domain/AppExceptions.cpp.o	d7ba38dff676ceb0
+913	1317	1680870614364527012	CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestDynamicVector.cpp.o	aa34e91ff0e9629e
+2	313	1680870613360442613	CMakeFiles/a45_913_Gabor_Ioana.dir/main.cpp.o	31a29a88094965d2
+1661	1678	1680866939463662733	CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestAll.cpp.o	d38f1ce44ab11a6d

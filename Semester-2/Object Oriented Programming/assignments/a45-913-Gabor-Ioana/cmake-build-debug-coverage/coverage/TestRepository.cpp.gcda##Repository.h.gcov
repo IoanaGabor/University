@@ -1,0 +1,312 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/repository/Repository.h
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestRepository.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestRepository.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef A45_913_GABOR_IOANA_REPOSITORY_H
+        -:    6:#define A45_913_GABOR_IOANA_REPOSITORY_H
+        -:    7:
+        -:    8:
+        -:    9:#include <string>
+        -:   10:#include "domain/DynamicVector.h"
+        -:   11:#include "domain/AppExceptions.h"
+        -:   12:template<class T>
+        -:   13:class Repository {
+        -:   14:private:
+        -:   15:    DynamicVector<T> entities;
+        -:   16:public:
+        -:   17:    Repository();
+        -:   18:    void add(T element);
+        -:   19:    void remove(std::string element_id);
+        -:   20:    void update(T element);
+        -:   21:    DynamicVector<T> getAllEntities();
+        -:   22:    T getElementById(const std:: string& elementId);
+        -:   23:    bool isPresent(const std::string &elementId);
+        -:   24:private:
+        -:   25:    int findPosition(const std::string& element_id);
+        -:   26:
+        -:   27:};
+        -:   28:
+        -:   29:template<class T>
+function _ZN10RepositoryI5EventE14getElementByIdERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   30:T Repository<T>::getElementById(const std::string& elementId) {
+    #####:   31:    for(int i=0;i<entities.getSize();i++){
+    %%%%%:   31-block  0
+    %%%%%:   31-block  1
+    %%%%%:   31-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   32:        if(entities[i].getId() == elementId){
+    %%%%%:   32-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   33:            return entities[i];
+    %%%%%:   33-block  0
+call    0 never executed
+call    1 never executed
+        -:   34:        }
+        -:   35:    }
+    #####:   36:    throw RepositoryException("element was not found!");
+    %%%%%:   36-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   36-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   36-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   36-block  3
+call   11 never executed
+    $$$$$:   36-block  4
+    $$$$$:   36-block  5
+call   12 never executed
+    $$$$$:   36-block  6
+    $$$$$:   36-block  7
+call   13 never executed
+        -:   37:}
+        -:   38:
+        -:   39:
+        -:   40:template<class T>
+function _ZN10RepositoryI5EventE9isPresentERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   41:bool Repository<T>::isPresent(const std::string& elementId) {
+    #####:   42:    for(int i=0;i<entities.getSize();i++){
+    %%%%%:   42-block  0
+    %%%%%:   42-block  1
+    %%%%%:   42-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   43:        if(entities[i].getId() == elementId){
+    %%%%%:   43-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   44:            return true;
+    %%%%%:   44-block  0
+        -:   45:        }
+        -:   46:    }
+    #####:   47:    return false;
+    %%%%%:   47-block  0
+        -:   48:}
+        -:   49:
+        -:   50:template<class T>
+function _ZN10RepositoryI5EventE14getAllEntitiesEv called 0 returned 0% blocks executed 0%
+    #####:   51:DynamicVector<T> Repository<T>::getAllEntities() {
+    #####:   52:    return this->entities;
+    %%%%%:   52-block  0
+call    0 never executed
+        -:   53:}
+        -:   54:
+        -:   55:template<class T>
+function _ZN10RepositoryI5EventEC2Ev called 0 returned 0% blocks executed 0%
+    #####:   56:Repository<T>::Repository() {
+    %%%%%:   56-block  0
+call    0 never executed
+    #####:   57:    this->entities = DynamicVector<T>(1);
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    %%%%%:   57-block  0
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   57-block  1
+call    6 never executed
+    $$$$$:   57-block  2
+call    7 never executed
+    $$$$$:   57-block  3
+    #####:   58:}
+    $$$$$:   58-block  0
+call    0 never executed
+        -:   59:
+        -:   60:template<class T>
+function _ZN10RepositoryI5EventE12findPositionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   61:int Repository<T>::findPosition(const std::string& element_id) {
+    #####:   62:    for(int i=0;i< this->entities.getSize();i++){
+    %%%%%:   62-block  0
+    %%%%%:   62-block  1
+    %%%%%:   62-block  2
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:   63:        if(this->entities[i].getId()==element_id){
+    %%%%%:   63-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    #####:   64:            return i;
+    %%%%%:   64-block  0
+        -:   65:        }
+        -:   66:    }
+    #####:   67:    return -1;
+    %%%%%:   67-block  0
+        -:   68:}
+        -:   69:
+        -:   70:template<class T>
+function _ZN10RepositoryI5EventE6updateES0_ called 0 returned 0% blocks executed 0%
+    #####:   71:void Repository<T>::update(T element) {
+    #####:   72:    int position = this->findPosition(element.getId());
+    %%%%%:   72-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   72-block  1
+call    4 never executed
+    $$$$$:   72-block  2
+call    5 never executed
+    $$$$$:   72-block  3
+call    6 never executed
+    #####:   73:    if(position == -1){
+branch  0 never executed
+branch  1 never executed
+    #####:   74:        throw RepositoryException("the element does not exist");
+    %%%%%:   74-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   74-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   74-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   74-block  3
+call   11 never executed
+    $$$$$:   74-block  4
+    $$$$$:   74-block  5
+call   12 never executed
+    $$$$$:   74-block  6
+    $$$$$:   74-block  7
+call   13 never executed
+        -:   75:    }
+    #####:   76:    this->entities[position] = element;
+    %%%%%:   76-block  0
+call    0 never executed
+call    1 never executed
+        -:   77:
+    #####:   78:}
+        -:   79:
+        -:   80:template<class T>
+function _ZN10RepositoryI5EventE6removeENSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 0 returned 0% blocks executed 0%
+    #####:   81:void Repository<T>::remove(std::string element_id) {
+    #####:   82:    int position = this->findPosition(element_id);
+    %%%%%:   82-block  0
+call    0 never executed
+    #####:   83:    if(position == -1){
+branch  0 never executed
+branch  1 never executed
+    #####:   84:        throw RepositoryException("the element does not exist");
+    %%%%%:   84-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   84-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   84-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   84-block  3
+call   11 never executed
+    $$$$$:   84-block  4
+    $$$$$:   84-block  5
+call   12 never executed
+    $$$$$:   84-block  6
+    $$$$$:   84-block  7
+call   13 never executed
+        -:   85:    }
+    #####:   86:    std::swap(this->entities[position], this->entities[this->entities.getSize()-1]);
+    %%%%%:   86-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+call    3 never executed
+    #####:   87:    this->entities.pop_back();
+call    0 never executed
+    #####:   88:}
+        -:   89:
+        -:   90:template<class T>
+function _ZN10RepositoryI5EventE3addES0_ called 0 returned 0% blocks executed 0%
+    #####:   91:void Repository<T>::add(T element) {
+    #####:   92:    int position = this->findPosition(element.getId());
+    %%%%%:   92-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   92-block  1
+call    4 never executed
+    $$$$$:   92-block  2
+call    5 never executed
+    $$$$$:   92-block  3
+call    6 never executed
+    #####:   93:    if(position != -1){
+branch  0 never executed
+branch  1 never executed
+    #####:   94:        throw RepositoryException("the element already exists");
+    %%%%%:   94-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   94-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   94-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   94-block  3
+call   11 never executed
+    $$$$$:   94-block  4
+    $$$$$:   94-block  5
+call   12 never executed
+    $$$$$:   94-block  6
+    $$$$$:   94-block  7
+call   13 never executed
+        -:   95:    }
+    #####:   96:    this->entities.add(element);
+    %%%%%:   96-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   96-block  1
+call    4 never executed
+    $$$$$:   96-block  2
+call    5 never executed
+    #####:   97:}
+        -:   98:
+        -:   99:
+        -:  100:#endif //A45_913_GABOR_IOANA_REPOSITORY_H

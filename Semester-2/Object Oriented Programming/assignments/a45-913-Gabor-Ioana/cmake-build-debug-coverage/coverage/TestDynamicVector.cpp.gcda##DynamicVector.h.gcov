@@ -1,0 +1,237 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/domain/DynamicVector.h
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestDynamicVector.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestDynamicVector.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:#pragma once
+        -:    5:
+        -:    6:#include <algorithm>
+        -:    7:#include "AppExceptions.h"
+        -:    8:
+        -:    9:const int RESIZING_FACTOR = 2;
+        -:   10:const int DEFAULT_INITAL_CAPACITY = 1;
+        -:   11:
+        -:   12:template<class T>
+        -:   13:class DynamicVector {
+        -:   14:private:
+        -:   15:    int capacity, size;
+        -:   16:    T *elements;
+        -:   17:public:
+        -:   18:    DynamicVector();
+        -:   19:
+        -:   20:    DynamicVector(int capacity);
+        -:   21:
+        -:   22:    ~DynamicVector();
+        -:   23:
+        -:   24:    DynamicVector(const DynamicVector &other);
+        -:   25:
+        -:   26:    DynamicVector &operator=(const DynamicVector &other);
+        -:   27:
+        -:   28:    T &operator[](unsigned int position);
+        -:   29:
+        -:   30:    void add(T new_element);
+        -:   31:
+        -:   32:    void pop_back();
+        -:   33:
+        -:   34:    int getSize();
+        -:   35:
+        -:   36:private:
+        -:   37:    void resize(int new_capacity);
+        -:   38:};
+        -:   39:
+        -:   40:template<class T>
+function _ZN13DynamicVectorIiE8pop_backEv called 2 returned 100% blocks executed 18%
+        2:   41:void DynamicVector<T>::pop_back() {
+        2:   42:    if (this->size == 0) {
+        2:   42-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   43:        throw DynamicVectorException("cannot pop from empty vector");
+    %%%%%:   43-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   43-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   43-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   43-block  3
+call   11 never executed
+    $$$$$:   43-block  4
+    $$$$$:   43-block  5
+call   12 never executed
+    $$$$$:   43-block  6
+    $$$$$:   43-block  7
+call   13 never executed
+        -:   44:    }
+        2:   45:    this->size--;
+        2:   46:}
+        2:   46-block  0
+        -:   47:
+        -:   48:template<class T>
+function _ZN13DynamicVectorIiEixEj called 11 returned 91% blocks executed 61%
+       11:   49:T &DynamicVector<T>::operator[](unsigned int position) {
+       11:   50:    if (position >= this->size) {
+       11:   50-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 10
+        1:   51:        throw DynamicVectorException("index out of bounds");
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   51-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   51-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 0
+    $$$$$:   51-block  3
+call   11 never executed
+    $$$$$:   51-block  4
+    $$$$$:   51-block  5
+call   12 never executed
+    $$$$$:   51-block  6
+    $$$$$:   51-block  7
+call   13 never executed
+        -:   52:    }
+       10:   53:    return this->elements[position];
+       10:   53-block  0
+       10:   53-block  1
+        -:   54:}
+        -:   55:
+        -:   56:template<class T>
+function _ZN13DynamicVectorIiEC2Ev called 4 returned 100% blocks executed 100%
+        4:   57:DynamicVector<T>::DynamicVector() {
+        4:   58:    this->size = 0;
+        4:   59:    this->capacity = DEFAULT_INITAL_CAPACITY;
+        4:   60:    this->elements = new T[DEFAULT_INITAL_CAPACITY];
+        4:   60-block  0
+call    0 returned 4
+        4:   61:}
+        -:   62:
+        -:   63:template<class T>
+function _ZN13DynamicVectorIiED2Ev called 5 returned 100% blocks executed 100%
+        5:   64:DynamicVector<T>::~DynamicVector() {
+        5:   65:    delete[] this->elements;
+        5:   65-block  0
+branch  0 taken 5 (fallthrough)
+branch  1 taken 0
+        5:   65-block  1
+call    2 returned 5
+        5:   66:}
+        -:   67:
+        -:   68:template<class T>
+function _ZN13DynamicVectorIiEC2ERKS0_ called 1 returned 100% blocks executed 88%
+        1:   69:DynamicVector<T>::DynamicVector(const DynamicVector &other) {
+        1:   70:    this->size = other.size;
+        1:   71:    this->capacity = other.capacity;
+       1*:   72:    this->elements = new T[other.capacity];
+        1:   72-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 0
+        1:   72-block  1
+    %%%%%:   72-block  2
+call    2 never executed
+        1:   72-block  3
+call    3 returned 1
+        5:   73:    for (int i = 0; i < this->size; i++) {
+        5:   73-block  0
+branch  0 taken 4
+branch  1 taken 1 (fallthrough)
+        4:   74:        this->elements[i] = other.elements[i];
+        4:   74-block  0
+        -:   75:    }
+        1:   76:}
+        -:   77:
+        -:   78:template<class T>
+        -:   79:DynamicVector<T>::DynamicVector(int capacity) {
+        -:   80:    this->capacity = capacity;
+        -:   81:    this->size = 0;
+        -:   82:    this->elements = new T[capacity];
+        -:   83:}
+        -:   84:
+        -:   85:template<class T>
+        -:   86:DynamicVector<T> &DynamicVector<T>::operator=(const DynamicVector &other) {
+        -:   87:    this->capacity = other.capacity;
+        -:   88:    this->size = other.size;
+        -:   89:    delete[] this->elements;
+        -:   90:    this->elements = new T[other.capacity];
+        -:   91:    for (int i = 0; i < this->capacity; i++) {
+        -:   92:        this->elements[i] = other.elements[i];
+        -:   93:    }
+        -:   94:    return *this;
+        -:   95:}
+        -:   96:
+        -:   97:template<class T>
+function _ZN13DynamicVectorIiE6resizeEi called 9 returned 100% blocks executed 86%
+        9:   98:void DynamicVector<T>::resize(int new_capacity) {
+        9:   99:    if (new_capacity < 0) {
+        9:   99-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 9
+    #####:  100:        new_capacity = 0;
+    %%%%%:  100-block  0
+        -:  101:    }
+        9:  102:    this->capacity = new_capacity;
+       9*:  103:    T *new_elements = new T[new_capacity];
+        9:  103-block  0
+branch  0 taken 9 (fallthrough)
+branch  1 taken 0
+        9:  103-block  1
+    %%%%%:  103-block  2
+call    2 never executed
+        9:  103-block  3
+call    3 returned 9
+       25:  104:    for (int i = 0; i < std::min(new_capacity, this->size); i++) {
+       25:  104-block  0
+call    0 returned 25
+branch  1 taken 16
+branch  2 taken 9 (fallthrough)
+       16:  105:        new_elements[i] = this->elements[i];
+       16:  105-block  0
+        -:  106:    }
+        9:  107:    this->size = std::min(this->size, new_capacity);
+        9:  107-block  0
+call    0 returned 9
+        9:  108:    delete[] this->elements;
+branch  0 taken 9 (fallthrough)
+branch  1 taken 0
+        9:  108-block  0
+call    2 returned 9
+        9:  109:    this->elements = new_elements;
+        9:  110:}
+        -:  111:
+        -:  112:template<class T>
+function _ZN13DynamicVectorIiE3addEi called 17 returned 100% blocks executed 100%
+       17:  113:void DynamicVector<T>::add(T new_element) {
+       17:  114:    if (this->capacity == this->size) {
+       17:  114-block  0
+branch  0 taken 9 (fallthrough)
+branch  1 taken 8
+        9:  115:        this->resize(this->capacity * RESIZING_FACTOR);
+        9:  115-block  0
+call    0 returned 9
+        -:  116:    }
+       17:  117:    this->elements[this->size] = new_element;
+       17:  118:    this->size++;
+       17:  119:}
+        -:  120:
+        -:  121:template<class T>
+function _ZN13DynamicVectorIiE7getSizeEv called 5 returned 100% blocks executed 100%
+        5:  122:int DynamicVector<T>::getSize() {
+        5:  123:    return this->size;
+        5:  123-block  0
+        -:  124:}

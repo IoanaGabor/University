@@ -1,0 +1,23 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/app_tests/TestAll.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/app_tests/TestAll.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/app_tests/TestAll.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 31.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "TestAll.h"
+        -:    6:#include "TestEvent.h"
+        -:    7:#include "TestRepository.h"
+        -:    8:#include "TestController.h"
+        -:    9:
+function _ZN7TestAll11runAllTestsEv called 1 returned 100% blocks executed 100%
+        1:   10:void TestAll::runAllTests() {
+        1:   11:    TestEvent::testAllEvent();
+        1:   11-block  0
+call    0 returned 1
+        1:   12:    TestRepository::testAllRepository();
+call    0 returned 1
+        1:   13:    TestController::testAllController();
+call    0 returned 1
+        1:   14:}

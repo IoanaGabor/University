@@ -1,0 +1,9 @@
+patient1|undiagnosed|||3
+patient2|fdsa|spec3|test5|4
+patient3|gasdfsa|spec1|test2|14
+patient4|bolnav|spec1|test3|3
+patient5|gfas|spec1|test3|5
+patient6|undiagnosed|||1
+patient8|undiagnosed|||7
+|undiagnosed|||7
+asdf|asdf|spec2|test3|18

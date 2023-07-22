@@ -1,0 +1,758 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/controller/EventsController.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/controller/EventsController.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/controller/EventsController.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include <iostream>
+        -:    6:#include "EventsController.h"
+        -:    7:#include "validators/Validators.h"
+        -:    8:
+function _ZN16EventsControllerC2ERK10RepositoryI5EventES4_ called 8 returned 100% blocks executed 67%
+        8:    9:EventsController::EventsController(const Repository<Event> &eventsRepository,
+        8:   10:                                   const Repository<Event> &userEventListRepository) {
+        8:   10-block  0
+call    0 returned 8
+call    1 returned 8
+branch  2 taken 8 (fallthrough)
+branch  3 taken 0 (throw)
+        8:   11:    this->eventsRepository = eventsRepository;
+        8:   11-block  0
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
+branch  2 taken 0 (throw)
+        8:   12:    this->userEventListRepository = userEventListRepository;
+        8:   12-block  0
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
+branch  2 taken 0 (throw)
+        8:   13:}
+        8:   13-block  0
+    $$$$$:   13-block  1
+call    0 never executed
+    $$$$$:   13-block  2
+call    1 never executed
+        -:   14:
+function _ZN16EventsController21addEventAdministratorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_iS7_ called 24 returned 92% blocks executed 78%
+       24:   15:void EventsController::addEventAdministrator(const std::string &title, const std::string &description,
+        -:   16:                                             const std::string &dateAndTime, int numberOfAttendants,
+        -:   17:                                             const std::string &link) {
+        -:   18:    try {
+       24:   19:        Event eventToBeAdded = Event(title, description, numberOfAttendants, dateAndTime, link);
+       24:   19-block  0
+call    0 returned 24
+branch  1 taken 23 (fallthrough)
+branch  2 taken 1 (throw)
+       24:   20:        this->eventsRepository.add(eventToBeAdded);
+       23:   20-block  0
+call    0 returned 23
+branch  1 taken 23 (fallthrough)
+branch  2 taken 0 (throw)
+       23:   20-block  1
+call    3 returned 23
+branch  4 taken 22 (fallthrough)
+branch  5 taken 1 (throw)
+       22:   20-block  2
+call    6 returned 22
+        1:   20-block  3
+call    7 returned 1
+        1:   20-block  4
+       25:   21:    } catch (GenericAppException &genericAppException) {
+call    0 returned 22
+        1:   21-block  0
+call    1 returned 1
+        2:   21-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 2
+        2:   21-block  2
+call    4 returned 2
+        2:   22:        throw EventsControllerException(genericAppException.get_message());
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   22-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:   22-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:   22-block  2
+call    9 never executed
+    $$$$$:   22-block  3
+    $$$$$:   22-block  4
+call   10 never executed
+        2:   23:    }
+        2:   23-block  0
+call    0 returned 2
+        -:   24:
+       22:   25:}
+        -:   26:
+function _ZN16EventsController24updateEventAdministratorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_S7_iS7_ called 3 returned 33% blocks executed 78%
+        3:   27:void EventsController::updateEventAdministrator(const std::string &title, const std::string &description,
+        -:   28:                                                const std::string &dateAndTime, int numberOfAttendants,
+        -:   29:                                                const std::string &link) {
+        -:   30:    try {
+        3:   31:        Event eventToBeUpdated = Event(title, description, numberOfAttendants, dateAndTime, link);
+        3:   31-block  0
+call    0 returned 3
+branch  1 taken 2 (fallthrough)
+branch  2 taken 1 (throw)
+        3:   32:        this->eventsRepository.update(eventToBeUpdated);
+        2:   32-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   32-block  1
+call    3 returned 2
+branch  4 taken 1 (fallthrough)
+branch  5 taken 1 (throw)
+        1:   32-block  2
+call    6 returned 1
+        1:   32-block  3
+call    7 returned 1
+        1:   32-block  4
+        4:   33:    } catch (GenericAppException &genericAppException) {
+call    0 returned 1
+        1:   33-block  0
+call    1 returned 1
+        2:   33-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 2
+        2:   33-block  2
+call    4 returned 2
+        2:   34:        throw EventsControllerException(genericAppException.get_message());
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   34-block  0
+call    4 returned 2
+branch  5 taken 2 (fallthrough)
+branch  6 taken 0 (throw)
+        2:   34-block  1
+call    7 returned 2
+call    8 returned 2
+    $$$$$:   34-block  2
+call    9 never executed
+    $$$$$:   34-block  3
+    $$$$$:   34-block  4
+call   10 never executed
+        2:   35:    }
+        2:   35-block  0
+call    0 returned 2
+        1:   36:}
+        -:   37:
+function _ZN16EventsController24removeEventAdministratorERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ called 2 returned 50% blocks executed 73%
+        2:   38:void EventsController::removeEventAdministrator(const std::string &title, const std::string &dateAndTime) {
+        -:   39:    try {
+        3:   40:        this->eventsRepository.remove(Event::getIdFromTitleAndDate(title, dateAndTime));
+        2:   40-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   40-block  1
+call    3 returned 2
+branch  4 taken 1 (fallthrough)
+branch  5 taken 1 (throw)
+        1:   40-block  2
+call    6 returned 1
+        1:   40-block  3
+call    7 returned 1
+        1:   40-block  4
+        1:   41:    } catch (GenericAppException &genericAppException) {
+        1:   41-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   41-block  1
+call    2 returned 1
+        1:   42:        throw EventsControllerException(genericAppException.get_message());
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   42-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   42-block  1
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   42-block  2
+call    9 never executed
+    $$$$$:   42-block  3
+    $$$$$:   42-block  4
+call   10 never executed
+        1:   43:    }
+        1:   43-block  0
+call    0 returned 1
+        1:   44:}
+        -:   45:
+function _ZN16EventsController12addEventUserERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 3 returned 67% blocks executed 42%
+        3:   46:void EventsController::addEventUser(const std::string &id) {
+        3:   47:    bool isPresentAdministrator = this->eventsRepository.isPresent(id);
+        3:   47-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   48:    bool isPresentUser = this->userEventListRepository.isPresent(id);
+        3:   48-block  0
+call    0 returned 3
+branch  1 taken 3 (fallthrough)
+branch  2 taken 0 (throw)
+        3:   49:    if(!isPresentAdministrator) {
+        3:   49-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 3
+    #####:   50:        throw EventsControllerException("the event does not exist in the database");
+    %%%%%:   50-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   50-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   50-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   50-block  3
+call   11 never executed
+    $$$$$:   50-block  4
+    $$$$$:   50-block  5
+call   12 never executed
+    $$$$$:   50-block  6
+    $$$$$:   50-block  7
+call   13 never executed
+        -:   51:    }
+        3:   52:    if(isPresentUser){
+        3:   52-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 2
+        1:   53:        throw EventsControllerException("the event is already in user's list");
+        1:   53-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   53-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   53-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 1
+    $$$$$:   53-block  3
+call   11 never executed
+    $$$$$:   53-block  4
+    $$$$$:   53-block  5
+call   12 never executed
+    $$$$$:   53-block  6
+    $$$$$:   53-block  7
+call   13 never executed
+        -:   54:    }
+        2:   55:    Event eventToBeUpdated = this->eventsRepository.getElementById(id);
+        2:   55-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   56:    this->eventsRepository.update(
+        2:   56-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   57:            Event(
+        2:   57-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   57-block  1
+call    3 returned 2
+    $$$$$:   57-block  2
+call    4 never executed
+    $$$$$:   57-block  3
+        4:   58:                    eventToBeUpdated.getTitle(),
+        2:   58-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 2
+    $$$$$:   58-block  1
+call    4 never executed
+    $$$$$:   58-block  2
+        2:   59:                    eventToBeUpdated.getDescription(),
+call    0 returned 2
+    $$$$$:   59-block  0
+call    1 never executed
+    $$$$$:   59-block  1
+        2:   60:                    eventToBeUpdated.getNumberOfAttendants() + 1,
+        2:   60-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   60-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        4:   61:                    eventToBeUpdated.getDateAndTime(),
+        2:   61-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 2
+    $$$$$:   61-block  1
+call    4 never executed
+    $$$$$:   61-block  2
+        4:   62:                    eventToBeUpdated.getLink()
+        2:   62-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 2
+    $$$$$:   62-block  1
+call    4 never executed
+    $$$$$:   62-block  2
+        -:   63:                ));
+        2:   64:    Event eventToBeAddedToUserList = this->eventsRepository.getElementById(id);
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   65:    this->userEventListRepository.add(eventToBeAddedToUserList);
+        2:   65-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   65-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   65-block  2
+call    6 returned 2
+    $$$$$:   65-block  3
+call    7 never executed
+    $$$$$:   65-block  4
+        2:   66:}
+call    0 returned 2
+call    1 returned 2
+    $$$$$:   66-block  0
+call    2 never executed
+    $$$$$:   66-block  1
+call    3 never executed
+        -:   67:
+function _ZN16EventsController15removeEventUserERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ called 2 returned 50% blocks executed 41%
+        2:   68:void EventsController::removeEventUser(const std::string &title, const std::string &dateAndTime) {
+        2:   69:    bool isPresentAdministrator = this->eventsRepository.isPresent(Event::getIdFromTitleAndDate(title, dateAndTime));
+        2:   69-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   69-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   69-block  2
+call    6 returned 2
+    $$$$$:   69-block  3
+call    7 never executed
+    $$$$$:   69-block  4
+        2:   70:    bool isPresentUser = this->userEventListRepository.isPresent(Event::getIdFromTitleAndDate(title, dateAndTime));
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   70-block  0
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   70-block  1
+call    6 returned 2
+    $$$$$:   70-block  2
+call    7 never executed
+    $$$$$:   70-block  3
+        2:   71:    if(!isPresentAdministrator) {
+branch  0 taken 0 (fallthrough)
+branch  1 taken 2
+    #####:   72:        throw EventsControllerException("the event does not exist in the database");
+    %%%%%:   72-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   72-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   72-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   72-block  3
+call   11 never executed
+    $$$$$:   72-block  4
+    $$$$$:   72-block  5
+call   12 never executed
+    $$$$$:   72-block  6
+    $$$$$:   72-block  7
+call   13 never executed
+        -:   73:    }
+        2:   74:    if(!isPresentUser){
+        2:   74-block  0
+branch  0 taken 1 (fallthrough)
+branch  1 taken 1
+        1:   75:        throw EventsControllerException("the event is not in user's list");
+        1:   75-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   75-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   75-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 1
+    $$$$$:   75-block  3
+call   11 never executed
+    $$$$$:   75-block  4
+    $$$$$:   75-block  5
+call   12 never executed
+    $$$$$:   75-block  6
+    $$$$$:   75-block  7
+call   13 never executed
+        -:   76:    }
+        -:   77:    Event eventToBeUpdated = this->eventsRepository.getElementById(
+        1:   78:            Event::getIdFromTitleAndDate(title, dateAndTime));
+        1:   78-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   78-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+    $$$$$:   78-block  2
+        1:   79:    this->eventsRepository.update(
+        1:   79-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        2:   80:            Event(
+        1:   80-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   80-block  1
+call    3 returned 1
+    $$$$$:   80-block  2
+call    4 never executed
+    $$$$$:   80-block  3
+        2:   81:                    eventToBeUpdated.getTitle(),
+        1:   81-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    $$$$$:   81-block  1
+call    4 never executed
+    $$$$$:   81-block  2
+        1:   82:                    eventToBeUpdated.getDescription(),
+call    0 returned 1
+    $$$$$:   82-block  0
+call    1 never executed
+    $$$$$:   82-block  1
+        1:   83:                    eventToBeUpdated.getNumberOfAttendants() - 1,
+        1:   83-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   83-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        2:   84:                    eventToBeUpdated.getDateAndTime(),
+        1:   84-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    $$$$$:   84-block  1
+call    4 never executed
+    $$$$$:   84-block  2
+        2:   85:                    eventToBeUpdated.getLink()
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+    $$$$$:   85-block  0
+call    4 never executed
+    $$$$$:   85-block  1
+        -:   86:            ));
+        1:   87:    this->userEventListRepository.remove(Event::getIdFromTitleAndDate(title, dateAndTime));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   87-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   87-block  1
+call    6 returned 1
+    $$$$$:   87-block  2
+call    7 never executed
+    $$$$$:   87-block  3
+        1:   88:}
+call    0 returned 1
+    $$$$$:   88-block  0
+call    1 never executed
+        -:   89:
+function _ZN16EventsController22selectAllEventsByMonthERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 4 returned 50% blocks executed 80%
+        4:   90:DynamicVector<Event> EventsController::selectAllEventsByMonth(const std::string& month) {
+        4:   91:    DynamicVector<Event> allEvents = this->eventsRepository.getAllEntities();
+        4:   91-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   92:    DynamicVector<Event> selectedEvents = DynamicVector<Event>();
+        4:   92-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:   93:    if (!month.empty() && !Validators::isValidMonth(month)) {
+        4:   93-block  0
+call    0 returned 4
+branch  1 taken 3 (fallthrough)
+branch  2 taken 1
+        3:   93-block  1
+call    3 returned 3
+branch  4 taken 3 (fallthrough)
+branch  5 taken 0 (throw)
+        3:   93-block  2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 1
+        2:   93-block  3
+        2:   93-block  4
+        4:   93-block  5
+branch  8 taken 2 (fallthrough)
+branch  9 taken 2
+        2:   94:        throw EventsControllerException("invalid month");
+        2:   94-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:   94-block  1
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:   94-block  2
+call    8 returned 2
+call    9 returned 2
+call   10 returned 2
+    $$$$$:   94-block  3
+call   11 never executed
+    $$$$$:   94-block  4
+    $$$$$:   94-block  5
+call   12 never executed
+    $$$$$:   94-block  6
+    $$$$$:   94-block  7
+call   13 never executed
+        -:   95:    }
+        2:   96:    if(month.empty()){
+        2:   96-block  0
+call    0 returned 2
+branch  1 taken 1 (fallthrough)
+branch  2 taken 1
+        1:   97:        return this->getAllEventsSortedByDate();
+        1:   97-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   98:    }
+        5:   99:    for (int i = 0; i < allEvents.getSize(); i++) {
+        1:   99-block  0
+        4:   99-block  1
+        5:   99-block  2
+call    0 returned 5
+branch  1 taken 4
+branch  2 taken 1 (fallthrough)
+        4:  100:        if (allEvents[i].getMonth() == month) {
+        4:  100-block  0
+call    0 returned 4
+branch  1 taken 4 (fallthrough)
+branch  2 taken 0 (throw)
+        4:  100-block  1
+call    3 returned 4
+branch  4 taken 4 (fallthrough)
+branch  5 taken 0 (throw)
+        4:  100-block  2
+call    6 returned 4
+call    7 returned 4
+branch  8 taken 2 (fallthrough)
+branch  9 taken 2
+        2:  101:            selectedEvents.add(allEvents[i]);
+        2:  101-block  0
+call    0 returned 2
+branch  1 taken 2 (fallthrough)
+branch  2 taken 0 (throw)
+        2:  101-block  1
+call    3 returned 2
+branch  4 taken 2 (fallthrough)
+branch  5 taken 0 (throw)
+        2:  101-block  2
+call    6 returned 2
+branch  7 taken 2 (fallthrough)
+branch  8 taken 0 (throw)
+        2:  101-block  3
+call    9 returned 2
+    $$$$$:  101-block  4
+call   10 never executed
+    $$$$$:  101-block  5
+        -:  102:        }
+        -:  103:    }
+        1:  104:    return selectedEvents;
+        1:  104-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  105:}
+        2:  105-block  0
+call    0 returned 2
+call    1 returned 2
+        2:  105-block  1
+call    2 returned 2
+        2:  105-block  2
+call    3 returned 2
+        -:  106:
+function _ZN16EventsController24getAllEventsSortedByDateEv called 1 returned 100% blocks executed 81%
+        1:  107:DynamicVector<Event> EventsController::getAllEventsSortedByDate(){
+        1:  108:    DynamicVector<Event> allEvents = this->eventsRepository.getAllEntities();
+        1:  108-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  109:    Event temporaryEventUsedForSwapping;
+        1:  109-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        5:  110:    for(int i=0;i<allEvents.getSize();i++){
+        1:  110-block  0
+        4:  110-block  1
+        5:  110-block  2
+call    0 returned 5
+branch  1 taken 4
+branch  2 taken 1 (fallthrough)
+       10:  111:        for(int j=i+1;j<allEvents.getSize();j++){
+        4:  111-block  0
+        6:  111-block  1
+       10:  111-block  2
+call    0 returned 10
+branch  1 taken 6
+branch  2 taken 4 (fallthrough)
+        6:  112:            if(allEvents[i].getDateAndTime() > allEvents[j].getDateAndTime()){
+        6:  112-block  0
+call    0 returned 6
+branch  1 taken 6 (fallthrough)
+branch  2 taken 0 (throw)
+        6:  112-block  1
+call    3 returned 6
+branch  4 taken 6 (fallthrough)
+branch  5 taken 0 (throw)
+        6:  112-block  2
+call    6 returned 6
+branch  7 taken 6 (fallthrough)
+branch  8 taken 0 (throw)
+        6:  112-block  3
+call    9 returned 6
+branch 10 taken 6 (fallthrough)
+branch 11 taken 0 (throw)
+        6:  112-block  4
+call   12 returned 6
+call   13 returned 6
+call   14 returned 6
+branch 15 taken 1 (fallthrough)
+branch 16 taken 5
+    $$$$$:  112-block  5
+call   17 never executed
+    $$$$$:  112-block  6
+        1:  113:                temporaryEventUsedForSwapping = allEvents[i];
+        1:  113-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  113-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  114:                allEvents[i] = allEvents[j];
+        1:  114-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  114-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  114-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  115:                allEvents[j] = temporaryEventUsedForSwapping;
+        1:  115-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  115-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        -:  116:            }
+        -:  117:        }
+        -:  118:    }
+        2:  119:    return allEvents;
+        1:  119-block  0
+        1:  119-block  1
+        1:  120:}
+        1:  120-block  0
+call    0 returned 1
+    $$$$$:  120-block  1
+call    1 never executed
+    $$$$$:  120-block  2
+call    2 never executed
+        -:  121:
+function _ZN16EventsControllerC2Ev called 1 returned 100% blocks executed 80%
+        1:  122:EventsController::EventsController() = default;
+        1:  122-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  122-block  1
+    $$$$$:  122-block  2
+call    4 never executed
+        -:  123:
+function _ZN16EventsController23listEventsAdministratorEv called 2 returned 100% blocks executed 100%
+        2:  124:DynamicVector<Event> EventsController::listEventsAdministrator() {
+        2:  125:    return this->eventsRepository.getAllEntities();
+        2:  125-block  0
+call    0 returned 2
+        -:  126:}
+        -:  127:
+function _ZN16EventsController14listEventsUserEv called 2 returned 100% blocks executed 100%
+        2:  128:DynamicVector<Event> EventsController::listEventsUser() {
+        2:  129:    return this->userEventListRepository.getAllEntities();
+        2:  129-block  0
+call    0 returned 2
+        -:  130:}

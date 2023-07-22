@@ -1,0 +1,304 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/app_tests/TestDynamicVector.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestDynamicVector.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestDynamicVector.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include <cassert>
+        -:    6:#include "TestDynamicVector.h"
+        -:    7:#include "../domain/DynamicVector.h"
+        -:    8:
+function _ZN17TestDynamicVector7testAddEv called 1 returned 100% blocks executed 79%
+        1:    9:void TestDynamicVector::testAdd() {
+        1:   10:    DynamicVector<int> dynamicVector = DynamicVector<int>();
+        1:   10-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11:    dynamicVector.add(1);
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:    dynamicVector.add(2);
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13:    dynamicVector.add(3);
+        1:   13-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   14:    dynamicVector.add(4);
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15:    dynamicVector.add(5);
+        1:   15-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   16:    assert(dynamicVector.getSize() == 5);
+        1:   16-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   16-block  1
+call    3 never executed
+        1:   17:}
+        1:   17-block  0
+call    0 returned 1
+    $$$$$:   17-block  1
+call    1 never executed
+        -:   18:
+function _ZN17TestDynamicVector11testPopBackEv called 1 returned 100% blocks executed 78%
+        1:   19:void TestDynamicVector::testPopBack() {
+        1:   20:    DynamicVector<int> dynamicVector = DynamicVector<int>();
+        1:   20-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   21:    dynamicVector.add(1);
+        1:   21-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   22:    dynamicVector.add(2);
+        1:   22-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   23:    dynamicVector.add(3);
+        1:   23-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   24:    dynamicVector.add(4);
+        1:   24-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25:    dynamicVector.pop_back();
+        1:   25-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   26:    assert(dynamicVector.getSize() == 3);
+        1:   26-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   26-block  1
+call    3 never executed
+        1:   27:    dynamicVector.pop_back();
+        1:   27-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   28:    assert(dynamicVector.getSize() == 2);
+        1:   28-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:   28-block  1
+call    3 never executed
+        1:   29:}
+        1:   29-block  0
+call    0 returned 1
+    $$$$$:   29-block  1
+call    1 never executed
+        -:   30:
+function _ZN17TestDynamicVector12testIndexingEv called 1 returned 100% blocks executed 73%
+        1:   31:void TestDynamicVector::testIndexing(){
+        1:   32:    DynamicVector<int> dynamicVector = DynamicVector<int>();
+        1:   32-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   33:    dynamicVector.add(1);
+        1:   33-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   34:    dynamicVector.add(2);
+        1:   34-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   35:    dynamicVector.add(3);
+        1:   35-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:    dynamicVector.add(4);
+        1:   36-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   37:    assert(dynamicVector[1]==2);
+        1:   37-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   37-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   37-block  2
+call    5 never executed
+       1*:   38:    assert(dynamicVector[3] == 4);
+        1:   38-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   38-block  1
+branch  3 taken 0 (fallthrough)
+branch  4 taken 1
+    %%%%%:   38-block  2
+call    5 never executed
+        -:   39:    try{
+        1:   40:        dynamicVector[432];
+        1:   40-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    #####:   41:        assert(false);
+    %%%%%:   41-block  0
+call    0 never executed
+        1:   42:    }catch (DynamicVectorException &dynamicVectorException){
+        1:   42-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   42-block  1
+call    2 returned 1
+        -:   43:        assert(true);
+        1:   44:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   45:}
+        1:   45-block  0
+call    0 returned 1
+    $$$$$:   45-block  1
+call    1 never executed
+        -:   46:
+function _ZN17TestDynamicVector20testAllDynamicVectorEv called 1 returned 100% blocks executed 100%
+        1:   47:void TestDynamicVector::testAllDynamicVector() {
+        1:   48:    TestDynamicVector::testAdd();
+        1:   48-block  0
+call    0 returned 1
+        1:   49:    TestDynamicVector::testPopBack();
+call    0 returned 1
+        1:   50:    TestDynamicVector::testIndexing();
+call    0 returned 1
+        1:   51:    TestDynamicVector::testCopyConstructor();
+call    0 returned 1
+        1:   52:}
+        -:   53:
+function _ZN17TestDynamicVector19testCopyConstructorEv called 1 returned 100% blocks executed 74%
+        1:   54:void TestDynamicVector::testCopyConstructor() {
+        1:   55:    DynamicVector<int> dynamicVector = DynamicVector<int>();
+        1:   55-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   56:    dynamicVector.add(1);
+        1:   56-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57:    dynamicVector.add(2);
+        1:   57-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58:    dynamicVector.add(3);
+        1:   58-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59:    dynamicVector.add(4);
+        1:   59-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60:    DynamicVector<int> copyOfDynamicVector = DynamicVector<int>(dynamicVector);
+        1:   60-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   61:    assert(dynamicVector.getSize() == copyOfDynamicVector.getSize());
+        1:   61-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+    %%%%%:   61-block  1
+call    4 never executed
+       1*:   62:    assert(dynamicVector[0] == copyOfDynamicVector[0]);
+        1:   62-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   62-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   62-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   62-block  3
+call    8 never executed
+       1*:   63:    assert(dynamicVector[1] == copyOfDynamicVector[1]);
+        1:   63-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   63-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   63-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   63-block  3
+call    8 never executed
+       1*:   64:    assert(dynamicVector[2] == copyOfDynamicVector[2]);
+        1:   64-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   64-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   64-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   64-block  3
+call    8 never executed
+       1*:   65:    assert(dynamicVector[3] == copyOfDynamicVector[3]);
+        1:   65-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   65-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:   65-block  2
+branch  6 taken 0 (fallthrough)
+branch  7 taken 1
+    %%%%%:   65-block  3
+call    8 never executed
+        1:   66:}
+        1:   66-block  0
+call    0 returned 1
+call    1 returned 1
+    $$$$$:   66-block  1
+call    2 never executed
+    $$$$$:   66-block  2
+call    3 never executed

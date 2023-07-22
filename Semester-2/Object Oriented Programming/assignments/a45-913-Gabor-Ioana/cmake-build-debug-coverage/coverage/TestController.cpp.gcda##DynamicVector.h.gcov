@@ -1,0 +1,231 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/domain/DynamicVector.h
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestController.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/app_tests/TestController.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:#pragma once
+        -:    5:
+        -:    6:#include <algorithm>
+        -:    7:#include "AppExceptions.h"
+        -:    8:
+        -:    9:const int RESIZING_FACTOR = 2;
+        -:   10:const int DEFAULT_INITAL_CAPACITY = 1;
+        -:   11:
+        -:   12:template<class T>
+        -:   13:class DynamicVector {
+        -:   14:private:
+        -:   15:    int capacity, size;
+        -:   16:    T *elements;
+        -:   17:public:
+        -:   18:    DynamicVector();
+        -:   19:
+        -:   20:    DynamicVector(int capacity);
+        -:   21:
+        -:   22:    ~DynamicVector();
+        -:   23:
+        -:   24:    DynamicVector(const DynamicVector &other);
+        -:   25:
+        -:   26:    DynamicVector &operator=(const DynamicVector &other);
+        -:   27:
+        -:   28:    T &operator[](unsigned int position);
+        -:   29:
+        -:   30:    void add(T new_element);
+        -:   31:
+        -:   32:    void pop_back();
+        -:   33:
+        -:   34:    int getSize();
+        -:   35:
+        -:   36:private:
+        -:   37:    void resize(int new_capacity);
+        -:   38:};
+        -:   39:
+        -:   40:template<class T>
+        -:   41:void DynamicVector<T>::pop_back() {
+        -:   42:    if (this->size == 0) {
+        -:   43:        throw DynamicVectorException("cannot pop from empty vector");
+        -:   44:    }
+        -:   45:    this->size--;
+        -:   46:}
+        -:   47:
+        -:   48:template<class T>
+        -:   49:T &DynamicVector<T>::operator[](unsigned int position) {
+        -:   50:    if (position >= this->size) {
+        -:   51:        throw DynamicVectorException("index out of bounds");
+        -:   52:    }
+        -:   53:    return this->elements[position];
+        -:   54:}
+        -:   55:
+        -:   56:template<class T>
+function _ZN13DynamicVectorI5EventEC2Ev called 0 returned 0% blocks executed 0%
+    #####:   57:DynamicVector<T>::DynamicVector() {
+    #####:   58:    this->size = 0;
+    #####:   59:    this->capacity = DEFAULT_INITAL_CAPACITY;
+    #####:   60:    this->elements = new T[DEFAULT_INITAL_CAPACITY];
+    %%%%%:   60-block  0
+call    0 never executed
+    %%%%%:   60-block  1
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   60-block  2
+    %%%%%:   60-block  3
+branch  4 never executed
+branch  5 never executed
+    $$$$$:   60-block  4
+    $$$$$:   60-block  5
+call    6 never executed
+    $$$$$:   60-block  6
+call    7 never executed
+    #####:   61:}
+    %%%%%:   61-block  0
+        -:   62:
+        -:   63:template<class T>
+function _ZN13DynamicVectorI5EventED2Ev called 0 returned 0% blocks executed 0%
+    #####:   64:DynamicVector<T>::~DynamicVector() {
+    #####:   65:    delete[] this->elements;
+    %%%%%:   65-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   65-block  1
+    %%%%%:   65-block  2
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   65-block  3
+call    4 never executed
+    %%%%%:   65-block  4
+call    5 never executed
+    #####:   66:}
+        -:   67:
+        -:   68:template<class T>
+        -:   69:DynamicVector<T>::DynamicVector(const DynamicVector &other) {
+        -:   70:    this->size = other.size;
+        -:   71:    this->capacity = other.capacity;
+        -:   72:    this->elements = new T[other.capacity];
+        -:   73:    for (int i = 0; i < this->size; i++) {
+        -:   74:        this->elements[i] = other.elements[i];
+        -:   75:    }
+        -:   76:}
+        -:   77:
+        -:   78:template<class T>
+function _ZN13DynamicVectorI5EventEC2Ei called 0 returned 0% blocks executed 0%
+    #####:   79:DynamicVector<T>::DynamicVector(int capacity) {
+    #####:   80:    this->capacity = capacity;
+    #####:   81:    this->size = 0;
+    #####:   82:    this->elements = new T[capacity];
+    %%%%%:   82-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   82-block  1
+    %%%%%:   82-block  2
+    %%%%%:   82-block  3
+call    2 never executed
+    %%%%%:   82-block  4
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   82-block  5
+    %%%%%:   82-block  6
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   82-block  7
+    $$$$$:   82-block  8
+call    8 never executed
+    $$$$$:   82-block  9
+branch  9 never executed
+branch 10 never executed
+    $$$$$:   82-block 10
+    $$$$$:   82-block 11
+    $$$$$:   82-block 12
+call   11 never executed
+    #####:   83:}
+    %%%%%:   83-block  0
+        -:   84:
+        -:   85:template<class T>
+function _ZN13DynamicVectorI5EventEaSERKS1_ called 0 returned 0% blocks executed 0%
+    #####:   86:DynamicVector<T> &DynamicVector<T>::operator=(const DynamicVector &other) {
+    #####:   87:    this->capacity = other.capacity;
+    #####:   88:    this->size = other.size;
+    #####:   89:    delete[] this->elements;
+    %%%%%:   89-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   89-block  1
+    %%%%%:   89-block  2
+branch  2 never executed
+branch  3 never executed
+    %%%%%:   89-block  3
+call    4 never executed
+    %%%%%:   89-block  4
+call    5 never executed
+    #####:   90:    this->elements = new T[other.capacity];
+    %%%%%:   90-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:   90-block  1
+    %%%%%:   90-block  2
+    %%%%%:   90-block  3
+call    2 never executed
+    %%%%%:   90-block  4
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+    %%%%%:   90-block  5
+    %%%%%:   90-block  6
+branch  6 never executed
+branch  7 never executed
+    $$$$$:   90-block  7
+    $$$$$:   90-block  8
+call    8 never executed
+    $$$$$:   90-block  9
+branch  9 never executed
+branch 10 never executed
+    $$$$$:   90-block 10
+    $$$$$:   90-block 11
+    $$$$$:   90-block 12
+call   11 never executed
+    #####:   91:    for (int i = 0; i < this->capacity; i++) {
+    %%%%%:   91-block  0
+    %%%%%:   91-block  1
+branch  0 never executed
+branch  1 never executed
+    #####:   92:        this->elements[i] = other.elements[i];
+    %%%%%:   92-block  0
+call    0 never executed
+        -:   93:    }
+    #####:   94:    return *this;
+    %%%%%:   94-block  0
+    %%%%%:   94-block  1
+        -:   95:}
+        -:   96:
+        -:   97:template<class T>
+        -:   98:void DynamicVector<T>::resize(int new_capacity) {
+        -:   99:    if (new_capacity < 0) {
+        -:  100:        new_capacity = 0;
+        -:  101:    }
+        -:  102:    this->capacity = new_capacity;
+        -:  103:    T *new_elements = new T[new_capacity];
+        -:  104:    for (int i = 0; i < std::min(new_capacity, this->size); i++) {
+        -:  105:        new_elements[i] = this->elements[i];
+        -:  106:    }
+        -:  107:    this->size = std::min(this->size, new_capacity);
+        -:  108:    delete[] this->elements;
+        -:  109:    this->elements = new_elements;
+        -:  110:}
+        -:  111:
+        -:  112:template<class T>
+        -:  113:void DynamicVector<T>::add(T new_element) {
+        -:  114:    if (this->capacity == this->size) {
+        -:  115:        this->resize(this->capacity * RESIZING_FACTOR);
+        -:  116:    }
+        -:  117:    this->elements[this->size] = new_element;
+        -:  118:    this->size++;
+        -:  119:}
+        -:  120:
+        -:  121:template<class T>
+function _ZN13DynamicVectorI5EventE7getSizeEv called 0 returned 0% blocks executed 0%
+    #####:  122:int DynamicVector<T>::getSize() {
+    #####:  123:    return this->size;
+    %%%%%:  123-block  0
+        -:  124:}

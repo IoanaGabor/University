@@ -1,0 +1,26 @@
+# ninja log v5
+0	25	1679662847850648387	CMakeFiles/a23_913_Gabor_Ioana.dir/tests/test_domain.c.o	3aaea54690b4770a
+1	243	1679663413174203914	CMakeFiles/a23_913_Gabor_Ioana.dir/ui/ui.c.o	5e4ecd455fb5b128
+331	398	1679661222736967608	CMakeFiles/a23_913_Gabor_Ioana.dir/repository/undo_redo_repository.c.o	549cd28005f243db
+0	34	1679662337815833832	CMakeFiles/a23_913_Gabor_Ioana.dir/tests/test_service.c.o	ad3cad4d6f28960
+0	243	1679663413174203914	CMakeFiles/a23_913_Gabor_Ioana.dir/service/service.c.o	cd4268ccaacc9318
+0	20	1689710506089326869	build.ninja	927190317bdeb886
+29	247	1679661222584965590	CMakeFiles/a23_913_Gabor_Ioana.dir/repository/repository.c.o	d4ff339487128521
+0	34	1679663462082857628	CMakeFiles/a23_913_Gabor_Ioana.dir/utils/utils.c.o	2954fd953ab43283
+1	71	1679663889476570344	CMakeFiles/a23_913_Gabor_Ioana.dir/main.c.o	1c8568a6eb1142b
+322	383	1679661222720967396	CMakeFiles/a23_913_Gabor_Ioana.dir/domain/vector.c.o	4a6c574a03b16175
+71	96	1679663889500570665	a23_913_Gabor_Ioana	5aed1dec5ac9a0da
+24	247	1679661222584965590	CMakeFiles/a23_913_Gabor_Ioana.dir/domain/product.c.o	88f7ed342f1db859
+0	38	1679661813764837683	CMakeFiles/a23_913_Gabor_Ioana.dir/tests/test_repository.c.o	54637d79f03b7cf8
+6	104	1689710988867255863	CMakeFiles/a23_913_Gabor_Ioana.dir/main.c.o	de8059b0ed93d94
+1	104	1689710988859256098	CMakeFiles/a23_913_Gabor_Ioana.dir/domain/product.c.o	7ff466d232707668
+10	105	1689710988859256098	CMakeFiles/a23_913_Gabor_Ioana.dir/repository/repository.c.o	14e5625f65d3105e
+104	174	1689710988931253986	CMakeFiles/a23_913_Gabor_Ioana.dir/tests/test_domain.c.o	46eb20a5b9a497d4
+105	250	1689710989011251640	CMakeFiles/a23_913_Gabor_Ioana.dir/ui/ui.c.o	81bc7552018b08de
+104	254	1689710989011251640	CMakeFiles/a23_913_Gabor_Ioana.dir/service/service.c.o	37d6194f471f252c
+174	284	1689710989043250701	CMakeFiles/a23_913_Gabor_Ioana.dir/utils/utils.c.o	a66e63fa2087ce32
+250	336	1689710989099249059	CMakeFiles/a23_913_Gabor_Ioana.dir/domain/vector.c.o	d99b4b4e81cbef48
+254	345	1689710989103248941	CMakeFiles/a23_913_Gabor_Ioana.dir/repository/undo_redo_repository.c.o	a3ac2d0bfd4ae11
+284	388	1689710989151247533	CMakeFiles/a23_913_Gabor_Ioana.dir/tests/test_repository.c.o	fd81533d1e9a387
+336	399	1689710989163247181	CMakeFiles/a23_913_Gabor_Ioana.dir/tests/test_service.c.o	c2620c0d4ca92e6b
+399	442	1689710989203246008	a23_913_Gabor_Ioana	5aed1dec5ac9a0da

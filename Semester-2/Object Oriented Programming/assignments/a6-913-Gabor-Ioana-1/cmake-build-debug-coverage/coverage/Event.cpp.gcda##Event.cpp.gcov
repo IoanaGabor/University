@@ -1,0 +1,562 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/domain/Event.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/domain/Event.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/domain/Event.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include "Event.h"
+        -:    6:#include "validators/Validators.h"
+        -:    7:#include "AppExceptions.h"
+        -:    8:
+function _ZN5EventC2Ev called 1 returned 100% blocks executed 59%
+        1:    9:Event::Event() {
+        1:    9-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+        1:   10:    this->title = "";
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   11:    this->description = "";
+        1:   11-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   12:    this->link = "";
+        1:   12-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   13:    this->numberOfAttendants = 0;
+        1:   14:    this->dateAndTime = "";
+        1:   14-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   15:}
+        1:   15-block  0
+    $$$$$:   15-block  1
+call    0 never executed
+    $$$$$:   15-block  2
+call    1 never executed
+    $$$$$:   15-block  3
+call    2 never executed
+    $$$$$:   15-block  4
+call    3 never executed
+        -:   16:
+        -:   17:
+function _ZN5EventC2ERKS_ called 291 returned 100% blocks executed 59%
+      291:   18:Event::Event(const Event &other) {
+      291:   18-block  0
+call    0 returned 291
+call    1 returned 291
+call    2 returned 291
+call    3 returned 291
+      291:   19:    this->title = other.title;
+call    0 returned 291
+branch  1 taken 291 (fallthrough)
+branch  2 taken 0 (throw)
+      291:   20:    this->numberOfAttendants = other.numberOfAttendants;
+      291:   21:    this->link = other.link;
+      291:   21-block  0
+call    0 returned 291
+branch  1 taken 291 (fallthrough)
+branch  2 taken 0 (throw)
+      291:   22:    this->description = other.description;
+      291:   22-block  0
+call    0 returned 291
+branch  1 taken 291 (fallthrough)
+branch  2 taken 0 (throw)
+      291:   23:    this->dateAndTime = other.dateAndTime;
+      291:   23-block  0
+call    0 returned 291
+branch  1 taken 291 (fallthrough)
+branch  2 taken 0 (throw)
+      291:   24:}
+      291:   24-block  0
+    $$$$$:   24-block  1
+call    0 never executed
+    $$$$$:   24-block  2
+call    1 never executed
+    $$$$$:   24-block  3
+call    2 never executed
+    $$$$$:   24-block  4
+call    3 never executed
+        -:   25:
+function _ZN5EventC2ERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_iS7_S7_ called 58 returned 97% blocks executed 52%
+       58:   26:Event::Event(const std::string &title, const std::string &description, int numberOfAttendants,
+       58:   27:             const std::string &dateAndTime, const std::string &link) {
+       58:   27-block  0
+call    0 returned 58
+call    1 returned 58
+call    2 returned 58
+call    3 returned 58
+       58:   28:    this->title = title;
+call    0 returned 58
+branch  1 taken 58 (fallthrough)
+branch  2 taken 0 (throw)
+       58:   29:    this->description = description;
+       58:   29-block  0
+call    0 returned 58
+branch  1 taken 58 (fallthrough)
+branch  2 taken 0 (throw)
+       58:   30:    this->link = link;
+       58:   30-block  0
+call    0 returned 58
+branch  1 taken 58 (fallthrough)
+branch  2 taken 0 (throw)
+       58:   31:    this->numberOfAttendants = numberOfAttendants;
+       58:   32:    this->dateAndTime = dateAndTime;
+       58:   32-block  0
+call    0 returned 58
+branch  1 taken 58 (fallthrough)
+branch  2 taken 0 (throw)
+       58:   33:    if (!Validators::isValidDateAndTime(dateAndTime)) {
+       58:   33-block  0
+call    0 returned 58
+branch  1 taken 58 (fallthrough)
+branch  2 taken 0 (throw)
+       58:   33-block  1
+call    3 returned 58
+branch  4 taken 58 (fallthrough)
+branch  5 taken 0 (throw)
+       58:   33-block  2
+call    6 returned 58
+branch  7 taken 0 (fallthrough)
+branch  8 taken 58
+    $$$$$:   33-block  3
+call    9 never executed
+    $$$$$:   33-block  4
+    #####:   34:        throw EventException("Invalid date and time\n");
+    %%%%%:   34-block  0
+call    0 never executed
+call    1 never executed
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+    %%%%%:   34-block  1
+call    5 never executed
+branch  6 never executed
+branch  7 never executed
+    %%%%%:   34-block  2
+call    8 never executed
+call    9 never executed
+call   10 never executed
+    $$$$$:   34-block  3
+call   11 never executed
+    $$$$$:   34-block  4
+    $$$$$:   34-block  5
+call   12 never executed
+    $$$$$:   34-block  6
+    $$$$$:   34-block  7
+call   13 never executed
+        -:   35:    }
+       58:   36:    if (!Validators::isValidLink(link)) {
+       58:   36-block  0
+call    0 returned 58
+branch  1 taken 58 (fallthrough)
+branch  2 taken 0 (throw)
+       58:   36-block  1
+call    3 returned 58
+branch  4 taken 58 (fallthrough)
+branch  5 taken 0 (throw)
+       58:   36-block  2
+call    6 returned 58
+branch  7 taken 2 (fallthrough)
+branch  8 taken 56
+    $$$$$:   36-block  3
+call    9 never executed
+    $$$$$:   36-block  4
+        2:   37:        throw EventException("Invalid link\n");
+        2:   37-block  0
+call    0 returned 2
+call    1 returned 2
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0 (throw)
+        2:   37-block  1
+call    5 returned 2
+branch  6 taken 2 (fallthrough)
+branch  7 taken 0 (throw)
+        2:   37-block  2
+call    8 returned 2
+call    9 returned 2
+call   10 returned 2
+    $$$$$:   37-block  3
+call   11 never executed
+    $$$$$:   37-block  4
+    $$$$$:   37-block  5
+call   12 never executed
+    $$$$$:   37-block  6
+    $$$$$:   37-block  7
+call   13 never executed
+        -:   38:    }
+        -:   39:
+       64:   40:}
+       56:   40-block  0
+        2:   40-block  1
+call    0 returned 2
+        2:   40-block  2
+call    1 returned 2
+        2:   40-block  3
+call    2 returned 2
+        2:   40-block  4
+call    3 returned 2
+        -:   41:
+function _ZN5Event8getTitleB5cxx11Ev called 6 returned 100% blocks executed 100%
+        6:   42:std::string Event::getTitle() {
+        6:   43:    return this->title;
+        6:   43-block  0
+call    0 returned 6
+        -:   44:}
+        -:   45:
+function _ZN5Event14getDescriptionB5cxx11Ev called 6 returned 100% blocks executed 100%
+        6:   46:std::string Event::getDescription() {
+        6:   47:    return this->description;
+        6:   47-block  0
+call    0 returned 6
+        -:   48:}
+        -:   49:
+function _ZNK5Event14getDateAndTimeB5cxx11Ev called 18 returned 100% blocks executed 100%
+       18:   50:std::string Event::getDateAndTime() const{
+       18:   51:    return this->dateAndTime;
+       18:   51-block  0
+call    0 returned 18
+        -:   52:}
+        -:   53:
+        -:   54:
+function _ZNK5Event21getNumberOfAttendantsEv called 5 returned 100% blocks executed 100%
+        5:   55:int Event::getNumberOfAttendants() const {
+        5:   56:    return this->numberOfAttendants;
+        5:   56-block  0
+        -:   57:}
+        -:   58:
+function _ZNK5Event8getMonthB5cxx11Ev called 4 returned 100% blocks executed 88%
+        4:   59:std::string Event::getMonth() const {
+        4:   60:    std::string month;
+        4:   60-block  0
+call    0 returned 4
+        4:   61:    int howManySlashes = 0;
+       72:   62:    for (char currentCharacter: this->dateAndTime) {
+call    0 returned 4
+call    1 returned 4
+       68:   62-block  0
+call    2 returned 68
+       68:   62-block  1
+call    3 returned 68
+       72:   62-block  2
+call    4 returned 72
+branch  5 taken 68
+branch  6 taken 4 (fallthrough)
+       68:   63:        if (currentCharacter == '/') {
+branch  0 taken 16 (fallthrough)
+branch  1 taken 52
+       16:   64:            howManySlashes++;
+       16:   64-block  0
+       52:   65:        }else if (howManySlashes == 2) {
+       52:   65-block  0
+branch  0 taken 8 (fallthrough)
+branch  1 taken 44
+        8:   66:            month += currentCharacter;
+        8:   66-block  0
+call    0 returned 8
+branch  1 taken 8 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   67:        }
+        -:   68:    }
+        4:   69:    return month;
+        4:   69-block  0
+        4:   69-block  1
+    =====:   70:}
+    $$$$$:   70-block  0
+call    0 never executed
+        -:   71:
+function _ZN5Event7getLinkB5cxx11Ev called 6 returned 100% blocks executed 100%
+        6:   72:std::string Event::getLink() {
+        6:   73:    return this->link;
+        6:   73-block  0
+call    0 returned 6
+        -:   74:}
+        -:   75:
+function _ZN5Event8setTitleERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 100% blocks executed 100%
+        2:   76:void Event::setTitle(const std::string &newTitle) {
+        2:   77:    this->title = newTitle;
+        2:   77-block  0
+call    0 returned 2
+        2:   78:}
+        -:   79:
+function _ZN5Event14setDescriptionERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 1 returned 100% blocks executed 100%
+        1:   80:void Event::setDescription(const std::string &newDescription) {
+        1:   81:    this->description = newDescription;
+        1:   81-block  0
+call    0 returned 1
+        1:   82:}
+        -:   83:
+function _ZN5Event14setDateAndTimeERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 50% blocks executed 58%
+        2:   84:void Event::setDateAndTime(const std::string &dateAndTime) {
+        2:   85:    if (!Validators::isValidDateAndTime(dateAndTime)) {
+        2:   85-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   85-block  1
+call    4 returned 2
+branch  5 taken 1 (fallthrough)
+branch  6 taken 1
+    $$$$$:   85-block  2
+call    7 never executed
+    $$$$$:   85-block  3
+call    8 never executed
+        1:   86:        throw EventException("Invalid date and time\n");
+        1:   86-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   86-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   86-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 0
+    $$$$$:   86-block  3
+call   11 never executed
+    $$$$$:   86-block  4
+    $$$$$:   86-block  5
+call   12 never executed
+    $$$$$:   86-block  6
+    $$$$$:   86-block  7
+call   13 never executed
+        -:   87:    }
+        1:   88:    this->dateAndTime = dateAndTime;
+        1:   88-block  0
+call    0 returned 1
+        1:   89:}
+        -:   90:
+function _ZN5Event7setLinkERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE called 2 returned 50% blocks executed 58%
+        2:   91:void Event::setLink(const std::string &newLink) {
+        2:   92:    if (!Validators::isValidLink(newLink)) {
+        2:   92-block  0
+call    0 returned 2
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0 (throw)
+        2:   92-block  1
+call    4 returned 2
+branch  5 taken 1 (fallthrough)
+branch  6 taken 1
+    $$$$$:   92-block  2
+call    7 never executed
+    $$$$$:   92-block  3
+call    8 never executed
+        1:   93:        throw EventException("Invalid link\n");
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0 (throw)
+        1:   93-block  1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:   93-block  2
+call    8 returned 1
+call    9 returned 1
+call   10 returned 0
+    $$$$$:   93-block  3
+call   11 never executed
+    $$$$$:   93-block  4
+    $$$$$:   93-block  5
+call   12 never executed
+    $$$$$:   93-block  6
+    $$$$$:   93-block  7
+call   13 never executed
+        -:   94:    }
+        1:   95:    this->link = newLink;
+        1:   95-block  0
+call    0 returned 1
+        1:   96:}
+        -:   97:
+function _ZN5Event21setNumberOfAttendantsEi called 1 returned 100% blocks executed 100%
+        1:   98:void Event::setNumberOfAttendants(int newNumberOfAttendants) {
+        1:   99:    this->numberOfAttendants = newNumberOfAttendants;
+        1:  100:}
+        -:  101:
+function _ZN5Event5getIdB5cxx11Ev called 189 returned 100% blocks executed 100%
+      189:  102:std::string Event::getId() {
+      189:  103:    return this->title + this->dateAndTime;
+      189:  103-block  0
+call    0 returned 189
+        -:  104:}
+        -:  105:
+function _ZN5Event21getIdFromTitleAndDateERKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEES7_ called 16 returned 100% blocks executed 100%
+       16:  106:std::string Event::getIdFromTitleAndDate(const std::string &title, const std::string &date) {
+       16:  107:    return title + date;
+       16:  107-block  0
+call    0 returned 16
+        -:  108:}
+        -:  109:
+        -:  110:
+function _ZNK5EventeqERKS_ called 2 returned 100% blocks executed 92%
+        2:  111:bool Event::operator==(const Event &other) const {
+        4:  112:    return this->title == other.title && this->description == other.description &&
+        2:  112-block  0
+call    0 returned 2
+        2:  112-block  1
+call    1 returned 2
+branch  2 taken 2 (fallthrough)
+branch  3 taken 0
+        2:  113:           this->numberOfAttendants == other.numberOfAttendants && this->link == other.link
+        2:  113-block  0
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:  113-block  1
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0
+       4*:  114:           && this->dateAndTime == other.dateAndTime;
+branch  0 taken 2 (fallthrough)
+branch  1 taken 0
+        2:  114-block  0
+call    2 returned 2
+branch  3 taken 2 (fallthrough)
+branch  4 taken 0
+        2:  114-block  1
+    %%%%%:  114-block  2
+        2:  114-block  3
+        -:  115:}
+        -:  116:
+function _ZNK5EventneERKS_ called 1 returned 100% blocks executed 38%
+        1:  117:bool Event::operator!=(const Event &other) const {
+       1*:  118:    return !(this->title == other.title && this->description == other.description &&
+        1:  118-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1
+    %%%%%:  118-block  1
+call    3 never executed
+branch  4 never executed
+branch  5 never executed
+        1:  118-block  2
+    %%%%%:  118-block  3
+    #####:  119:             this->numberOfAttendants == other.numberOfAttendants && this->link == other.link
+    %%%%%:  119-block  0
+branch  0 never executed
+branch  1 never executed
+    %%%%%:  119-block  1
+call    2 never executed
+branch  3 never executed
+branch  4 never executed
+       1*:  120:             && this->dateAndTime == other.dateAndTime);
+    %%%%%:  120-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        1:  120-block  1
+        -:  121:}
+        -:  122:
+function _ZN5Event8toStringB5cxx11Ev called 1 returned 100% blocks executed 46%
+        1:  123:std::string Event::toString() {
+        2:  124:    return "Title " + this->title + " Description " + this->description + " Date and time"
+        1:  124-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  124-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  124-block  2
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+call    9 returned 1
+call   10 returned 1
+call   11 returned 1
+    $$$$$:  124-block  3
+call   12 never executed
+    $$$$$:  124-block  4
+    $$$$$:  124-block  5
+call   13 never executed
+    $$$$$:  124-block  6
+    $$$$$:  124-block  7
+call   14 never executed
+    $$$$$:  124-block  8
+    $$$$$:  124-block  9
+call   15 never executed
+    $$$$$:  124-block 10
+        3:  125:           + "Date and time " + this->dateAndTime + "Link " + this->link + " Number of participants "
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  125-block  0
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  125-block  1
+call    6 returned 1
+branch  7 taken 1 (fallthrough)
+branch  8 taken 0 (throw)
+        1:  125-block  2
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  125-block  3
+call   12 returned 1
+branch 13 taken 1 (fallthrough)
+branch 14 taken 0 (throw)
+        1:  125-block  4
+call   15 returned 1
+branch 16 taken 1 (fallthrough)
+branch 17 taken 0 (throw)
+        1:  125-block  5
+call   18 returned 1
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+    $$$$$:  125-block  6
+call   24 never executed
+    $$$$$:  125-block  7
+    $$$$$:  125-block  8
+call   25 never executed
+    $$$$$:  125-block  9
+    $$$$$:  125-block 10
+call   26 never executed
+    $$$$$:  125-block 11
+    $$$$$:  125-block 12
+call   27 never executed
+    $$$$$:  125-block 13
+    $$$$$:  125-block 14
+call   28 never executed
+    $$$$$:  125-block 15
+        3:  126:           + std::to_string(this->numberOfAttendants);
+        1:  126-block  0
+call    0 returned 1
+        1:  126-block  1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+call    4 returned 1
+        1:  126-block  2
+    $$$$$:  126-block  3
+call    5 never executed
+        -:  127:}
+        -:  128:
+function _ZN5EventaSERKS_ called 18 returned 100% blocks executed 100%
+       18:  129:Event &Event::operator=(const Event &other) = default;
+       18:  129-block  0
+call    0 returned 18
+call    1 returned 18
+call    2 returned 18
+call    3 returned 18

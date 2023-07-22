@@ -1,0 +1,121 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/repository/Repository.h
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/main.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 30.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#ifndef A45_913_GABOR_IOANA_REPOSITORY_H
+        -:    6:#define A45_913_GABOR_IOANA_REPOSITORY_H
+        -:    7:
+        -:    8:
+        -:    9:#include <string>
+        -:   10:#include "domain/DynamicVector.h"
+        -:   11:#include "domain/AppExceptions.h"
+        -:   12:template<class T>
+        -:   13:class Repository {
+        -:   14:private:
+        -:   15:    DynamicVector<T> entities;
+        -:   16:public:
+        -:   17:    Repository();
+        -:   18:    void add(T element);
+        -:   19:    void remove(std::string element_id);
+        -:   20:    void update(T element);
+        -:   21:    DynamicVector<T> getAllEntities();
+        -:   22:    T getElementById(const std:: string& elementId);
+        -:   23:    bool isPresent(const std::string &elementId);
+        -:   24:private:
+        -:   25:    int findPosition(const std::string& element_id);
+        -:   26:
+        -:   27:};
+        -:   28:
+        -:   29:template<class T>
+        -:   30:T Repository<T>::getElementById(const std::string& elementId) {
+        -:   31:    for(int i=0;i<entities.getSize();i++){
+        -:   32:        if(entities[i].getId() == elementId){
+        -:   33:            return entities[i];
+        -:   34:        }
+        -:   35:    }
+        -:   36:    throw RepositoryException("element was not found!");
+        -:   37:}
+        -:   38:
+        -:   39:
+        -:   40:template<class T>
+        -:   41:bool Repository<T>::isPresent(const std::string& elementId) {
+        -:   42:    for(int i=0;i<entities.getSize();i++){
+        -:   43:        if(entities[i].getId() == elementId){
+        -:   44:            return true;
+        -:   45:        }
+        -:   46:    }
+        -:   47:    return false;
+        -:   48:}
+        -:   49:
+        -:   50:template<class T>
+        -:   51:DynamicVector<T> Repository<T>::getAllEntities() {
+        -:   52:    return this->entities;
+        -:   53:}
+        -:   54:
+        -:   55:template<class T>
+function _ZN10RepositoryI5EventEC2Ev called 39 returned 100% blocks executed 60%
+       39:   56:Repository<T>::Repository() {
+       39:   56-block  0
+call    0 returned 39
+       39:   57:    this->entities = DynamicVector<T>(1);
+call    0 returned 39
+branch  1 taken 39 (fallthrough)
+branch  2 taken 0 (throw)
+       39:   57-block  0
+call    3 returned 39
+branch  4 taken 39 (fallthrough)
+branch  5 taken 0 (throw)
+       39:   57-block  1
+call    6 returned 39
+    $$$$$:   57-block  2
+call    7 never executed
+    $$$$$:   57-block  3
+       39:   58:}
+    $$$$$:   58-block  0
+call    0 never executed
+        -:   59:
+        -:   60:template<class T>
+        -:   61:int Repository<T>::findPosition(const std::string& element_id) {
+        -:   62:    for(int i=0;i< this->entities.getSize();i++){
+        -:   63:        if(this->entities[i].getId()==element_id){
+        -:   64:            return i;
+        -:   65:        }
+        -:   66:    }
+        -:   67:    return -1;
+        -:   68:}
+        -:   69:
+        -:   70:template<class T>
+        -:   71:void Repository<T>::update(T element) {
+        -:   72:    int position = this->findPosition(element.getId());
+        -:   73:    if(position == -1){
+        -:   74:        throw RepositoryException("the element does not exist");
+        -:   75:    }
+        -:   76:    this->entities[position] = element;
+        -:   77:
+        -:   78:}
+        -:   79:
+        -:   80:template<class T>
+        -:   81:void Repository<T>::remove(std::string element_id) {
+        -:   82:    int position = this->findPosition(element_id);
+        -:   83:    if(position == -1){
+        -:   84:        throw RepositoryException("the element does not exist");
+        -:   85:    }
+        -:   86:    std::swap(this->entities[position], this->entities[this->entities.getSize()-1]);
+        -:   87:    this->entities.pop_back();
+        -:   88:}
+        -:   89:
+        -:   90:template<class T>
+        -:   91:void Repository<T>::add(T element) {
+        -:   92:    int position = this->findPosition(element.getId());
+        -:   93:    if(position != -1){
+        -:   94:        throw RepositoryException("the element already exists");
+        -:   95:    }
+        -:   96:    this->entities.add(element);
+        -:   97:}
+        -:   98:
+        -:   99:
+        -:  100:#endif //A45_913_GABOR_IOANA_REPOSITORY_H

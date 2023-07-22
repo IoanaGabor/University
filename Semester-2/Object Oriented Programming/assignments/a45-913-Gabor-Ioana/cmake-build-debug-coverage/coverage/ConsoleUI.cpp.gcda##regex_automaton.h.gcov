@@ -1,0 +1,736 @@
+        -:    0:Source:/usr/include/c++/11/bits/regex_automaton.h
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/ui/ConsoleUI.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a45-913-Gabor-Ioana/cmake-build-debug-coverage/CMakeFiles/a45_913_Gabor_Ioana.dir/ui/ConsoleUI.cpp.gcda
+        -:    0:Runs:1
+        -:    1:// class template regex -*- C++ -*-
+        -:    2:
+        -:    3:// Copyright (C) 2013-2021 Free Software Foundation, Inc.
+        -:    4://
+        -:    5:// This file is part of the GNU ISO C++ Library.  This library is free
+        -:    6:// software; you can redistribute it and/or modify it under the
+        -:    7:// terms of the GNU General Public License as published by the
+        -:    8:// Free Software Foundation; either version 3, or (at your option)
+        -:    9:// any later version.
+        -:   10:
+        -:   11:// This library is distributed in the hope that it will be useful,
+        -:   12:// but WITHOUT ANY WARRANTY; without even the implied warranty of
+        -:   13:// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+        -:   14:// GNU General Public License for more details.
+        -:   15:
+        -:   16:// Under Section 7 of GPL version 3, you are granted additional
+        -:   17:// permissions described in the GCC Runtime Library Exception, version
+        -:   18:// 3.1, as published by the Free Software Foundation.
+        -:   19:
+        -:   20:// You should have received a copy of the GNU General Public License and
+        -:   21:// a copy of the GCC Runtime Library Exception along with this program;
+        -:   22:// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+        -:   23:// <http://www.gnu.org/licenses/>.
+        -:   24:
+        -:   25:/**
+        -:   26: *  @file bits/regex_automaton.h
+        -:   27: *  This is an internal header file, included by other library headers.
+        -:   28: *  Do not attempt to use it directly. @headername{regex}
+        -:   29: */
+        -:   30:
+        -:   31:// This macro defines the maximal state number a NFA can have.
+        -:   32:#ifndef _GLIBCXX_REGEX_STATE_LIMIT
+        -:   33:#define _GLIBCXX_REGEX_STATE_LIMIT 100000
+        -:   34:#endif
+        -:   35:
+        -:   36:namespace std _GLIBCXX_VISIBILITY(default)
+        -:   37:{
+        -:   38:_GLIBCXX_BEGIN_NAMESPACE_VERSION
+        -:   39:
+        -:   40:namespace __detail
+        -:   41:{
+        -:   42:  /**
+        -:   43:   *  @defgroup regex-detail Base and Implementation Classes
+        -:   44:   *  @ingroup regex
+        -:   45:   *  @{
+        -:   46:   */
+        -:   47:
+        -:   48:  typedef long _StateIdT;
+        -:   49:  static const _StateIdT _S_invalid_state_id  = -1;
+        -:   50:
+        -:   51:  template<typename _CharT>
+        -:   52:    using _Matcher = std::function<bool (_CharT)>;
+        -:   53:
+        -:   54:  /// Operation codes that define the type of transitions within the base NFA
+        -:   55:  /// that represents the regular expression.
+        -:   56:  enum _Opcode : int
+        -:   57:  {
+        -:   58:      _S_opcode_unknown,
+        -:   59:      _S_opcode_alternative,
+        -:   60:      _S_opcode_repeat,
+        -:   61:      _S_opcode_backref,
+        -:   62:      _S_opcode_line_begin_assertion,
+        -:   63:      _S_opcode_line_end_assertion,
+        -:   64:      _S_opcode_word_boundary,
+        -:   65:      _S_opcode_subexpr_lookahead,
+        -:   66:      _S_opcode_subexpr_begin,
+        -:   67:      _S_opcode_subexpr_end,
+        -:   68:      _S_opcode_dummy,
+        -:   69:      _S_opcode_match,
+        -:   70:      _S_opcode_accept,
+        -:   71:  };
+        -:   72:
+        -:   73:  struct _State_base
+        -:   74:  {
+        -:   75:  protected:
+        -:   76:    _Opcode      _M_opcode;           // type of outgoing transition
+        -:   77:
+        -:   78:  public:
+        -:   79:    _StateIdT    _M_next;             // outgoing transition
+        -:   80:    union // Since they are mutually exclusive.
+        -:   81:    {
+        -:   82:      size_t _M_subexpr;        // for _S_opcode_subexpr_*
+        -:   83:      size_t _M_backref_index;  // for _S_opcode_backref
+        -:   84:      struct
+        -:   85:      {
+        -:   86:	// for _S_opcode_alternative, _S_opcode_repeat and
+        -:   87:	// _S_opcode_subexpr_lookahead
+        -:   88:	_StateIdT  _M_alt;
+        -:   89:	// for _S_opcode_word_boundary or _S_opcode_subexpr_lookahead or
+        -:   90:	// quantifiers (ungreedy if set true)
+        -:   91:	bool       _M_neg;
+        -:   92:      };
+        -:   93:      // For _S_opcode_match
+        -:   94:      __gnu_cxx::__aligned_membuf<_Matcher<char>> _M_matcher_storage;
+        -:   95:    };
+        -:   96:
+        -:   97:  protected:
+function _ZNSt8__detail11_State_baseC2ENS_7_OpcodeE called 19117 returned 100% blocks executed 100%
+    19117:   98:    explicit _State_base(_Opcode __opcode)
+    19117:   99:    : _M_opcode(__opcode), _M_next(_S_invalid_state_id)
+    19117:  100:    { }
+        -:  101:
+        -:  102:  public:
+        -:  103:    bool
+function _ZNSt8__detail11_State_base10_M_has_altEv called 67597 returned 100% blocks executed 100%
+    67597:  104:    _M_has_alt()
+        -:  105:    {
+    67597:  106:      return _M_opcode == _S_opcode_alternative
+    67597:  107:	|| _M_opcode == _S_opcode_repeat
+    67597:  107-block  0
+branch  0 taken 52080 (fallthrough)
+branch  1 taken 15517
+   135194:  108:	|| _M_opcode == _S_opcode_subexpr_lookahead;
+    67597:  108-block  0
+branch  0 taken 67597 (fallthrough)
+branch  1 taken 0
+    52080:  108-block  1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 52080
+    15517:  108-block  2
+    52080:  108-block  3
+    67597:  108-block  4
+        -:  109:    }
+        -:  110:
+        -:  111:#ifdef _GLIBCXX_DEBUG
+        -:  112:    std::ostream&
+        -:  113:    _M_print(std::ostream& ostr) const;
+        -:  114:
+        -:  115:    // Prints graphviz dot commands for state.
+        -:  116:    std::ostream&
+        -:  117:    _M_dot(std::ostream& __ostr, _StateIdT __id) const;
+        -:  118:#endif
+        -:  119:  };
+        -:  120:
+        -:  121:  template<typename _Char_type>
+        -:  122:    struct _State : _State_base
+        -:  123:    {
+        -:  124:      typedef _Matcher<_Char_type> _MatcherT;
+        -:  125:      static_assert(sizeof(_MatcherT) == sizeof(_Matcher<char>),
+        -:  126:		    "std::function<bool(T)> has the same size as "
+        -:  127:		    "std::function<bool(char)>");
+        -:  128:      static_assert(alignof(_MatcherT) == alignof(_Matcher<char>),
+        -:  129:		    "std::function<bool(T)> has the same alignment as "
+        -:  130:		    "std::function<bool(char)>");
+        -:  131:
+        -:  132:      explicit
+function _ZNSt8__detail6_StateIcEC2ENS_7_OpcodeE called 19117 returned 100% blocks executed 100%
+    19117:  133:      _State(_Opcode __opcode) : _State_base(__opcode)
+    19117:  133-block  0
+call    0 returned 19117
+        -:  134:      {
+    19117:  135:	if (_M_opcode() == _S_opcode_match)
+call    0 returned 19117
+branch  1 taken 1527 (fallthrough)
+branch  2 taken 17590
+     1527:  136:	  new (this->_M_matcher_storage._M_addr()) _MatcherT();
+     1527:  136-block  0
+call    0 returned 1527
+call    1 returned 1527
+    19117:  137:      }
+        -:  138:
+function _ZNSt8__detail6_StateIcEC2ERKS1_ called 80216 returned 100% blocks executed 89%
+    80216:  139:      _State(const _State& __rhs) : _State_base(__rhs)
+        -:  140:      {
+    80216:  141:	if (__rhs._M_opcode() == _S_opcode_match)
+    80216:  141-block  0
+call    0 returned 80216
+branch  1 taken 49292 (fallthrough)
+branch  2 taken 30924
+    49292:  142:	  new (this->_M_matcher_storage._M_addr())
+call    0 returned 49292
+call    1 returned 49292
+call    2 returned 49292
+branch  3 taken 49292 (fallthrough)
+branch  4 taken 0 (throw)
+    $$$$$:  142-block  0
+call    5 never executed
+    49292:  143:	    _MatcherT(__rhs._M_get_matcher());
+    49292:  143-block  0
+call    0 returned 49292
+    80216:  144:      }
+    80216:  144-block  0
+        -:  145:
+function _ZNSt8__detail6_StateIcEC2EOS1_ called 69016 returned 100% blocks executed 100%
+    69016:  146:      _State(_State&& __rhs) : _State_base(__rhs)
+        -:  147:      {
+    69016:  148:	if (__rhs._M_opcode() == _S_opcode_match)
+    69016:  148-block  0
+call    0 returned 69016
+branch  1 taken 35374 (fallthrough)
+branch  2 taken 33642
+    35374:  149:	  new (this->_M_matcher_storage._M_addr())
+call    0 returned 35374
+call    1 returned 35374
+call    2 returned 35374
+    35374:  150:	    _MatcherT(std::move(__rhs._M_get_matcher()));
+    35374:  150-block  0
+call    0 returned 35374
+call    1 returned 35374
+    69016:  151:      }
+        -:  152:
+        -:  153:      _State&
+        -:  154:      operator=(const _State&) = delete;
+        -:  155:
+function _ZNSt8__detail6_StateIcED2Ev called 168349 returned 100% blocks executed 100%
+   168349:  156:      ~_State()
+        -:  157:      {
+   168349:  158:	if (_M_opcode() == _S_opcode_match)
+   168349:  158-block  0
+call    0 returned 168349
+branch  1 taken 86193 (fallthrough)
+branch  2 taken 82156
+    86193:  159:	  _M_get_matcher().~_MatcherT();
+    86193:  159-block  0
+call    0 returned 86193
+call    1 returned 86193
+   168349:  160:      }
+        -:  161:
+        -:  162:      // Since correct ctor and dtor rely on _M_opcode, it's better not to
+        -:  163:      // change it over time.
+        -:  164:      _Opcode
+function _ZNKSt8__detail6_StateIcE9_M_opcodeEv called 410355 returned 100% blocks executed 100%
+   410355:  165:      _M_opcode() const
+   410355:  166:      { return _State_base::_M_opcode; }
+   410355:  166-block  0
+        -:  167:
+        -:  168:      bool
+function _ZNKSt8__detail6_StateIcE10_M_matchesEc called 3762 returned 100% blocks executed 100%
+     3762:  169:      _M_matches(_Char_type __char) const
+     3762:  170:      { return _M_get_matcher()(__char); }
+     3762:  170-block  0
+call    0 returned 3762
+call    1 returned 3762
+        -:  171:
+        -:  172:      _MatcherT&
+function _ZNSt8__detail6_StateIcE14_M_get_matcherEv called 123094 returned 100% blocks executed 100%
+   123094:  173:      _M_get_matcher()
+   123094:  174:      { return *static_cast<_MatcherT*>(this->_M_matcher_storage._M_addr()); }
+   123094:  174-block  0
+call    0 returned 123094
+        -:  175:
+        -:  176:      const _MatcherT&
+function _ZNKSt8__detail6_StateIcE14_M_get_matcherEv called 53054 returned 100% blocks executed 100%
+    53054:  177:      _M_get_matcher() const
+        -:  178:      {
+        -:  179:	return *static_cast<const _MatcherT*>(
+    53054:  180:	    this->_M_matcher_storage._M_addr());
+    53054:  180-block  0
+call    0 returned 53054
+        -:  181:      }
+        -:  182:    };
+        -:  183:
+        -:  184:  struct _NFA_base
+        -:  185:  {
+        -:  186:    typedef size_t                              _SizeT;
+        -:  187:    typedef regex_constants::syntax_option_type _FlagT;
+        -:  188:
+        -:  189:    explicit
+function _ZNSt8__detail9_NFA_baseC2ENSt15regex_constants18syntax_option_typeE called 120 returned 100% blocks executed 100%
+      120:  190:    _NFA_base(_FlagT __f)
+      240:  191:    : _M_flags(__f), _M_start_state(0), _M_subexpr_count(0),
+      120:  192:    _M_has_backref(false)
+      120:  192-block  0
+call    0 returned 120
+      120:  193:    { }
+        -:  194:
+        -:  195:    _NFA_base(_NFA_base&&) = default;
+        -:  196:
+        -:  197:  protected:
+function _ZNSt8__detail9_NFA_baseD2Ev called 120 returned 100% blocks executed 100%
+      120:  198:    ~_NFA_base() = default;
+      120:  198-block  0
+call    0 returned 120
+        -:  199:
+        -:  200:  public:
+        -:  201:    _FlagT
+        -:  202:    _M_options() const
+        -:  203:    { return _M_flags; }
+        -:  204:
+        -:  205:    _StateIdT
+function _ZNKSt8__detail9_NFA_base8_M_startEv called 240 returned 100% blocks executed 100%
+      240:  206:    _M_start() const
+      240:  207:    { return _M_start_state; }
+      240:  207-block  0
+        -:  208:
+        -:  209:    _SizeT
+function _ZNKSt8__detail9_NFA_base12_M_sub_countEv called 120 returned 100% blocks executed 100%
+      120:  210:    _M_sub_count() const
+      120:  211:    { return _M_subexpr_count; }
+      120:  211-block  0
+        -:  212:
+        -:  213:    _GLIBCXX_STD_C::vector<size_t> _M_paren_stack;
+        -:  214:    _FlagT                    _M_flags;
+        -:  215:    _StateIdT                 _M_start_state;
+        -:  216:    _SizeT                    _M_subexpr_count;
+        -:  217:    bool                      _M_has_backref;
+        -:  218:  };
+        -:  219:
+        -:  220:  template<typename _TraitsT>
+        -:  221:    struct _NFA
+        -:  222:    : _NFA_base, _GLIBCXX_STD_C::vector<_State<typename _TraitsT::char_type>>
+        -:  223:    {
+        -:  224:      typedef typename _TraitsT::char_type	_Char_type;
+        -:  225:      typedef _State<_Char_type>		_StateT;
+        -:  226:      typedef _Matcher<_Char_type>		_MatcherT;
+        -:  227:
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEEC2ERKSt6localeNSt15regex_constants18syntax_option_typeE called 120 returned 100% blocks executed 100%
+      120:  228:      _NFA(const typename _TraitsT::locale_type& __loc, _FlagT __flags)
+      120:  229:      : _NFA_base(__flags)
+      120:  229-block  0
+call    0 returned 120
+call    1 returned 120
+call    2 returned 120
+      120:  230:      { _M_traits.imbue(__loc); }
+call    0 returned 120
+call    1 returned 120
+call    2 returned 120
+call    3 returned 120
+        -:  231:
+        -:  232:      // for performance reasons _NFA objects should only be moved not copied
+        -:  233:      _NFA(const _NFA&) = delete;
+        -:  234:      _NFA(_NFA&&) = default;
+        -:  235:
+        -:  236:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE16_M_insert_acceptEv called 120 returned 100% blocks executed 75%
+      120:  237:      _M_insert_accept()
+        -:  238:      {
+      120:  239:	auto __ret = _M_insert_state(_StateT(_S_opcode_accept));
+      120:  239-block  0
+call    0 returned 120
+call    1 returned 120
+branch  2 taken 120 (fallthrough)
+branch  3 taken 0 (throw)
+      120:  239-block  1
+call    4 returned 120
+    $$$$$:  239-block  2
+call    5 never executed
+      120:  240:	return __ret;
+      120:  240-block  0
+        -:  241:      }
+        -:  242:
+        -:  243:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE13_M_insert_altEllb called 0 returned 0% blocks executed 0%
+    #####:  244:      _M_insert_alt(_StateIdT __next, _StateIdT __alt,
+        -:  245:		    bool __neg __attribute__((__unused__)))
+        -:  246:      {
+    #####:  247:	_StateT __tmp(_S_opcode_alternative);
+    %%%%%:  247-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+        -:  248:	// It labels every quantifier to make greedy comparison easier in BFS
+        -:  249:	// approach.
+    #####:  250:	__tmp._M_next = __next;
+    #####:  251:	__tmp._M_alt = __alt;
+    #####:  252:	return _M_insert_state(std::move(__tmp));
+    %%%%%:  252-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  252-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  252-block  2
+    %%%%%:  252-block  3
+call    7 never executed
+    %%%%%:  252-block  4
+    $$$$$:  252-block  5
+call    8 never executed
+    $$$$$:  252-block  6
+    #####:  253:      }
+call    0 never executed
+    $$$$$:  253-block  0
+call    1 never executed
+        -:  254:
+        -:  255:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE16_M_insert_repeatEllb called 15517 returned 100% blocks executed 67%
+    15517:  256:      _M_insert_repeat(_StateIdT __next, _StateIdT __alt, bool __neg)
+        -:  257:      {
+    15517:  258:	_StateT __tmp(_S_opcode_repeat);
+    15517:  258-block  0
+call    0 returned 15517
+branch  1 taken 15517 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  259:	// It labels every quantifier to make greedy comparison easier in BFS
+        -:  260:	// approach.
+    15517:  261:	__tmp._M_next = __next;
+    15517:  262:	__tmp._M_alt = __alt;
+    15517:  263:	__tmp._M_neg = __neg;
+    31034:  264:	return _M_insert_state(std::move(__tmp));
+    15517:  264-block  0
+call    0 returned 15517
+call    1 returned 15517
+branch  2 taken 15517 (fallthrough)
+branch  3 taken 0 (throw)
+    15517:  264-block  1
+call    4 returned 15517
+branch  5 taken 15517 (fallthrough)
+branch  6 taken 0 (throw)
+    15517:  264-block  2
+    15517:  264-block  3
+call    7 returned 15517
+    15517:  264-block  4
+    $$$$$:  264-block  5
+call    8 never executed
+    $$$$$:  264-block  6
+    15517:  265:      }
+call    0 returned 15517
+    $$$$$:  265-block  0
+call    1 never executed
+        -:  266:
+        -:  267:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE17_M_insert_matcherESt8functionIFbcEE called 1527 returned 100% blocks executed 72%
+     1527:  268:      _M_insert_matcher(_MatcherT __m)
+        -:  269:      {
+     1527:  270:	_StateT __tmp(_S_opcode_match);
+     1527:  270-block  0
+call    0 returned 1527
+branch  1 taken 1527 (fallthrough)
+branch  2 taken 0 (throw)
+     1527:  271:	__tmp._M_get_matcher() = std::move(__m);
+     1527:  271-block  0
+call    0 returned 1527
+call    1 returned 1527
+call    2 returned 1527
+     3054:  272:	return _M_insert_state(std::move(__tmp));
+call    0 returned 1527
+call    1 returned 1527
+branch  2 taken 1527 (fallthrough)
+branch  3 taken 0 (throw)
+     1527:  272-block  0
+call    4 returned 1527
+branch  5 taken 1527 (fallthrough)
+branch  6 taken 0 (throw)
+     1527:  272-block  1
+     1527:  272-block  2
+call    7 returned 1527
+     1527:  272-block  3
+    $$$$$:  272-block  4
+call    8 never executed
+    $$$$$:  272-block  5
+     1527:  273:      }
+call    0 returned 1527
+    $$$$$:  273-block  0
+call    1 never executed
+        -:  274:
+        -:  275:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE23_M_insert_subexpr_beginEv called 238 returned 100% blocks executed 69%
+      238:  276:      _M_insert_subexpr_begin()
+        -:  277:      {
+      238:  278:	auto __id = this->_M_subexpr_count++;
+      238:  279:	this->_M_paren_stack.push_back(__id);
+      238:  279-block  0
+call    0 returned 238
+branch  1 taken 238 (fallthrough)
+branch  2 taken 0 (throw)
+      238:  280:	_StateT __tmp(_S_opcode_subexpr_begin);
+      238:  280-block  0
+call    0 returned 238
+branch  1 taken 238 (fallthrough)
+branch  2 taken 0 (throw)
+      238:  281:	__tmp._M_subexpr = __id;
+      476:  282:	return _M_insert_state(std::move(__tmp));
+      238:  282-block  0
+call    0 returned 238
+call    1 returned 238
+branch  2 taken 238 (fallthrough)
+branch  3 taken 0 (throw)
+      238:  282-block  1
+call    4 returned 238
+branch  5 taken 238 (fallthrough)
+branch  6 taken 0 (throw)
+      238:  282-block  2
+      238:  282-block  3
+call    7 returned 238
+      238:  282-block  4
+    $$$$$:  282-block  5
+call    8 never executed
+    $$$$$:  282-block  6
+      238:  283:      }
+call    0 returned 238
+    $$$$$:  283-block  0
+call    1 never executed
+        -:  284:
+        -:  285:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE21_M_insert_subexpr_endEv called 238 returned 100% blocks executed 71%
+      238:  286:      _M_insert_subexpr_end()
+        -:  287:      {
+      238:  288:	_StateT __tmp(_S_opcode_subexpr_end);
+      238:  288-block  0
+call    0 returned 238
+branch  1 taken 238 (fallthrough)
+branch  2 taken 0 (throw)
+      238:  289:	__tmp._M_subexpr = this->_M_paren_stack.back();
+      238:  289-block  0
+call    0 returned 238
+      238:  290:	this->_M_paren_stack.pop_back();
+call    0 returned 238
+      476:  291:	return _M_insert_state(std::move(__tmp));
+call    0 returned 238
+call    1 returned 238
+branch  2 taken 238 (fallthrough)
+branch  3 taken 0 (throw)
+      238:  291-block  0
+call    4 returned 238
+branch  5 taken 238 (fallthrough)
+branch  6 taken 0 (throw)
+      238:  291-block  1
+      238:  291-block  2
+call    7 returned 238
+      238:  291-block  3
+    $$$$$:  291-block  4
+call    8 never executed
+    $$$$$:  291-block  5
+      238:  292:      }
+call    0 returned 238
+    $$$$$:  292-block  0
+call    1 never executed
+        -:  293:
+        -:  294:      _StateIdT
+        -:  295:      _M_insert_backref(size_t __index);
+        -:  296:
+        -:  297:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE20_M_insert_line_beginEv called 120 returned 100% blocks executed 78%
+      120:  298:      _M_insert_line_begin()
+      120:  299:      { return _M_insert_state(_StateT(_S_opcode_line_begin_assertion)); }
+      120:  299-block  0
+call    0 returned 120
+call    1 returned 120
+branch  2 taken 120 (fallthrough)
+branch  3 taken 0 (throw)
+      120:  299-block  1
+      120:  299-block  2
+call    4 returned 120
+      120:  299-block  3
+    $$$$$:  299-block  4
+call    5 never executed
+        -:  300:
+        -:  301:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE18_M_insert_line_endEv called 120 returned 100% blocks executed 78%
+      120:  302:      _M_insert_line_end()
+      120:  303:      { return _M_insert_state(_StateT(_S_opcode_line_end_assertion)); }
+      120:  303-block  0
+call    0 returned 120
+call    1 returned 120
+branch  2 taken 120 (fallthrough)
+branch  3 taken 0 (throw)
+      120:  303-block  1
+      120:  303-block  2
+call    4 returned 120
+      120:  303-block  3
+    $$$$$:  303-block  4
+call    5 never executed
+        -:  304:
+        -:  305:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE20_M_insert_word_boundEb called 59 returned 100% blocks executed 67%
+       59:  306:      _M_insert_word_bound(bool __neg)
+        -:  307:      {
+       59:  308:	_StateT __tmp(_S_opcode_word_boundary);
+       59:  308-block  0
+call    0 returned 59
+branch  1 taken 59 (fallthrough)
+branch  2 taken 0 (throw)
+       59:  309:	__tmp._M_neg = __neg;
+      118:  310:	return _M_insert_state(std::move(__tmp));
+       59:  310-block  0
+call    0 returned 59
+call    1 returned 59
+branch  2 taken 59 (fallthrough)
+branch  3 taken 0 (throw)
+       59:  310-block  1
+call    4 returned 59
+branch  5 taken 59 (fallthrough)
+branch  6 taken 0 (throw)
+       59:  310-block  2
+       59:  310-block  3
+call    7 returned 59
+       59:  310-block  4
+    $$$$$:  310-block  5
+call    8 never executed
+    $$$$$:  310-block  6
+       59:  311:      }
+call    0 returned 59
+    $$$$$:  311-block  0
+call    1 never executed
+        -:  312:
+        -:  313:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE19_M_insert_lookaheadElb called 0 returned 0% blocks executed 0%
+    #####:  314:      _M_insert_lookahead(_StateIdT __alt, bool __neg)
+        -:  315:      {
+    #####:  316:	_StateT __tmp(_S_opcode_subexpr_lookahead);
+    %%%%%:  316-block  0
+call    0 never executed
+branch  1 never executed
+branch  2 never executed
+    #####:  317:	__tmp._M_alt = __alt;
+    #####:  318:	__tmp._M_neg = __neg;
+    #####:  319:	return _M_insert_state(std::move(__tmp));
+    %%%%%:  319-block  0
+call    0 never executed
+call    1 never executed
+branch  2 never executed
+branch  3 never executed
+    %%%%%:  319-block  1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+    %%%%%:  319-block  2
+    %%%%%:  319-block  3
+call    7 never executed
+    %%%%%:  319-block  4
+    $$$$$:  319-block  5
+call    8 never executed
+    $$$$$:  319-block  6
+    #####:  320:      }
+call    0 never executed
+    $$$$$:  320-block  0
+call    1 never executed
+        -:  321:
+        -:  322:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE15_M_insert_dummyEv called 1178 returned 100% blocks executed 78%
+     1178:  323:      _M_insert_dummy()
+     1178:  324:      { return _M_insert_state(_StateT(_S_opcode_dummy)); }
+     1178:  324-block  0
+call    0 returned 1178
+call    1 returned 1178
+branch  2 taken 1178 (fallthrough)
+branch  3 taken 0 (throw)
+     1178:  324-block  1
+     1178:  324-block  2
+call    4 returned 1178
+     1178:  324-block  3
+    $$$$$:  324-block  4
+call    5 never executed
+        -:  325:
+        -:  326:      _StateIdT
+function _ZNSt8__detail4_NFAINSt7__cxx1112regex_traitsIcEEE15_M_insert_stateENS_6_StateIcEE called 35277 returned 100% blocks executed 88%
+    35277:  327:      _M_insert_state(_StateT __s)
+        -:  328:      {
+    35277:  329:	this->push_back(std::move(__s));
+    35277:  329-block  0
+call    0 returned 35277
+call    1 returned 35277
+    35277:  330:	if (this->size() > _GLIBCXX_REGEX_STATE_LIMIT)
+call    0 returned 35277
+branch  1 taken 0 (fallthrough)
+branch  2 taken 35277
+    #####:  331:	  __throw_regex_error(
+    %%%%%:  331-block  0
+call    0 never executed
+        -:  332:	    regex_constants::error_space,
+        -:  333:	    "Number of NFA states exceeds limit. Please use shorter regex "
+        -:  334:	    "string, or use smaller brace expression, or make "
+        -:  335:	    "_GLIBCXX_REGEX_STATE_LIMIT larger.");
+    35277:  336:	return this->size() - 1;
+    35277:  336-block  0
+call    0 returned 35277
+        -:  337:      }
+        -:  338:
+        -:  339:      // Eliminate dummy node in this NFA to make it compact.
+        -:  340:      void
+        -:  341:      _M_eliminate_dummy();
+        -:  342:
+        -:  343:#ifdef _GLIBCXX_DEBUG
+        -:  344:      std::ostream&
+        -:  345:      _M_dot(std::ostream& __ostr) const;
+        -:  346:#endif
+        -:  347:    public:
+        -:  348:      _TraitsT                  _M_traits;
+        -:  349:    };
+        -:  350:
+        -:  351:  /// Describes a sequence of one or more %_State, its current start
+        -:  352:  /// and end(s).  This structure contains fragments of an NFA during
+        -:  353:  /// construction.
+        -:  354:  template<typename _TraitsT>
+        -:  355:    class _StateSeq
+        -:  356:    {
+        -:  357:    public:
+        -:  358:      typedef _NFA<_TraitsT> _RegexT;
+        -:  359:
+        -:  360:    public:
+function _ZNSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEC2ERNS_4_NFAIS3_EEl called 2890 returned 100% blocks executed 100%
+     2890:  361:      _StateSeq(_RegexT& __nfa, _StateIdT __s)
+     2890:  362:      : _M_nfa(__nfa), _M_start(__s), _M_end(__s)
+     2890:  363:      { }
+        -:  364:
+function _ZNSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEEC2ERNS_4_NFAIS3_EEll called 31500 returned 100% blocks executed 100%
+    31500:  365:      _StateSeq(_RegexT& __nfa, _StateIdT __s, _StateIdT __end)
+    31500:  366:      : _M_nfa(__nfa), _M_start(__s), _M_end(__end)
+    31500:  367:      { }
+        -:  368:
+        -:  369:      // Append a state on *this and change *this to the new sequence.
+        -:  370:      void
+function _ZNSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEE9_M_appendEl called 1125 returned 100% blocks executed 100%
+     1125:  371:      _M_append(_StateIdT __id)
+        -:  372:      {
+     1125:  373:	_M_nfa[_M_end]._M_next = __id;
+     1125:  373-block  0
+call    0 returned 1125
+     1125:  374:	_M_end = __id;
+     1125:  375:      }
+        -:  376:
+        -:  377:      // Append a sequence on *this and change *this to the new sequence.
+        -:  378:      void
+function _ZNSt8__detail9_StateSeqINSt7__cxx1112regex_traitsIcEEE9_M_appendERKS4_ called 18401 returned 100% blocks executed 100%
+    18401:  379:      _M_append(const _StateSeq& __s)
+        -:  380:      {
+    18401:  381:	_M_nfa[_M_end]._M_next = __s._M_start;
+    18401:  381-block  0
+call    0 returned 18401
+    18401:  382:	_M_end = __s._M_end;
+    18401:  383:      }
+        -:  384:
+        -:  385:      // Clones an entire sequence.
+        -:  386:      _StateSeq
+        -:  387:      _M_clone();
+        -:  388:
+        -:  389:    public:
+        -:  390:      _RegexT&  _M_nfa;
+        -:  391:      _StateIdT _M_start;
+        -:  392:      _StateIdT _M_end;
+        -:  393:    };
+        -:  394:
+        -:  395: ///@} regex-detail
+        -:  396:} // namespace __detail
+        -:  397:
+        -:  398:_GLIBCXX_END_NAMESPACE_VERSION
+        -:  399:} // namespace std
+        -:  400:
+        -:  401:#include <bits/regex_automaton.tcc>

@@ -1,0 +1,20 @@
+# ninja log v5
+3853	4413	1683290213776567839	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/AbstractFileRepository.cpp.o	219170498e1296f6
+830	1563	1683290210924570033	CMakeFiles/a7_913_Gabor_Ioana_1.dir/controller/EventsController.cpp.o	629e2af22fa91518
+5211	5610	1683290214972566904	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/DataBaseEventsRepository.cpp.o	c8985dfe5859529e
+5610	5845	1683290215204566721	a7_913_Gabor_Ioana_1	bcfbc239853011fe
+4912	5524	1683290214884566974	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/AbstractUserEventList.cpp.o	c9f316b6e93fe291
+3554	4153	1683290213512568044	CMakeFiles/a7_913_Gabor_Ioana_1.dir/app_tests/TestController.cpp.o	afffc5d017ea6da4
+1	3553	1683290212908568513	CMakeFiles/a7_913_Gabor_Ioana_1.dir/ui/ConsoleUI.cpp.o	7692da66c5fc5e78
+2272	3118	1683290212480568842	CMakeFiles/a7_913_Gabor_Ioana_1.dir/app_tests/TestAll.cpp.o	e57b8ecb43108ad3
+4153	4912	1683290214272567453	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/CSVEventList.cpp.o	b86cda816da779bd
+2	34	1690061437905653538	build.ninja	40291138096e3824
+1563	1877	1683290211240569792	CMakeFiles/a7_913_Gabor_Ioana_1.dir/domain/AppExceptions.cpp.o	cdf3ba3df8bc7618
+3119	3853	1683290213212568277	CMakeFiles/a7_913_Gabor_Ioana_1.dir/app_tests/TestRepository.cpp.o	48532f8f575af9df
+1	830	1683290210192570587	CMakeFiles/a7_913_Gabor_Ioana_1.dir/main.cpp.o	537cf667abca906
+4880	5245	1683290214608567189	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/TextFileRepository.cpp.o	ac4703b303245437
+1878	2271	1683290211632569493	CMakeFiles/a7_913_Gabor_Ioana_1.dir/app_tests/TestEvent.cpp.o	64d6a8e6081e7c84
+4413	5210	1683290214572567218	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/HTMLEventList.cpp.o	2b3480892571962d
+1	684	1683290210044570699	CMakeFiles/a7_913_Gabor_Ioana_1.dir/domain/Event.cpp.o	e98ae9abef012b6b
+1027	4880	1683290214236567481	CMakeFiles/a7_913_Gabor_Ioana_1.dir/validators/Validators.cpp.o	93071b85f9e2bb6
+684	1027	1683290210388570439	CMakeFiles/a7_913_Gabor_Ioana_1.dir/repository/MemoryRepository.cpp.o	aded3aa91c3c7a62

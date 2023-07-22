@@ -1,0 +1,5 @@
+/home/ioana/second_semester/OOP/assignments/a89-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/a89-913-Gabor-Ioana.dir
+/home/ioana/second_semester/OOP/assignments/a89-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ioana/second_semester/OOP/assignments/a89-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ioana/second_semester/OOP/assignments/a89-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/a89-913-Gabor-Ioana_autogen_timestamp_deps.dir
+/home/ioana/second_semester/OOP/assignments/a89-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/a89-913-Gabor-Ioana_autogen.dir

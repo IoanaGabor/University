@@ -1,0 +1,11 @@
+movie|fda|/2022/09/23/10:25|https://www.google.com/|5
+concert|fda|/2022/10/23/10:25|https://www.infoarena.ro/|15
+abc|fda|/2022/04/23/10:25|https://www.infoarena.ro/|20
+contest|fda|/2022/10/21/10:25|https://www.youtube.com/|20
+party|fda|/2022/11/23/10:25|https://www.infoarena.ro/|15
+something|fda|/2022/12/23/10:25|https://www.infoarena.ro/|20
+nothing|fda|/2022/01/23/10:25|https://www.infoarena.ro/|34
+haha|fda|/2022/03/23/10:25|https://www.infoarena.ro/|36
+well|fda|/2022/04/23/10:25|https://www.infoarena.ro/|10
+fda623s|fda|/2022/05/23/10:25|https://www.infoarena.ro/|10
+fdasfdas|fda|/2022/06/23/10:25|https://www.infoarena.ro/|34

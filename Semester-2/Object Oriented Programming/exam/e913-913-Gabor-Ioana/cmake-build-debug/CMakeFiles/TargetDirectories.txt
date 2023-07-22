@@ -1,0 +1,4 @@
+/home/ioana/second_semester/OOP/e913-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/e913-913-Gabor-Ioana.dir
+/home/ioana/second_semester/OOP/e913-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ioana/second_semester/OOP/e913-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ioana/second_semester/OOP/e913-913-Gabor-Ioana/cmake-build-debug/CMakeFiles/e913-913-Gabor-Ioana_autogen.dir

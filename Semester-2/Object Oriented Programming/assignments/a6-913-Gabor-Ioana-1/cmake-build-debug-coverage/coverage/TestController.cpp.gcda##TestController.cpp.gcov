@@ -1,0 +1,1118 @@
+        -:    0:Source:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/app_tests/TestController.cpp
+        -:    0:Graph:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/app_tests/TestController.cpp.gcno
+        -:    0:Data:/home/ioana/second_semester/oop/assignments/a6-913-Gabor-Ioana-1/cmake-build-debug-coverage/CMakeFiles/a6_913_Gabor_Ioana_1.dir/app_tests/TestController.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by ioana on 31.03.2023.
+        -:    3://
+        -:    4:
+        -:    5:#include <cassert>
+        -:    6:#include "TestController.h"
+        -:    7:#include "domain/Event.h"
+        -:    8:#include "repository/Repository.h"
+        -:    9:#include "controller/EventsController.h"
+        -:   10:
+function _ZN14TestController17testAllControllerEv called 1 returned 100% blocks executed 100%
+        1:   11:void TestController::testAllController() {
+        1:   12:    TestController::testAddEventAdministrator();
+        1:   12-block  0
+call    0 returned 1
+        1:   13:    TestController::testUpdateEventAdministrator();
+call    0 returned 1
+        1:   14:    TestController::testRemoveEventAdministrator();
+call    0 returned 1
+        1:   15:    TestController::testListEventsAdministrator();
+call    0 returned 1
+        1:   16:    TestController::testSelectEventsByMonthAdministrator();
+call    0 returned 1
+        1:   17:    TestController::testAddEventUser();
+call    0 returned 1
+        1:   18:    TestController::testRemoveEventUser();
+call    0 returned 1
+        1:   19:}
+        -:   20:
+function _ZN14TestController25testAddEventAdministratorEv called 1 returned 100% blocks executed 56%
+        1:   21:void TestController::testAddEventAdministrator() {
+        1:   22:    Repository<Event> eventsRepository = Repository<Event>();
+        1:   22-block  0
+call    0 returned 1
+        1:   23:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:   24:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   25:    std::string title = "movie night";
+        1:   25-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   25-block  1
+        1:   26:    std::string description = "movie night";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   26-block  0
+        1:   27:    std::string dateAndTime = "/2022/10/23/10:24";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   27-block  0
+        1:   28:    int numberOfAttendants = 39;
+        1:   29:    std::string link = "https://stackoverflow.com/questions/3385229";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   29-block  0
+        1:   30:    eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   31:    try {
+       3*:   32:        eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, "fdsa");
+        1:   32-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   32-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1 (throw)
+    %%%%%:   32-block  2
+call    7 never executed
+call    8 never executed
+        1:   32-block  3
+call    9 returned 1
+        1:   32-block  4
+        1:   32-block  5
+call   10 returned 1
+        1:   32-block  6
+    #####:   33:        assert(false);
+call    0 never executed
+        1:   34:    } catch (EventsControllerException &eventsControllerException) {
+        1:   34-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   34-block  1
+call    2 returned 1
+        -:   35:        assert(true);
+        1:   36:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   37:
+        -:   38:    try {
+        1:   39:        eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+        1:   39-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    =====:   40:        assert(false);
+    $$$$$:   40-block  0
+call    0 never executed
+        1:   41:    } catch (EventsControllerException &eventsControllerException) {
+        1:   41-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   41-block  1
+call    2 returned 1
+        -:   42:        assert(true);
+        1:   43:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   44:
+        1:   45:}
+        1:   45-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   45-block  1
+call    7 never executed
+    $$$$$:   45-block  2
+call    8 never executed
+    $$$$$:   45-block  3
+call    9 never executed
+    $$$$$:   45-block  4
+call   10 never executed
+    $$$$$:   45-block  5
+call   11 never executed
+    $$$$$:   45-block  6
+call   12 never executed
+    $$$$$:   45-block  7
+call   13 never executed
+        -:   46:
+function _ZN14TestController28testUpdateEventAdministratorEv called 1 returned 100% blocks executed 58%
+        1:   47:void TestController::testUpdateEventAdministrator() {
+        1:   48:    Repository<Event> eventsRepository = Repository<Event>();
+        1:   48-block  0
+call    0 returned 1
+        1:   49:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:   50:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   51:    std::string title = "movie night";
+        1:   51-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   51-block  1
+        1:   52:    std::string description = "movie night";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   52-block  0
+        1:   53:    std::string dateAndTime = "/2022/10/23/10:24";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   53-block  0
+        1:   54:    int numberOfAttendants = 39;
+        1:   55:    std::string link = "https://stackoverflow.com/questions/3385229";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   55-block  0
+        1:   56:    eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57:    std::string updatedDescription = "movie night asdf";
+        1:   57-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   57-block  1
+        1:   58:    eventsController.updateEventAdministrator(title, updatedDescription, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   59:    try {
+       3*:   60:        eventsController.updateEventAdministrator(title, description, dateAndTime, numberOfAttendants, "fdsa");
+        1:   60-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   60-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1 (throw)
+    %%%%%:   60-block  2
+call    7 never executed
+call    8 never executed
+        1:   60-block  3
+call    9 returned 1
+        1:   60-block  4
+        1:   60-block  5
+call   10 returned 1
+        1:   60-block  6
+    #####:   61:        assert(false);
+call    0 never executed
+        1:   62:    } catch (EventsControllerException &eventsControllerException) {
+        1:   62-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   62-block  1
+call    2 returned 1
+        -:   63:        assert(true);
+        1:   64:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:   65:
+        -:   66:    try {
+        3:   67:        eventsController.updateEventAdministrator("fdasd", description, dateAndTime, numberOfAttendants, link);
+        1:   67-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   67-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1 (throw)
+    $$$$$:   67-block  2
+call    7 never executed
+call    8 never executed
+        1:   67-block  3
+call    9 returned 1
+        1:   67-block  4
+        1:   67-block  5
+call   10 returned 1
+        1:   67-block  6
+    =====:   68:        assert(false);
+call    0 never executed
+        1:   69:    } catch (EventsControllerException &eventsControllerException) {
+        1:   69-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   69-block  1
+call    2 returned 1
+        -:   70:        assert(true);
+        1:   71:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   72:}
+        1:   72-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+    $$$$$:   72-block  1
+call    8 never executed
+    $$$$$:   72-block  2
+call    9 never executed
+    $$$$$:   72-block  3
+call   10 never executed
+    $$$$$:   72-block  4
+call   11 never executed
+    $$$$$:   72-block  5
+call   12 never executed
+    $$$$$:   72-block  6
+call   13 never executed
+    $$$$$:   72-block  7
+call   14 never executed
+    $$$$$:   72-block  8
+call   15 never executed
+        -:   73:
+function _ZN14TestController28testRemoveEventAdministratorEv called 1 returned 100% blocks executed 56%
+        1:   74:void TestController::testRemoveEventAdministrator() {
+        1:   75:    Repository<Event> eventsRepository = Repository<Event>();
+        1:   75-block  0
+call    0 returned 1
+        1:   76:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:   77:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   78:    std::string title = "movie night";
+        1:   78-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   78-block  1
+        1:   79:    std::string description = "movie night";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   79-block  0
+        1:   80:    std::string dateAndTime = "/2022/10/23/10:24";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   80-block  0
+        1:   81:    int numberOfAttendants = 39;
+        1:   82:    std::string link = "https://stackoverflow.com/questions/3385229";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   82-block  0
+        1:   83:    eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   84:    eventsController.addEventAdministrator("fdasdas", description, dateAndTime, numberOfAttendants, link);
+        1:   84-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   84-block  1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:   84-block  2
+call    7 returned 1
+call    8 returned 1
+    $$$$$:   84-block  3
+call    9 never executed
+    $$$$$:   84-block  4
+    $$$$$:   84-block  5
+call   10 never executed
+    $$$$$:   84-block  6
+        1:   85:    eventsController.removeEventAdministrator(title, dateAndTime);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:   86:    assert(eventsController.listEventsAdministrator().size() == 1);
+        1:   86-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   86-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:   86-block  2
+call    6 never executed
+        1:   86-block  3
+call    7 returned 1
+        -:   87:    try {
+       3*:   88:        eventsController.removeEventAdministrator("fdasd",  dateAndTime);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:   88-block  0
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1 (throw)
+    %%%%%:   88-block  1
+call    7 never executed
+call    8 never executed
+        1:   88-block  2
+call    9 returned 1
+        1:   88-block  3
+        1:   88-block  4
+call   10 returned 1
+        1:   88-block  5
+    #####:   89:        assert(false);
+call    0 never executed
+        1:   90:    } catch (EventsControllerException &eventsControllerException) {
+        1:   90-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:   90-block  1
+call    2 returned 1
+        -:   91:        assert(true);
+        1:   92:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   93:}
+        1:   93-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:   93-block  1
+call    7 never executed
+    $$$$$:   93-block  2
+call    8 never executed
+    $$$$$:   93-block  3
+call    9 never executed
+    $$$$$:   93-block  4
+call   10 never executed
+    $$$$$:   93-block  5
+call   11 never executed
+    $$$$$:   93-block  6
+call   12 never executed
+    $$$$$:   93-block  7
+call   13 never executed
+        -:   94:
+function _ZN14TestController27testListEventsAdministratorEv called 1 returned 100% blocks executed 52%
+        1:   95:void TestController::testListEventsAdministrator() {
+        1:   96:    Repository<Event> eventsRepository = Repository<Event>();
+        1:   96-block  0
+call    0 returned 1
+        1:   97:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:   98:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   99:    std::string title = "movie night";
+        1:   99-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:   99-block  1
+        1:  100:    std::string description = "movie night";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  100-block  0
+        1:  101:    std::string dateAndTime = "/2022/10/23/10:24";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  101-block  0
+        1:  102:    int numberOfAttendants = 39;
+        1:  103:    std::string link = "https://stackoverflow.com/questions/3385229";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  103-block  0
+        1:  104:    eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+       1*:  105:    assert(eventsController.listEventsAdministrator().size() == 1);
+        1:  105-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  105-block  1
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  105-block  2
+call    6 never executed
+        1:  105-block  3
+call    7 returned 1
+        1:  106:}
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:  106-block  0
+call    7 never executed
+    $$$$$:  106-block  1
+call    8 never executed
+    $$$$$:  106-block  2
+call    9 never executed
+    $$$$$:  106-block  3
+call   10 never executed
+    $$$$$:  106-block  4
+call   11 never executed
+    $$$$$:  106-block  5
+call   12 never executed
+    $$$$$:  106-block  6
+call   13 never executed
+        -:  107:
+function _ZN14TestController36testSelectEventsByMonthAdministratorEv called 1 returned 100% blocks executed 48%
+        1:  108:void TestController::testSelectEventsByMonthAdministrator() {
+        1:  109:    Repository<Event> eventsRepository = Repository<Event>();
+        1:  109-block  0
+call    0 returned 1
+        1:  110:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:  111:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  112:    eventsController.addEventAdministrator("movie night", "movie night", "/2022/10/23/10:24", 39,
+        1:  112-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  112-block  1
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  112-block  2
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  112-block  3
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  112-block  4
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  112-block  5
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:  112-block  6
+call   27 never executed
+    $$$$$:  112-block  7
+    $$$$$:  112-block  8
+call   28 never executed
+    $$$$$:  112-block  9
+    $$$$$:  112-block 10
+call   29 never executed
+    $$$$$:  112-block 11
+    $$$$$:  112-block 12
+call   30 never executed
+    $$$$$:  112-block 13
+    $$$$$:  112-block 14
+call   31 never executed
+    $$$$$:  112-block 15
+    $$$$$:  112-block 16
+call   32 never executed
+    $$$$$:  112-block 17
+    $$$$$:  112-block 18
+call   33 never executed
+    $$$$$:  112-block 19
+    $$$$$:  112-block 20
+call   34 never executed
+    $$$$$:  112-block 21
+        -:  113:                                           "https://stackoverflow.com/questions/3385229");
+        1:  114:    eventsController.addEventAdministrator("movie night 2", "movie night", "/2022/09/23/10:24", 39,
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  114-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  114-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  114-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  114-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  114-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:  114-block  5
+call   27 never executed
+    $$$$$:  114-block  6
+    $$$$$:  114-block  7
+call   28 never executed
+    $$$$$:  114-block  8
+    $$$$$:  114-block  9
+call   29 never executed
+    $$$$$:  114-block 10
+    $$$$$:  114-block 11
+call   30 never executed
+    $$$$$:  114-block 12
+    $$$$$:  114-block 13
+call   31 never executed
+    $$$$$:  114-block 14
+    $$$$$:  114-block 15
+call   32 never executed
+    $$$$$:  114-block 16
+    $$$$$:  114-block 17
+call   33 never executed
+    $$$$$:  114-block 18
+    $$$$$:  114-block 19
+call   34 never executed
+    $$$$$:  114-block 20
+        -:  115:                                           "https://stackoverflow.com/questions/3385229");
+        1:  116:    eventsController.addEventAdministrator("movie nigjk;lht 3", "movie night", "/2022/10/23/10:24", 39,
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  116-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  116-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  116-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  116-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  116-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:  116-block  5
+call   27 never executed
+    $$$$$:  116-block  6
+    $$$$$:  116-block  7
+call   28 never executed
+    $$$$$:  116-block  8
+    $$$$$:  116-block  9
+call   29 never executed
+    $$$$$:  116-block 10
+    $$$$$:  116-block 11
+call   30 never executed
+    $$$$$:  116-block 12
+    $$$$$:  116-block 13
+call   31 never executed
+    $$$$$:  116-block 14
+    $$$$$:  116-block 15
+call   32 never executed
+    $$$$$:  116-block 16
+    $$$$$:  116-block 17
+call   33 never executed
+    $$$$$:  116-block 18
+    $$$$$:  116-block 19
+call   34 never executed
+    $$$$$:  116-block 20
+        -:  117:                                           "https://stackoverflow.com/questions/3385229");
+        1:  118:    eventsController.addEventAdministrator("movie night 4", "movie night", "/2022/12/23/10:24", 39,
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  118-block  0
+call    4 returned 1
+call    5 returned 1
+branch  6 taken 1 (fallthrough)
+branch  7 taken 0 (throw)
+        1:  118-block  1
+call    8 returned 1
+call    9 returned 1
+branch 10 taken 1 (fallthrough)
+branch 11 taken 0 (throw)
+        1:  118-block  2
+call   12 returned 1
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+        1:  118-block  3
+call   16 returned 1
+branch 17 taken 1 (fallthrough)
+branch 18 taken 0 (throw)
+        1:  118-block  4
+call   19 returned 1
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+call   26 returned 1
+    $$$$$:  118-block  5
+call   27 never executed
+    $$$$$:  118-block  6
+    $$$$$:  118-block  7
+call   28 never executed
+    $$$$$:  118-block  8
+    $$$$$:  118-block  9
+call   29 never executed
+    $$$$$:  118-block 10
+    $$$$$:  118-block 11
+call   30 never executed
+    $$$$$:  118-block 12
+    $$$$$:  118-block 13
+call   31 never executed
+    $$$$$:  118-block 14
+    $$$$$:  118-block 15
+call   32 never executed
+    $$$$$:  118-block 16
+    $$$$$:  118-block 17
+call   33 never executed
+    $$$$$:  118-block 18
+    $$$$$:  118-block 19
+call   34 never executed
+    $$$$$:  118-block 20
+        -:  119:                                           "https://stackoverflow.com/questions/3385229");
+       1*:  120:    assert(eventsController.selectAllEventsByMonth("10").size()==2);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  120-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  120-block  1
+call    7 returned 1
+branch  8 taken 0 (fallthrough)
+branch  9 taken 1
+    %%%%%:  120-block  2
+call   10 never executed
+        1:  120-block  3
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:  120-block  4
+call   14 never executed
+    $$$$$:  120-block  5
+    $$$$$:  120-block  6
+call   15 never executed
+    $$$$$:  120-block  7
+       1*:  121:    assert(eventsController.selectAllEventsByMonth("").size()==4);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  121-block  0
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0 (throw)
+        1:  121-block  1
+call    7 returned 1
+branch  8 taken 0 (fallthrough)
+branch  9 taken 1
+    %%%%%:  121-block  2
+call   10 never executed
+        1:  121-block  3
+call   11 returned 1
+call   12 returned 1
+call   13 returned 1
+    $$$$$:  121-block  4
+call   14 never executed
+    $$$$$:  121-block  5
+    $$$$$:  121-block  6
+call   15 never executed
+    $$$$$:  121-block  7
+        -:  122:    try{
+       3*:  123:        eventsController.selectAllEventsByMonth("13").size();
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  123-block  0
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1 (throw)
+    %%%%%:  123-block  1
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+        1:  123-block  2
+call   11 returned 1
+        1:  123-block  3
+        1:  123-block  4
+call   12 returned 1
+        1:  123-block  5
+    #####:  124:        assert(false);
+call    0 never executed
+        1:  125:    }catch (EventsControllerException &eventsControllerException){
+        1:  125-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  125-block  1
+call    2 returned 1
+        -:  126:        assert(true);
+        1:  127:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  128:    try{
+        3:  129:        eventsController.selectAllEventsByMonth("13fdas").size();
+        1:  129-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+        1:  129-block  1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1 (throw)
+    $$$$$:  129-block  2
+call    7 never executed
+call    8 never executed
+call    9 never executed
+call   10 never executed
+        1:  129-block  3
+call   11 returned 1
+        1:  129-block  4
+        1:  129-block  5
+call   12 returned 1
+        1:  129-block  6
+    =====:  130:        assert(false);
+call    0 never executed
+        1:  131:    }catch (EventsControllerException &eventsControllerException){
+        1:  131-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  131-block  1
+call    2 returned 1
+        -:  132:        assert(true);
+        1:  133:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  134:}
+        1:  134-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+    $$$$$:  134-block  1
+call    3 never executed
+    $$$$$:  134-block  2
+call    4 never executed
+    $$$$$:  134-block  3
+call    5 never executed
+        -:  135:
+function _ZN14TestController16testAddEventUserEv called 1 returned 100% blocks executed 55%
+        1:  136:void TestController::testAddEventUser() {
+        1:  137:    Repository<Event> eventsRepository = Repository<Event>();
+        1:  137-block  0
+call    0 returned 1
+        1:  138:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:  139:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  140:    std::string title = "movie night";
+        1:  140-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  140-block  1
+        1:  141:    std::string description = "movie night";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  141-block  0
+        1:  142:    std::string dateAndTime = "/2022/10/23/10:24";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  142-block  0
+        1:  143:    int numberOfAttendants = 39;
+        1:  144:    std::string link = "https://stackoverflow.com/questions/3385229";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  144-block  0
+        1:  145:    eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  146:    eventsController.addEventUser(Event::getIdFromTitleAndDate(title, dateAndTime));
+        1:  146-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  146-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  146-block  2
+call    6 returned 1
+    $$$$$:  146-block  3
+call    7 never executed
+    $$$$$:  146-block  4
+       1*:  147:    assert(eventsController.listEventsUser().size()==1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  147-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  147-block  1
+call    6 never executed
+        1:  147-block  2
+call    7 returned 1
+        -:  148:    try {
+       2*:  149:        eventsController.addEventUser(Event::getIdFromTitleAndDate(title, dateAndTime));
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  149-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1 (throw)
+    %%%%%:  149-block  1
+call    6 never executed
+        1:  149-block  2
+call    7 returned 1
+        1:  149-block  3
+    #####:  150:        assert(false);
+call    0 never executed
+        1:  151:    } catch (EventsControllerException &eventsControllerException) {
+        1:  151-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  151-block  1
+call    2 returned 1
+        -:  152:        assert(true);
+        1:  153:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  154:
+        1:  155:}
+        1:  155-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:  155-block  1
+call    7 never executed
+    $$$$$:  155-block  2
+call    8 never executed
+    $$$$$:  155-block  3
+call    9 never executed
+    $$$$$:  155-block  4
+call   10 never executed
+    $$$$$:  155-block  5
+call   11 never executed
+    $$$$$:  155-block  6
+call   12 never executed
+    $$$$$:  155-block  7
+call   13 never executed
+        -:  156:
+function _ZN14TestController19testRemoveEventUserEv called 1 returned 100% blocks executed 54%
+        1:  157:void TestController::testRemoveEventUser() {
+        1:  158:    Repository<Event> eventsRepository = Repository<Event>();
+        1:  158-block  0
+call    0 returned 1
+        1:  159:    Repository<Event> userEventListRepository = Repository<Event>();
+call    0 returned 1
+        1:  160:    EventsController eventsController = EventsController(eventsRepository, userEventListRepository);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  161:    std::string title = "movie night";
+        1:  161-block  0
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  161-block  1
+        1:  162:    std::string description = "movie night";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  162-block  0
+        1:  163:    std::string dateAndTime = "/2022/10/23/10:24";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  163-block  0
+        1:  164:    int numberOfAttendants = 39;
+        1:  165:    std::string link = "https://stackoverflow.com/questions/3385229";
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 1 (fallthrough)
+branch  3 taken 0 (throw)
+    $$$$$:  165-block  0
+        1:  166:    eventsController.addEventAdministrator(title, description, dateAndTime, numberOfAttendants, link);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  167:    eventsController.addEventUser(Event::getIdFromTitleAndDate(title, dateAndTime));
+        1:  167-block  0
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  167-block  1
+call    3 returned 1
+branch  4 taken 1 (fallthrough)
+branch  5 taken 0 (throw)
+        1:  167-block  2
+call    6 returned 1
+    $$$$$:  167-block  3
+call    7 never executed
+    $$$$$:  167-block  4
+       1*:  168:    assert(eventsController.listEventsUser().size()==1);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:  168-block  0
+call    3 returned 1
+branch  4 taken 0 (fallthrough)
+branch  5 taken 1
+    %%%%%:  168-block  1
+call    6 never executed
+        1:  168-block  2
+call    7 returned 1
+        1:  169:    eventsController.removeEventUser(title, dateAndTime);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  170:    try {
+        1:  171:        eventsController.removeEventUser(title, dateAndTime);
+        1:  171-block  0
+call    0 returned 1
+branch  1 taken 0 (fallthrough)
+branch  2 taken 1 (throw)
+    #####:  172:        assert(false);
+    %%%%%:  172-block  0
+call    0 never executed
+        1:  173:    } catch (EventsControllerException &eventsControllerException) {
+        1:  173-block  0
+branch  0 taken 0 (fallthrough)
+branch  1 taken 1
+        1:  173-block  1
+call    2 returned 1
+        -:  174:        assert(true);
+        1:  175:    }
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        -:  176:
+        1:  177:}
+        1:  177-block  0
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+    $$$$$:  177-block  1
+call    7 never executed
+    $$$$$:  177-block  2
+call    8 never executed
+    $$$$$:  177-block  3
+call    9 never executed
+    $$$$$:  177-block  4
+call   10 never executed
+    $$$$$:  177-block  5
+call   11 never executed
+    $$$$$:  177-block  6
+call   12 never executed
+    $$$$$:  177-block  7
+call   13 never executed

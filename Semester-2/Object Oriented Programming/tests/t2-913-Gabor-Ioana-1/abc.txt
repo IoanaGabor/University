@@ -1,0 +1,4 @@
+Temperature: diameter432.000000Producer: Price: 9.000000 Recordings: 3.000000 432.000000 432.000000 432.000000 Alerting: 1
+hum Producer: Price: 4.000000 Recordings: 432.000000 432.000000 Alerting: 0
+Temperature: diameter2.000000Producer: napocaPrice: 17.000000 Recordings: 3.000000 3.000000 23.000000 Alerting: 0
+hum Producer: wadasPrice: 4.000000 Recordings: 3.000000 3212.000000 23.000000 Alerting: 1
