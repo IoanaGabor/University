@@ -1,0 +1,142 @@
+The number of solutions is: 35
+The number of generated solutions is: 35
+Solution nr. 1
+1 1 1 0 
+0 0 0 1 
+
+Solution nr. 2
+1 1 0 1 
+0 0 1 1 
+
+Solution nr. 3
+1 1 0 1 
+0 0 1 0 
+
+Solution nr. 4
+1 1 0 0 
+0 0 1 1 
+
+Solution nr. 5
+1 1 0 0 
+0 0 1 0 
+
+Solution nr. 6
+1 1 0 0 
+0 0 0 1 
+
+Solution nr. 7
+1 0 1 1 
+0 1 1 1 
+
+Solution nr. 8
+1 0 1 1 
+0 1 1 0 
+
+Solution nr. 9
+1 0 1 1 
+0 1 0 1 
+
+Solution nr. 10
+1 0 1 1 
+0 1 0 0 
+
+Solution nr. 11
+1 0 1 0 
+0 1 1 1 
+
+Solution nr. 12
+1 0 1 0 
+0 1 1 0 
+
+Solution nr. 13
+1 0 1 0 
+0 1 0 1 
+
+Solution nr. 14
+1 0 1 0 
+0 1 0 0 
+
+Solution nr. 15
+1 0 1 0 
+0 0 0 1 
+
+Solution nr. 16
+1 0 0 1 
+0 1 1 1 
+
+Solution nr. 17
+1 0 0 1 
+0 1 1 0 
+
+Solution nr. 18
+1 0 0 1 
+0 1 0 1 
+
+Solution nr. 19
+1 0 0 1 
+0 1 0 0 
+
+Solution nr. 20
+1 0 0 1 
+0 0 1 1 
+
+Solution nr. 21
+1 0 0 1 
+0 0 1 0 
+
+Solution nr. 22
+1 0 0 0 
+0 1 1 1 
+
+Solution nr. 23
+1 0 0 0 
+0 1 1 0 
+
+Solution nr. 24
+1 0 0 0 
+0 1 0 1 
+
+Solution nr. 25
+1 0 0 0 
+0 1 0 0 
+
+Solution nr. 26
+1 0 0 0 
+0 0 1 1 
+
+Solution nr. 27
+1 0 0 0 
+0 0 1 0 
+
+Solution nr. 28
+1 0 0 0 
+0 0 0 1 
+
+Solution nr. 29
+0 1 1 0 
+0 0 0 1 
+
+Solution nr. 30
+0 1 0 1 
+0 0 1 1 
+
+Solution nr. 31
+0 1 0 1 
+0 0 1 0 
+
+Solution nr. 32
+0 1 0 0 
+0 0 1 1 
+
+Solution nr. 33
+0 1 0 0 
+0 0 1 0 
+
+Solution nr. 34
+0 1 0 0 
+0 0 0 1 
+
+Solution nr. 35
+0 0 1 0 
+0 0 0 1 
+

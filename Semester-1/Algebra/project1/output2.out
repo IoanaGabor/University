@@ -1,0 +1,10 @@
+Number of partitions with n = 2
+2
+Partition 1
+{{a1},{a2}}
+Equivalence relations for partition 1:
+(a1, a1),(a2, a2),
+Partition 2
+{{a1 ,a2}}
+Equivalence relations for partition 2:
+(a1, a1),(a1, a2),(a2, a1),(a2, a2),

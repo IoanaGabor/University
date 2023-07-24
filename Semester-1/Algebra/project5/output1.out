@@ -1,0 +1,62 @@
+The number of solutions is: 15
+The number of generated solutions is: 15
+Solution nr. 1
+1 1 1 
+0 0 0 
+
+Solution nr. 2
+1 1 0 
+0 0 1 
+
+Solution nr. 3
+1 1 0 
+0 0 0 
+
+Solution nr. 4
+1 0 1 
+0 1 1 
+
+Solution nr. 5
+1 0 1 
+0 1 0 
+
+Solution nr. 6
+1 0 1 
+0 0 0 
+
+Solution nr. 7
+1 0 0 
+0 1 1 
+
+Solution nr. 8
+1 0 0 
+0 1 0 
+
+Solution nr. 9
+1 0 0 
+0 0 1 
+
+Solution nr. 10
+1 0 0 
+0 0 0 
+
+Solution nr. 11
+0 1 1 
+0 0 0 
+
+Solution nr. 12
+0 1 0 
+0 0 1 
+
+Solution nr. 13
+0 1 0 
+0 0 0 
+
+Solution nr. 14
+0 0 1 
+0 0 0 
+
+Solution nr. 15
+0 0 0 
+0 0 0 
+

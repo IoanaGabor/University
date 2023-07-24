@@ -1,0 +1,210 @@
+Number of partitions with n = 5
+52
+Partition 1
+{{a1},{a2},{a3},{a4},{a5}}
+Equivalence relations for partition 1:
+(a1, a1),(a2, a2),(a3, a3),(a4, a4),(a5, a5),
+Partition 2
+{{a1},{a2},{a3},{a4 ,a5}}
+Equivalence relations for partition 2:
+(a1, a1),(a2, a2),(a3, a3),(a4, a4),(a4, a5),(a5, a4),(a5, a5),
+Partition 3
+{{a1},{a2},{a3 ,a4},{a5}}
+Equivalence relations for partition 3:
+(a1, a1),(a2, a2),(a3, a3),(a3, a4),(a4, a3),(a4, a4),(a5, a5),
+Partition 4
+{{a1},{a2},{a3 ,a5},{a4}}
+Equivalence relations for partition 4:
+(a1, a1),(a2, a2),(a3, a3),(a3, a5),(a5, a3),(a5, a5),(a4, a4),
+Partition 5
+{{a1},{a2},{a3 ,a4 ,a5}}
+Equivalence relations for partition 5:
+(a1, a1),(a2, a2),(a3, a3),(a3, a4),(a3, a5),(a4, a3),(a4, a4),(a4, a5),(a5, a3),(a5, a4),(a5, a5),
+Partition 6
+{{a1},{a2 ,a3},{a4},{a5}}
+Equivalence relations for partition 6:
+(a1, a1),(a2, a2),(a2, a3),(a3, a2),(a3, a3),(a4, a4),(a5, a5),
+Partition 7
+{{a1},{a2 ,a3},{a4 ,a5}}
+Equivalence relations for partition 7:
+(a1, a1),(a2, a2),(a2, a3),(a3, a2),(a3, a3),(a4, a4),(a4, a5),(a5, a4),(a5, a5),
+Partition 8
+{{a1},{a2 ,a4},{a3},{a5}}
+Equivalence relations for partition 8:
+(a1, a1),(a2, a2),(a2, a4),(a4, a2),(a4, a4),(a3, a3),(a5, a5),
+Partition 9
+{{a1},{a2 ,a4},{a3 ,a5}}
+Equivalence relations for partition 9:
+(a1, a1),(a2, a2),(a2, a4),(a4, a2),(a4, a4),(a3, a3),(a3, a5),(a5, a3),(a5, a5),
+Partition 10
+{{a1},{a2 ,a3 ,a4},{a5}}
+Equivalence relations for partition 10:
+(a1, a1),(a2, a2),(a2, a3),(a2, a4),(a3, a2),(a3, a3),(a3, a4),(a4, a2),(a4, a3),(a4, a4),(a5, a5),
+Partition 11
+{{a1},{a2 ,a5},{a3},{a4}}
+Equivalence relations for partition 11:
+(a1, a1),(a2, a2),(a2, a5),(a5, a2),(a5, a5),(a3, a3),(a4, a4),
+Partition 12
+{{a1},{a2 ,a5},{a3 ,a4}}
+Equivalence relations for partition 12:
+(a1, a1),(a2, a2),(a2, a5),(a5, a2),(a5, a5),(a3, a3),(a3, a4),(a4, a3),(a4, a4),
+Partition 13
+{{a1},{a2 ,a3 ,a5},{a4}}
+Equivalence relations for partition 13:
+(a1, a1),(a2, a2),(a2, a3),(a2, a5),(a3, a2),(a3, a3),(a3, a5),(a5, a2),(a5, a3),(a5, a5),(a4, a4),
+Partition 14
+{{a1},{a2 ,a4 ,a5},{a3}}
+Equivalence relations for partition 14:
+(a1, a1),(a2, a2),(a2, a4),(a2, a5),(a4, a2),(a4, a4),(a4, a5),(a5, a2),(a5, a4),(a5, a5),(a3, a3),
+Partition 15
+{{a1},{a2 ,a3 ,a4 ,a5}}
+Equivalence relations for partition 15:
+(a1, a1),(a2, a2),(a2, a3),(a2, a4),(a2, a5),(a3, a2),(a3, a3),(a3, a4),(a3, a5),(a4, a2),(a4, a3),(a4, a4),(a4, a5),(a5, a2),(a5, a3),(a5, a4),(a5, a5),
+Partition 16
+{{a1 ,a2},{a3},{a4},{a5}}
+Equivalence relations for partition 16:
+(a1, a1),(a1, a2),(a2, a1),(a2, a2),(a3, a3),(a4, a4),(a5, a5),
+Partition 17
+{{a1 ,a2},{a3},{a4 ,a5}}
+Equivalence relations for partition 17:
+(a1, a1),(a1, a2),(a2, a1),(a2, a2),(a3, a3),(a4, a4),(a4, a5),(a5, a4),(a5, a5),
+Partition 18
+{{a1 ,a2},{a3 ,a4},{a5}}
+Equivalence relations for partition 18:
+(a1, a1),(a1, a2),(a2, a1),(a2, a2),(a3, a3),(a3, a4),(a4, a3),(a4, a4),(a5, a5),
+Partition 19
+{{a1 ,a2},{a3 ,a5},{a4}}
+Equivalence relations for partition 19:
+(a1, a1),(a1, a2),(a2, a1),(a2, a2),(a3, a3),(a3, a5),(a5, a3),(a5, a5),(a4, a4),
+Partition 20
+{{a1 ,a2},{a3 ,a4 ,a5}}
+Equivalence relations for partition 20:
+(a1, a1),(a1, a2),(a2, a1),(a2, a2),(a3, a3),(a3, a4),(a3, a5),(a4, a3),(a4, a4),(a4, a5),(a5, a3),(a5, a4),(a5, a5),
+Partition 21
+{{a1 ,a3},{a2},{a4},{a5}}
+Equivalence relations for partition 21:
+(a1, a1),(a1, a3),(a3, a1),(a3, a3),(a2, a2),(a4, a4),(a5, a5),
+Partition 22
+{{a1 ,a3},{a2},{a4 ,a5}}
+Equivalence relations for partition 22:
+(a1, a1),(a1, a3),(a3, a1),(a3, a3),(a2, a2),(a4, a4),(a4, a5),(a5, a4),(a5, a5),
+Partition 23
+{{a1 ,a3},{a2 ,a4},{a5}}
+Equivalence relations for partition 23:
+(a1, a1),(a1, a3),(a3, a1),(a3, a3),(a2, a2),(a2, a4),(a4, a2),(a4, a4),(a5, a5),
+Partition 24
+{{a1 ,a3},{a2 ,a5},{a4}}
+Equivalence relations for partition 24:
+(a1, a1),(a1, a3),(a3, a1),(a3, a3),(a2, a2),(a2, a5),(a5, a2),(a5, a5),(a4, a4),
+Partition 25
+{{a1 ,a3},{a2 ,a4 ,a5}}
+Equivalence relations for partition 25:
+(a1, a1),(a1, a3),(a3, a1),(a3, a3),(a2, a2),(a2, a4),(a2, a5),(a4, a2),(a4, a4),(a4, a5),(a5, a2),(a5, a4),(a5, a5),
+Partition 26
+{{a1 ,a2 ,a3},{a4},{a5}}
+Equivalence relations for partition 26:
+(a1, a1),(a1, a2),(a1, a3),(a2, a1),(a2, a2),(a2, a3),(a3, a1),(a3, a2),(a3, a3),(a4, a4),(a5, a5),
+Partition 27
+{{a1 ,a2 ,a3},{a4 ,a5}}
+Equivalence relations for partition 27:
+(a1, a1),(a1, a2),(a1, a3),(a2, a1),(a2, a2),(a2, a3),(a3, a1),(a3, a2),(a3, a3),(a4, a4),(a4, a5),(a5, a4),(a5, a5),
+Partition 28
+{{a1 ,a4},{a2},{a3},{a5}}
+Equivalence relations for partition 28:
+(a1, a1),(a1, a4),(a4, a1),(a4, a4),(a2, a2),(a3, a3),(a5, a5),
+Partition 29
+{{a1 ,a4},{a2},{a3 ,a5}}
+Equivalence relations for partition 29:
+(a1, a1),(a1, a4),(a4, a1),(a4, a4),(a2, a2),(a3, a3),(a3, a5),(a5, a3),(a5, a5),
+Partition 30
+{{a1 ,a4},{a2 ,a3},{a5}}
+Equivalence relations for partition 30:
+(a1, a1),(a1, a4),(a4, a1),(a4, a4),(a2, a2),(a2, a3),(a3, a2),(a3, a3),(a5, a5),
+Partition 31
+{{a1 ,a4},{a2 ,a5},{a3}}
+Equivalence relations for partition 31:
+(a1, a1),(a1, a4),(a4, a1),(a4, a4),(a2, a2),(a2, a5),(a5, a2),(a5, a5),(a3, a3),
+Partition 32
+{{a1 ,a4},{a2 ,a3 ,a5}}
+Equivalence relations for partition 32:
+(a1, a1),(a1, a4),(a4, a1),(a4, a4),(a2, a2),(a2, a3),(a2, a5),(a3, a2),(a3, a3),(a3, a5),(a5, a2),(a5, a3),(a5, a5),
+Partition 33
+{{a1 ,a2 ,a4},{a3},{a5}}
+Equivalence relations for partition 33:
+(a1, a1),(a1, a2),(a1, a4),(a2, a1),(a2, a2),(a2, a4),(a4, a1),(a4, a2),(a4, a4),(a3, a3),(a5, a5),
+Partition 34
+{{a1 ,a2 ,a4},{a3 ,a5}}
+Equivalence relations for partition 34:
+(a1, a1),(a1, a2),(a1, a4),(a2, a1),(a2, a2),(a2, a4),(a4, a1),(a4, a2),(a4, a4),(a3, a3),(a3, a5),(a5, a3),(a5, a5),
+Partition 35
+{{a1 ,a3 ,a4},{a2},{a5}}
+Equivalence relations for partition 35:
+(a1, a1),(a1, a3),(a1, a4),(a3, a1),(a3, a3),(a3, a4),(a4, a1),(a4, a3),(a4, a4),(a2, a2),(a5, a5),
+Partition 36
+{{a1 ,a3 ,a4},{a2 ,a5}}
+Equivalence relations for partition 36:
+(a1, a1),(a1, a3),(a1, a4),(a3, a1),(a3, a3),(a3, a4),(a4, a1),(a4, a3),(a4, a4),(a2, a2),(a2, a5),(a5, a2),(a5, a5),
+Partition 37
+{{a1 ,a2 ,a3 ,a4},{a5}}
+Equivalence relations for partition 37:
+(a1, a1),(a1, a2),(a1, a3),(a1, a4),(a2, a1),(a2, a2),(a2, a3),(a2, a4),(a3, a1),(a3, a2),(a3, a3),(a3, a4),(a4, a1),(a4, a2),(a4, a3),(a4, a4),(a5, a5),
+Partition 38
+{{a1 ,a5},{a2},{a3},{a4}}
+Equivalence relations for partition 38:
+(a1, a1),(a1, a5),(a5, a1),(a5, a5),(a2, a2),(a3, a3),(a4, a4),
+Partition 39
+{{a1 ,a5},{a2},{a3 ,a4}}
+Equivalence relations for partition 39:
+(a1, a1),(a1, a5),(a5, a1),(a5, a5),(a2, a2),(a3, a3),(a3, a4),(a4, a3),(a4, a4),
+Partition 40
+{{a1 ,a5},{a2 ,a3},{a4}}
+Equivalence relations for partition 40:
+(a1, a1),(a1, a5),(a5, a1),(a5, a5),(a2, a2),(a2, a3),(a3, a2),(a3, a3),(a4, a4),
+Partition 41
+{{a1 ,a5},{a2 ,a4},{a3}}
+Equivalence relations for partition 41:
+(a1, a1),(a1, a5),(a5, a1),(a5, a5),(a2, a2),(a2, a4),(a4, a2),(a4, a4),(a3, a3),
+Partition 42
+{{a1 ,a5},{a2 ,a3 ,a4}}
+Equivalence relations for partition 42:
+(a1, a1),(a1, a5),(a5, a1),(a5, a5),(a2, a2),(a2, a3),(a2, a4),(a3, a2),(a3, a3),(a3, a4),(a4, a2),(a4, a3),(a4, a4),
+Partition 43
+{{a1 ,a2 ,a5},{a3},{a4}}
+Equivalence relations for partition 43:
+(a1, a1),(a1, a2),(a1, a5),(a2, a1),(a2, a2),(a2, a5),(a5, a1),(a5, a2),(a5, a5),(a3, a3),(a4, a4),
+Partition 44
+{{a1 ,a2 ,a5},{a3 ,a4}}
+Equivalence relations for partition 44:
+(a1, a1),(a1, a2),(a1, a5),(a2, a1),(a2, a2),(a2, a5),(a5, a1),(a5, a2),(a5, a5),(a3, a3),(a3, a4),(a4, a3),(a4, a4),
+Partition 45
+{{a1 ,a3 ,a5},{a2},{a4}}
+Equivalence relations for partition 45:
+(a1, a1),(a1, a3),(a1, a5),(a3, a1),(a3, a3),(a3, a5),(a5, a1),(a5, a3),(a5, a5),(a2, a2),(a4, a4),
+Partition 46
+{{a1 ,a3 ,a5},{a2 ,a4}}
+Equivalence relations for partition 46:
+(a1, a1),(a1, a3),(a1, a5),(a3, a1),(a3, a3),(a3, a5),(a5, a1),(a5, a3),(a5, a5),(a2, a2),(a2, a4),(a4, a2),(a4, a4),
+Partition 47
+{{a1 ,a2 ,a3 ,a5},{a4}}
+Equivalence relations for partition 47:
+(a1, a1),(a1, a2),(a1, a3),(a1, a5),(a2, a1),(a2, a2),(a2, a3),(a2, a5),(a3, a1),(a3, a2),(a3, a3),(a3, a5),(a5, a1),(a5, a2),(a5, a3),(a5, a5),(a4, a4),
+Partition 48
+{{a1 ,a4 ,a5},{a2},{a3}}
+Equivalence relations for partition 48:
+(a1, a1),(a1, a4),(a1, a5),(a4, a1),(a4, a4),(a4, a5),(a5, a1),(a5, a4),(a5, a5),(a2, a2),(a3, a3),
+Partition 49
+{{a1 ,a4 ,a5},{a2 ,a3}}
+Equivalence relations for partition 49:
+(a1, a1),(a1, a4),(a1, a5),(a4, a1),(a4, a4),(a4, a5),(a5, a1),(a5, a4),(a5, a5),(a2, a2),(a2, a3),(a3, a2),(a3, a3),
+Partition 50
+{{a1 ,a2 ,a4 ,a5},{a3}}
+Equivalence relations for partition 50:
+(a1, a1),(a1, a2),(a1, a4),(a1, a5),(a2, a1),(a2, a2),(a2, a4),(a2, a5),(a4, a1),(a4, a2),(a4, a4),(a4, a5),(a5, a1),(a5, a2),(a5, a4),(a5, a5),(a3, a3),
+Partition 51
+{{a1 ,a3 ,a4 ,a5},{a2}}
+Equivalence relations for partition 51:
+(a1, a1),(a1, a3),(a1, a4),(a1, a5),(a3, a1),(a3, a3),(a3, a4),(a3, a5),(a4, a1),(a4, a3),(a4, a4),(a4, a5),(a5, a1),(a5, a3),(a5, a4),(a5, a5),(a2, a2),
+Partition 52
+{{a1 ,a2 ,a3 ,a4 ,a5}}
+Equivalence relations for partition 52:
+(a1, a1),(a1, a2),(a1, a3),(a1, a4),(a1, a5),(a2, a1),(a2, a2),(a2, a3),(a2, a4),(a2, a5),(a3, a1),(a3, a2),(a3, a3),(a3, a4),(a3, a5),(a4, a1),(a4, a2),(a4, a3),(a4, a4),(a4, a5),(a5, a1),(a5, a2),(a5, a3),(a5, a4),(a5, a5),
